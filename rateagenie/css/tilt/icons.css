@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "tableau-icons";
+    src: url(../../fonts/tableau.eot);
+    src: url(../../fonts/tableau.eot?#iefix) format('embedded-opentype'), 
+        url(../../fonts/tableau.woff) format('woff'), 
+        url(../../fonts/tableau.ttf) format('truetype'), 
+        url(../../fonts/tableau.svg#svgtableau) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.text--dark-body {
+    color: #333 !important;
+    font-size: 2.5em;
+}
+.icon {
+    font-family: "tableau-icons";
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon--auto-updates:before {
+    content: "\f118";
+}
+.icon--change-management:before {
+    content: "\f120";
+}
+.icon--solutions:before {
+    content: "\f174";
+}
+.icon--customer-success:before {
+    content: "\f130";
+}

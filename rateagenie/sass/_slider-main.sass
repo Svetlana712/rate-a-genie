@@ -1,0 +1,490 @@
+@import "mixins.sass"
+@import "variables.sass"
+@import "global.sass"
+
+
+.main-item
+	display: block
+	margin: 0
+	border-radius: 50%
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07)
+	+opacity(1)
+	float: none
+	text-align: center
+	z-index: 2
+	+transitionMain
+	span
+		left: 50%
+		bottom: -40px
+		padding: 5px 12px
+		background: #fff
+		box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+		border-radius: 50px
+		white-space: nowrap
+		font-size: 16px
+		font-weight: 500
+		color: #566b78
+		pointer-events: none
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		transform: translate(-50%, -10px)
+		opacity: 0
+		z-index: 5
+		transition-property: opacity, transform
+		transition-duration: 0.25s
+		transition-timing-function: ease-out
+	&:hover
+		span
+			opacity: 0.9
+			transform: translate(-50%)
+
+.bank-table-wrap
+	display: table
+	width: 100%
+	height: 100%
+	border-radius: 50%
+
+.main-item,
+.main-item span
+	position: absolute
+	color: #000
+
+.main-item1,
+.main-item2,
+.main-item3,
+.main-item4,
+.main-item5,
+.main-item18,
+.main-item20,
+.main-item21,
+.main-item24,
+.main-item25
+	width: 90px!important
+	height: 90px!important
+	-webkit-animation: fadein 5s /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 5s /* Firefox < 16 */
+	-ms-animation: fadein 5s /* Internet Explorer */
+	-o-animation: fadein 5s /* Opera < 12.1 */
+	animation: fadein 5s 
+
+.main-item6,
+.main-item7,
+.main-item8,
+.main-item9,
+.main-item10, 
+.main-item17
+	width: 120px!important
+	height: 120px!important
+	-webkit-animation: fadein 10s /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 10s /* Firefox < 16 */
+	-ms-animation: fadein 10s /* Internet Explorer */
+	-o-animation: fadein 10s /* Opera < 12.1 */
+	animation: fadein 10s 
+
+.main-item11,
+.main-item12,
+.main-item13,
+.main-item14,
+.main-item15,
+.main-item16,
+.main-item19,
+.main-item22,
+.main-item23
+	width: 150px!important
+	height: 150px!important
+	-webkit-animation: fadein 2s /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s /* Firefox < 16 */
+	-ms-animation: fadein 2s /* Internet Explorer */
+	-o-animation: fadein 2s /* Opera < 12.1 */
+	animation: fadein 2s 
+
+@keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+/* Firefox < 16 */
+@-moz-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+/* Internet Explorer */
+@-ms-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+/* Opera < 12.1 */
+@-o-keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+
+.main-item1
+	top: 360px
+	left: 640px
+
+.main-item1-1
+	left: 2760px
+
+.main-item2
+	top: 192px
+	left: 820px
+
+.main-item2-1
+	left: 2940px
+
+.main-item3
+	top: 242px
+	left: 690px
+
+.main-item3-1
+	left: 2810px
+
+.main-item4
+	top: 220px
+	left: 1150px
+
+.main-item4-1
+	left: 3270px
+
+.main-item5
+	top: 45px
+	left: 880px
+
+.main-item5-1
+	left: 3000px
+
+.main-item6
+	top: 91px
+	left: 1260px
+
+.main-item6-1
+	left: 3380px
+
+.main-item7
+	top: 59px
+	left: 670px
+
+.main-item7-1
+	left: 2790px
+
+.main-item8
+	top: 295px
+	left: 480px
+
+.main-item8-1
+	left: 2600px
+
+.main-item9
+	top: 353px
+	left: 300px
+
+.main-item9-1
+	left: 2420px
+
+.main-item10
+	top: 65px
+	left: 160px
+
+.main-item10-1
+	left: 2280px
+
+.main-item11
+	top: 173px
+	left: 1430px
+
+.main-item11-1
+	left: 3550px
+
+.main-item12
+	top: 301px
+	left: 1260px
+
+.main-item12-1
+	left: 3380px
+
+.main-item13
+	top: 101px
+	left: 990px
+
+.main-item13-1
+	left: 3110px
+
+.main-item14
+	top: 72px
+	left: 420px
+
+.main-item14-1
+	left: 2540px
+
+.main-item15
+	top: 320px
+	left: 900px
+
+.main-item15-1
+	left: 3020px
+
+.main-item16
+	top: 165px 
+	left: 240px
+
+.main-item16-1
+	left: 2360px
+
+.main-item17
+	top: 200px
+	left: 2130px
+
+.main-item17-1
+	left: 4250px
+
+.main-item18
+	top: 360px
+	left: 2150px
+
+.main-item18-1
+	left: 4270px
+
+.main-item19
+	top: 271px
+	left: 1620px
+
+.main-item19-1
+	left: 3740px
+
+.main-item20
+	top: 171px
+	left: 1710px
+
+.main-item20-1
+	left: 3830px
+
+.main-item21
+	top: 52px
+	left: 2080px
+
+.main-item21-1
+	left: 4200px
+
+.main-item22
+	top: 84px
+	left: 1870px
+
+.main-item22-1
+	left: 3990px
+
+.main-item23
+	top: 301px
+	left: 1900px
+
+.main-item23-1
+	left: 4020px
+
+.main-item24
+	top: 65px
+	left: 1760px
+
+.main-item24-1
+	left: 3880px
+
+.main-item25
+	top: 58px
+	left: 1500px
+
+.main-item25-1
+	left: 3620px
+
+
+/*--------------------------------------------------- BANK'S LIST -----------------------------------------------*/
+
+.bank-item
+	display: table-cell
+	vertical-align: middle
+	margin: auto
+	text-align: center
+
+// .us-bank,
+// .pnc-bank,
+// .td-bank,
+// .sun-trust-bank,
+// .regions-bank,
+// .navy-federal-bank,
+// .charles-bank,
+// .bbt-bank,
+// .fidelity-bank,
+// .citizens-bank
+// 	svg
+// 		fill: #fff
+
+// .us-bank
+// 	background-color: #1f6fbe
+
+// .pnc-bank
+// 	background-color: #0e69aa
+
+// .sun-trust-bank
+// 	background-color: #00386d
+
+// .regions-bank
+// 	background-color: #88bd40
+
+// .navy-federal-bank
+// 	background-color: #0a447d
+// 	+linear(#337efb, #182770)
+
+// .charles-bank
+// 	background-color: #008cda
+
+// .bbt-bank
+// 	background-color: #8a0025
+
+// .fidelity-bank
+// 	background: #3f981a
+// 	background: -webkit-radial-gradient(left top, #2b378e 50%, #efefef 56%, #3f981a 50%)
+// 	background: -o-radial-gradient(bottom right, #2b378e 50%, #efefef 56%, #3f981a 50%)
+// 	background: -moz-radial-gradient(bottom right, #2b378e 50%, #efefef 56%, #3f981a 50%)
+// 	background: radial-gradient(to bottom right, #2b378e 50%, #efefef 56%, #3f981a 50%)
+
+// .citizens-bank
+// 	background-color: #37926d
+
+// .chase-bank
+// 	background-color: #fff
+// 	border: #ccc 1px solid
+// 	svg
+// 		fill: #175da5
+
+// .boa-bank
+// 	+radial(#fff, #ccc)
+// 	svg
+// 		fill: #4f30c9
+// 	.logo-red-part
+// 		fill: #e21931
+
+// .wells-fargo-bank
+// 	background-color: #d4002f
+// 	svg
+// 		fill: #efef16
+
+// .citi-bank
+// 	+linear(#49aaeb, #2841b7)
+// 	svg
+// 		fill: #092869
+// 	.citi-logo-hat
+// 		fill: #e83035
+
+// .us-bank
+// 	.us-logo-shield
+// 		fill: #de162b
+// 	.logo-shield-text
+// 		fill: #fff
+
+// .capital-one-bank
+// 	background-color: #004879
+// 	svg
+// 		fill: #d22f2f
+// 	.capone-logo-type
+// 		fill: #fff
+
+// .pnc-bank
+// 	.pnc-logo-circle
+// 		fill: #f58025
+// 	.pnc-logo-type
+// 		fill: #fff
+
+// .usaa-bank
+// 	background-color: #fff
+// 	border: #ccc 1px solid
+// 	svg
+// 		fill: #00365b
+
+// .td-bank
+// 	background: #21aa21
+// 	background: -webkit-linear-gradient(-90deg, #1b3f25 70%, #21aa21 10%)
+// 	background: -o-linear-gradient(-90deg, #1b3f25 70%, #21aa21 10%)
+// 	background: -moz-linear-gradient(-90deg, #1b3f25 70%, #21aa21 10%)
+// 	background: linear-gradient(-90deg, #1b3f25 70%, #21aa21 10%)
+// 	.td-logo-text
+// 		fill: #fff
+
+// .sun-trust-bank
+// 	.sun-trust-logo
+// 		fill: #fab731
+
+.table-image
+	display: table
+	width: 100%
+	height: 100%
+	float: none
+	border-radius: 50%
+	overflow: hidden
+	.image-center
+		display: table-cell
+		vertical-align: middle
+		border-radius: 50%
+		img
+			display: block
+			max-width: 80%
+			width: auto
+			margin: auto
+			&.w50p
+				max-width: 50%
+
+.white-bg
+	background-color: white
+	border: 1px solid #d7d7d7
+
+.black-bg
+	background-color: black
+
+.grey-gradient-bg
+	background: #d1d1d1
+	background: -webkit-radial-gradient(circle, white, #d1d1d1)
+	background: -o-radial-gradient(circle, white, #d1d1d1)
+	background: -moz-radial-gradient(circle, white, #d1d1d1)
+	background: radial-gradient(circle, white, #d1d1d1)
+
+.htc-bg
+	background-color: #69aa2a
+
+.one-plus-bg
+	background-color: #fb0a2b
+
+.asus-bg
+	background: #2288e3
+
+.lenovo-bg
+	background-color: #e60012
+
+.microsoft-bg
+	background-color: #004185
+
+.del-bg
+	+linear-horizontal(rgba(#5eb1f5, 0), #5eb1f5)
+
+.hp-bg
+	background-color: #0197d6
+
+.lg-bg
+	background-color: #f8f8f8
+
+.apple-bg
+	background-color: #b4b5b7
+
+/*--------------------------------------------------- END ANIMATION-BOX -----------------------------------------------*/

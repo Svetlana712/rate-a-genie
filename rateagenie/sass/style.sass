@@ -1,0 +1,1710 @@
+@import "mixins.sass"
+@import "variables.sass"
+@import "global.sass"
+
+
+/*----------------------------------------- MAIN PAGE -----------------------------------*/
+
+.w100p
+	width: 100%
+.ml50	
+	margin-left: 50px
+
+.page-scroll-content
+	position: relative
+
+section
+	padding-top: 100px
+	padding-bottom: 100px
+
+#pricing
+
+#banks
+
+#dashboard
+
+#support
+
+#contacts
+	height: 50px
+	min-height: 1px
+
+.main-box
+	position: relative
+	z-index: 1
+	padding-bottom: 0
+
+.stripes-wrap
+	position: absolute
+	left: 0
+	top: 50%
+	right: 0
+	transform: skewY(-12deg)
+	pointer-events: none
+	top: calc(50% + 310px)
+	.stripe-line
+		position: absolute
+		top: auto
+		left: 0
+		right: 0
+		height: 200px
+	.l0
+		height: 5000px
+		bottom: 200px
+		background: linear-gradient(90deg, #e4ecf5, #f5fdff)
+	.l1
+		bottom: 0
+		left: calc(50% + 220px)
+		background: linear-gradient(90deg, #f4fafd, #eff8fc)
+	.l2
+		bottom: 200px
+		right: calc(50% - 220px)
+		background: linear-gradient(90deg, #d6e3f0, #e7f3fa)
+	.l3
+		bottom: 600px
+		left: 10%
+		right: calc(50% - 300px)
+		background: linear-gradient(90deg, #ecf4fa, #e4eff6)
+
+
+.test
+	display: block !important
+	width: 100px
+	height: 100px
+	background-color: yellow
+
+
+.rtl
+	direction: rtl
+
+.ltr
+	direction: ltr
+
+
+.figerus-bg-wrap
+	position: relative
+	width: 100%
+	padding-top: 60px
+
+.el1
+	width: 0
+	height: 0
+	border-left: 50% solid transparent
+	border-right: 50% solid transparent
+	border-top: 100% solid red
+
+.post-card
+	display: block
+	position: relative
+	width: 80%
+	min-height: 400px
+	background: #f4f4f4
+	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+	border-radius: 4px
+	overflow: hidden
+	position: relative
+	margin: 0
+	.post-card-img
+		height: 200px
+		overflow: hidden
+	img
+		display: block
+		min-height: 200px
+		height: auto
+		min-width: 1px
+		max-width: 100%
+		margin: auto
+	h5
+		font-style: italic
+
+.pcard1
+	background-color: #80b96f
+
+.pcard2
+	background-color: #c5608f
+
+.pcard3
+	background-color: #693217
+
+.pcard4
+	background-color: #ece617
+
+.pcard5
+	background-color: #5095d6
+
+.pcard6
+	background-color: #8c2e85
+
+
+.logo-block
+	display: table
+	margin: 0 auto 20px
+	width: 70px
+	height: 70px
+	border-radius: 50%
+	background-color: transparent
+	border: 2px solid $light-green
+	// background-color: $light-green
+	text-align: center
+	padding: 5px
+	.fa
+		display: table-cell
+		+em(30)
+		vertical-align: middle
+		color: $green
+
+
+.post-info
+	position: relative
+	width: 100%
+	min-height: 200px	
+	padding: 20px 20px 20px
+	&:after
+		+ct
+		position: absolute
+		z-index: 1
+		left: 0
+		bottom: 100%
+		border-left: 700px solid transparent
+		border-bottom: 60px solid
+	&:before
+		+ct
+		position: absolute
+		z-index: 2
+		left: 62%
+		top: -76px
+		border-right: 700px solid
+		border-bottom: 82px solid transparent
+		border-top: 60px solid transparent
+	.post-absolute	
+		position: absolute
+		z-index: 0
+		bottom: 100%
+		right: 0px
+		width: 0
+		height: 0
+		border-right: 700px solid transparent
+		border-bottom: 100px solid
+	&.orange-bg
+		background-color: $orange
+		&:after
+			border-bottom-color: $orange
+		&:before
+			border-right-color: darken($orange, 10%)
+		.post-absolute
+			border-bottom-color: rgba($orange, 0.7)
+	&.green-bg
+		background-color: $green
+		&:after
+			border-bottom-color: $green
+		&:before
+			border-right-color: darken($green, 10%)
+		.post-absolute
+			border-bottom-color: rgba($green, 0.7)
+	&.crimson-bg
+		background-color: $bordo
+		&:after
+			border-bottom-color: $bordo
+		&:before
+			border-right-color: darken($bordo, 10%)
+		.post-absolute
+			border-bottom-color: rgba($bordo, 0.7)
+	&.yellow-bg
+		background-color: $light-yellow
+		&:after
+			border-bottom-color: $light-yellow
+		&:before
+			border-right-color: darken($light-yellow, 10%)
+		.post-absolute
+			border-bottom-color: rgba($light-yellow, 0.7)
+	&.violet-bg
+		background-color: $violet
+		&:after
+			border-bottom-color: $violet
+		&:before
+			border-right-color: darken($violet, 10%)
+		.post-absolute
+			border-bottom-color: rgba($violet, 0.7)
+	&.blue-bg
+		background-color: $green-blue
+		&:after
+			border-bottom-color: $green-blue
+		&:before
+			border-right-color: darken($green-blue, 10%)
+		.post-absolute
+			border-bottom-color: rgba($green-blue, 0.7)
+
+
+.white
+	color: $white
+
+.body-link
+	border-bottom: 1px solid
+
+.white
+	.body-link
+		border-color: transparent
+		+transitionMain
+		+hf
+			border-color: inherit
+
+.detecting-page
+	padding-top: 100px
+	padding-bottom: 100px
+	position: relative
+	background: #fff url(../img/main-bg.jpg) center center no-repeat
+	background-attachment: fixed
+	background-size: cover
+
+.signup-page
+	background-image: url(../img/bg2.jpg)
+
+.section-overlay
+	display: block
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	background-color: rgba(255, 255, 255, 0.5)
+
+@import "nav.sass"
+
+/*---------------------------------------- SECTIONS ----------------------------------------*/
+
+.absolute-form
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 200
+
+.device-container
+	display: table
+	width: 100%
+	height: 100%
+	.device-form-align
+		display: table-cell
+		vertical-align: middle
+
+.step-choice
+	&.active
+		position: relative
+		z-index: 10
+
+	
+.form-item-device
+	display: block
+	padding: 10px
+	&.selected
+		border: 1px solid $green
+
+.device-wrap
+	display: table
+	width: 100%
+	height: 200px
+	overflow: hidden
+
+.radio-item
+	display: block
+	width: 20%
+	padding: 10px
+	label
+		padding: 15px 15px
+		border-radius: 10px
+		background-color: rgba(255, 255, 255, 0.9)
+
+.device-item
+	display: table-cell
+	vertical-align: middle
+	text-align: center
+	img
+		display: block
+		margin: auto
+		max-width: 100%
+		max-height: 160px
+	
+.choice-background
+	padding: 40px 25px
+	background-color: rgba(255, 255, 255, 0.9)
+	border-radius: 10px
+
+.choice-background .btn,
+.step-choice .form-control
+		width: 100%
+		padding: 10px 25px
+		background-color: $white
+		border: 1px solid $blue
+		border-radius: 10px
+		color: $colorMain
+		+em(20)
+
+.choice-background .btn
+	overflow: hidden
+	text-overflow: ellipsis
+
+.enter-box .btn-device-submit,
+.submit-image
+	display: block
+	position: absolute
+	left: 50%	
+	margin-left: -100px
+	width: 200px
+	margin-right: auto
+
+.enter-box .btn-device-submit
+	+em(16)
+	margin-bottom: 10px
+	padding-top: 7px
+	padding-bottom: 7px
+	border: 3px solid #1d9ea2
+	border-radius: 50px
+	background-color: transparent
+	box-shadow: 2px 3px 0px #c6c6c6
+	color: #2a2a2a
+	font-weight: 400	
+	text-shadow: 0px 0 1px #2a2a2a
+	top: 25px
+	z-index: 1
+	letter-spacing: -0.04em
+	padding-left: 30px
+	&.none
+		display: none
+
+.submit-image
+	top: 19px
+	width: 203px
+	display: none
+	&.block
+		display: block
+
+.thanks-message
+	display: none
+	color: $green
+	position: absolute
+	top: 15px
+	text-align: center
+	left: 0	
+	width: 100%
+	padding-right: 30px
+	padding-left: 30px
+	&.block
+		display: block
+
+.enter-box
+	padding: 25px
+	position: relative
+	min-height: 95px
+	border-radius: 10px
+
+.introduction
+	background-color: $yellow
+
+.works
+	padding-top: 0
+	padding-bottom: 0
+
+.works-box
+	padding-top: 50px
+	padding-bottom: 50px
+	min-height: 600px
+	&:first-child
+		min-height: 100vh
+		padding-top: 80px
+		padding-bottom: 80px
+	&.gradient1
+		background: #3D7EAA /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #FFE47A, #3D7EAA) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #FFE47A, #3D7EAA) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	&.gradient2
+		background: #24C6DC /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #514A9D, #24C6DC) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #514A9D, #24C6DC) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	&.gradient3
+		background: #1FA2FF /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	&.gradient4
+		background: #FF512F /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #DD2476, #FF512F) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #DD2476, #FF512F) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	&.gradient5
+		background: #E55D87 /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #5FC3E4, #E55D87) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	&.gradient6
+		background: #CC95C0 /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	&.gradient7
+		background: #77A1D3 /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	&.gradient8
+		background: #03001e /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	&.gradient9
+		background: #00c3ff /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #ffff1c, #00c3ff) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	&.gradient10
+		background: #fdeff9 /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9) /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	&.violet-gradient-box
+		background: #0e153a
+		background: -webkit-linear-gradient(left top, #0e153a, #d6b3c7)
+		background: -o-linear-gradient(bottom right, #0e153a, #d6b3c7)
+		background: -moz-linear-gradient(bottom right, #0e153a, #d6b3c7)
+		background: linear-gradient(to bottom right, #0e153a, #d6b3c7)
+	&.rosy-gradient-box
+		background: #fc94c0
+		background: -webkit-linear-gradient(left top, #ffded9, #fc94c0)
+		background: -o-linear-gradient(bottom right, #ffded9, #fc94c0)
+		background: -moz-linear-gradient(bottom right, #ffded9, #fc94c0)
+		background: linear-gradient(to bottom right, #ffded9, #fc94c0)
+	&.yellow-gradient-box
+		background: #fc94c0
+		background: -webkit-linear-gradient(left top, #edef92, #c1c11e)
+		background: -o-linear-gradient(bottom right, #edef92, #c1c11e)
+		background: -moz-linear-gradient(bottom right, #edef92, #c1c11e)
+		background: linear-gradient(to bottom right, #edef92, #c1c11e)
+	&.green-box
+		background-color: rgba($green, 0.2)
+	&.blue-gradient-box
+		background: #f5fdff
+		background: -webkit-linear-gradient(left top, #97eaff, #e4ecf5)
+		background: -o-linear-gradient(bottom right, #97eaff, #e4ecf5)
+		background: -moz-linear-gradient(bottom right, #97eaff, #e4ecf5)
+		background: linear-gradient(to bottom right, #97eaff, #e4ecf5)
+	&.works-light
+		background-color: #3a3b74
+
+.works-white
+	background: #fff
+	color: $blue
+
+.item-big-img
+	position: relative
+	z-index: 1
+	img
+		display: block
+		max-width: 400px
+
+.item-back-img
+	position: absolute
+	z-index: 0
+	right: 0
+	top: 50%
+	img
+		display: block
+		height: 400px
+		width: auto
+		margin-top: -200px
+		// margin-left: -200px
+
+.item-img
+	img
+		width: auto
+		max-width: 100%
+
+
+.violet-text
+	color: #d1c9ef
+
+.read-more
+	&.large
+		+em(22)
+	.fa	
+		padding-right: 10px
+		padding-left: 5px
+		+transitionMain
+	+hf
+		.fa
+			padding-left: 15px
+			padding-right: 0
+
+.phone-thanks
+	position: relative
+	height: 480px
+	width: 190px
+	margin: auto
+	img
+		display: block
+		height: 480px
+		width: 190px
+		margin: auto
+
+.py10
+	padding-top: 10px
+	padding-bottom: 10px
+
+.pricing
+
+.pricing-main
+	background: #ebebeb url(../img/pricing-bg.jpg) center center no-repeat
+
+.advantages--wrap
+	width: 70%
+	margin: auto
+
+.advantage-item
+	text-align: center
+	margin-bottom: 15px
+	.icon
+		margin-bottom: 15px
+
+.accordion-box
+	width: 80%
+	margin-right: auto
+	margin-left: auto
+	.card
+		border: none
+		border-radius: 0
+		border-bottom: 1px solid #dedede
+		&:first-child
+			border-top: 1px solid #dedede
+	.card-block
+		padding-left: 80px
+	.card-header
+		display: block
+		padding-right: 30px
+		padding-left: 15px
+		border: none
+		padding-top: 15px
+		padding-bottom: 15px
+		background-color: transparent
+		&[aria-expanded="true"]
+			.arrow-accorderon
+				&:before
+					top: 11px
+					right: 22px						
+					// +transform(rotate(-53deg))			
+				&:after
+					top: 11px
+					left: 22px				
+					// +transform(rotate(53deg))			
+		img
+			margin-right: 10px
+	ul,
+	ol
+		padding-left: 20px
+
+
+.arrow-accorderon,
+.arrow-show
+	display: inline-block
+	vertical-align: middle
+	position: relative
+	width: 40px
+	height: 40px
+	margin-right: 15px
+	border-radius: 50%
+	border: 2px solid #dedede
+	&:before,
+	&:after
+		+ct
+		position: absolute
+		width: 2px
+		background-color: #dedede
+		+transitionMain
+
+.arrow-accorderon
+	&:before,
+	&:after
+		height: 13px
+		top: 12px
+	&:before
+		right: 12px						
+		+transform(rotate(53deg))
+	&:after
+		left: 12px				
+		+transform(rotate(-53deg))
+
+.accordeon-show
+	padding: 10px 10px
+	padding-right: 0
+	.show-text
+		display: inline-block
+		vertical-align: middle
+		min-width: 75px
+		text-align: right
+	&.open
+		.arrow-show
+			+transform(rotate(135deg))
+
+.arrow-show
+	+transitionMain
+	&:before,
+	&:after
+		height: 20px
+		top: 50%
+		margin-top: -10px
+	&:before
+		right: 50%
+		margin-right: -1px
+	&:after
+		left: 50%				
+		+transform(rotate(90deg))
+
+.price-item-wrap
+	&:first-child
+		.price-title
+			background-color: #edf1f4
+	&:nth-child(2)
+		.price-title
+			background-color: #f1f6f9
+	&:nth-last-child(2)
+		.price-title
+			background-color: #f4f9fc
+	&:last-child
+		.price-title
+			background-color: #f8f8f8
+
+.price-item
+	border: 1px solid #f1f2f2
+	margin-bottom: 30px
+
+.price-title
+	background-color: #f1f6f9
+	padding: 5px 5px
+
+.price-body
+	position: relative
+	min-height: 340px
+	padding-bottom: 100px
+	padding-right: 10px
+	padding-left: 10px
+	.btn-free
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		img
+			display: block
+			width: 100%
+			height: 100px
+			margin-right: auto
+			margin-left: auto
+		+hf
+			&:after
+				+ct
+				position: absolute
+				top: 0
+				right: 0
+				left: 0
+				bottom: 0
+				background-color: rgba(255, 255, 255, 0.2)
+
+.btn-free-separate
+	position: relative
+	display: block
+	width: 200px
+	margin: auto
+	border-radius: 20px
+	img
+		display: block
+		max-width: 100%
+	+hf
+		&:after
+			+ct
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			background-color: rgba(255, 255, 255, 0.15)
+			border-radius: 20px
+
+.btn-free-user
+	display: block
+	margin: auto
+	width: 200px
+	text-transform: uppercase
+	+em(14)
+	font-weight: 700
+	color: $white
+	padding: 15px 40px 15px 10px
+	background-image: url(../img/free-btn.png)
+	background-size: 100% auto
+	background-position: center center
+	background-repeat: no-repeat
+	text-align: center
+	&:hover
+		color: $white
+		
+.price-icon
+	height: 130px
+	padding-bottom: 20px
+	img
+		display: block
+		width: 100%
+		height: 100%
+		margin: auto
+
+.price
+	+em(26)
+	text-align: center
+
+.price-more
+	+em(14)
+	text-align: center
+
+.guarantee-img
+	margin-right: 15px
+
+.security-title
+	background-image: url(../img/security/security-bg.jpg)
+	background-position: center center 
+	background-repeat: no-repeat
+	background-size: cover
+
+.image-bg
+	position: relative
+	z-index: 0
+	.fade
+		position: absolute
+		display: block
+		z-index: 1
+		top: 0
+		right: 0
+		left: 0	
+		bottom: 0
+		background-color: rgba(0, 0, 0, 0.7)
+		+opacity(1)
+	.fade-white
+		background-color: rgba(255, 255, 255, 0.3)
+	.container,
+	.carousel-3d-wrap
+		position: relative
+		z-index: 2
+
+.user-photo
+	display: block
+	width: 120px
+	height: 120px
+	float: left
+	margin-right: 30px
+	border-radius: 50% 
+	text-align: center
+	overflow: hidden
+	img
+		display: inline-block
+		max-width: 100%
+		height: auto
+
+.author
+	p,
+	.author-logo
+		display: inline-block
+		vertical-align: middle
+	p
+		font-weight: 700
+		font-style: italic
+		margin-bottom: 0
+
+.author-logo
+	width: 150px
+	height: auto
+	margin-left: 15px
+
+.security-banner
+	display: block
+	height: 120px
+	width: 100%
+	overflow: hidden
+	img
+		display: block
+		vertical-align: middle
+		min-width: 100%
+		min-height: 100%
+		width: auto
+		height: auto
+
+.security-items-wrap
+	
+.security-icon	
+	display: block
+	width: 150px
+	height: 150px
+	border-radius: 50%
+	img
+		display: block
+		width: 100%
+		height: 100%
+
+.security-form
+	display: block
+	border-radius: 5px
+	img
+		display: block
+		border-radius: 5px
+		max-width: 100%
+
+.box-shadow
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07)
+
+.dashboard
+	position: relative
+	overflow: hidden
+	height: 1000px
+
+
+// REGISTER PAGES
+// --------------------------------------------------------------------------
+
+.full-page
+	display: table
+	height: 100%
+	width: 100%
+	padding-bottom: 60px
+	position: relative
+
+.full-page-inside
+	display: table-cell
+	vertical-align: middle
+
+.register-wrap
+	max-width: 450px
+	padding-top: 50px
+	padding-bottom: 50px
+	margin: auto
+	.logo
+		margin-right: auto
+		margin-left: auto
+
+.sigh-up-section
+	min-height: 1px
+	height: auto
+	padding-top: 70px
+	padding-bottom: 70px	
+
+/*--------------------------------- FOOTER --------------------------------*/
+
+footer
+	background-color: #fff
+	padding-bottom: 10px
+	position: relative
+	+transitionMain
+	-webkit-animation: fadein 1s /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1s /* Firefox < 16 */
+	-ms-animation: fadein 1s /* Internet Explorer */
+	-o-animation: fadein 1s /* Opera < 12.1 */
+	animation: fadein 1s 
+	&.fixed
+		position: fixed
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 50
+		+transitionMain
+		-webkit-animation: fadein 1s /* Safari, Chrome and Opera > 12.1 */
+		-moz-animation: fadein 1s /* Firefox < 16 */
+		-ms-animation: fadein 1s /* Internet Explorer */
+		-o-animation: fadein 1s /* Opera < 12.1 */
+		animation: fadein 1s 
+
+.fixed-footer
+	position: fixed
+	z-index: 10
+	bottom: 0
+	left: 0
+	right: 0
+
+.hr-border
+	height: 44px
+	background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.03)3px, transparent)
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.03)3px, transparent)
+	margin-bottom: -34px
+	&:after
+		+ct
+		width: 100%
+		height: 44px
+		background-color: transparent
+		background: -webkit-linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff)
+		background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff)
+
+.footer-nav
+	margin: 0
+	li
+		display: block
+		float: left
+	.footer-nav-link
+		display: inline-block
+		padding: 10px 20px
+		+em(12)
+		+transitionMain
+		text-align: center
+		color: $colorMain
+		+hf
+			background-color: #f1f6f9
+
+.copy
+	+em(12)
+	margin: 0
+
+
+/*--------------------------------- FORM --------------------------------*/
+
+.register-form
+	padding: 20px 25px
+	border-radius: 4px
+
+.form-group
+	padding-bottom: 30px
+	margin-bottom: 0
+	position: relative
+	.error
+		position: absolute
+		+em(14)
+		display: none
+		bottom: 10px
+		left: 0
+		margin: 0
+		color: #cf163c
+
+input.form-control
+	+em(14)
+	+placeholder
+		color: #909090
+
+.checkbox
+	label
+		+em(14)
+
+.forgot
+	display: inline-block
+	color: $blue
+	+em(14)
+	+hf
+		color: darken($blue, 10%)
+		text-decoration: underline
+
+.errors-wrap
+	position: absolute
+	bottom: 0px
+	left: 0
+	margin-bottom: 25px
+
+.alert-danger
+	display: inline-block
+	background-color: transparent
+	background-color: transparent
+	border-color: transparent
+	border-radius: 0
+	padding: 0
+	margin: 0
+
+.btn-register
+	color: #fff
+	border: none
+	text-transform: none
+	font-weight: 400
+	+em(16)
+	background: #24C6DC /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #514A9D, #24C6DC) /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #514A9D, #24C6DC) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	+transitionMain
+	+hf
+		color: #fff
+		background:  lighten(#24C6DC, 5%)
+		background: -webkit-linear-gradient(to right, lighten(#514A9D, 5%),  lighten(#24C6DC, 5%))
+		background: linear-gradient(to right,  lighten(#514A9D, 5%),  lighten(#24C6DC, 5%))
+
+.btn-sign-up
+	color: $blue
+	background-color: rgb(221, 221, 221) 
+	text-transform: none
+	border: none
+	font-weight: 400
+	+em(16)
+	+hf
+		background-color: lighten($blue, 20%)
+
+.info
+	+em(11)
+	margin-top: 5px
+	margin-bottom: 5px
+	color: lighten(#525f7f, 15%)
+
+.hr-or
+	text-align: center
+	position: relative
+	&:before
+		+ct
+		position: absolute
+		z-index: 0
+		width: 100%
+		height: 2px
+		left: 0
+		top: 50%
+		margin-top: -1px
+		background-color: rgb(221, 221, 221)
+	span
+		position: relative
+		display: inline-block
+		z-index: 1
+		+em(14)
+		background-color: #fff
+		padding: 5px 10px
+		margin: 0
+
+
+.supported-brands-title
+	background-image: url(../img/supported-banks.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+
+
+.work-list
+	display: block
+	padding: 0
+	margin: 0 auto
+	border-bottom: none
+	border-right: none
+	li
+		display: table
+		width: 25%
+		float: left
+		height: 50px
+	.bank-list
+		display: table-cell
+		vertical-align: middle
+		+em(16)
+		text-align: center
+		color: $white
+		+hf
+			background-color: rgba($white, 0.1)
+			color: $white
+
+@import "slider-main.sass"
+@import "swiper.sass"
+
+.secondary-page
+
+.terms
+	margin-bottom: 40px
+
+.steps
+	display: block
+	text-align: center
+	border-bottom: none
+	margin-bottom: 30px
+	.nav-item
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 10px
+
+.handle-wrap
+	height: 150px
+
+.custom-scrollbar
+	height: 100%
+	width: 100% !important
+	padding-right: 0 !important
+
+.enscroll-track
+	background: transparent
+	width: 17px
+	border: $blue 1px solid
+	border-radius: 20px
+	.vertical-handle
+		right: 11px
+		width: 10px
+		height: 10px
+		background: blue
+	.handle
+		width: 9px !important
+		height: 9px !important
+		border-radius: 50% !important
+		right: 3px
+		background: $blue
+		+transition(all 100ms ease-out)
+
+.grey-box-wrap
+	padding-top: 30px
+	padding-bottom: 30px	
+	background-color: #ecebe9
+	border-bottom: 5px solid #d0cfcd
+
+.grey
+	color: #939391
+
+.grey-logos
+	display: table
+	width: 100%
+	float: none
+	padding: 20px 15px 0 15px
+
+.grey-logo-item
+	display: table-cell
+	vertical-align: middle
+	float: none
+	margin-bottom: 20px
+	padding: 0 20px
+	// max-width: 200px
+	height: 80px
+	img
+		display: block
+		margin: auto
+		max-width: 100%	
+		max-height: 100%
+
+@media (min-width: 992px)
+
+	section
+		margin: 0
+
+	.navbar-toggleable-md 
+		.navbar-collapse
+			width: auto
+			max-width: 100%	
+		.nav-list 
+			.nav-link
+				padding-right: 20px
+				padding-left: 20px
+			.nav-item-button
+				.nav-link
+					padding-right: 0
+					padding-left: 0
+
+
+	.btn-group
+		&.nav-link
+			&:hover
+				.dropdown-menu
+					display: block
+					background-color: rgba(255, 255, 255, 0.4)
+				.nav-dropdown-btn
+					span
+						&:before
+							right: 14px						
+						&:after
+							right: 10px		
+
+
+@media (min-width: 768px)
+
+	.same-height-parent-css
+		float: none !important
+		display: table
+		width: 100%
+
+	.same-height-css
+		float: none !important
+		display: table-cell
+		vertical-align: top
+		
+	.same-height-css-middle
+		float: none !important
+		display: table-cell
+		vertical-align: middle
+
+	.aligned-middle-table, .aligned-bottom-table
+		display: table
+		width: 100%
+		height: 100%
+
+	.aligned-middle-table-cell
+		float: none !important
+		display: table-cell
+		vertical-align: middle
+
+	.aligned-bottom-table-cell
+		float: none !important
+		display: table-cell
+		vertical-align: bottom
+
+	.tablet-rtl
+		direction: rtl
+
+@media (min-width: 576px) 
+
+	.container
+		width: 100%
+
+
+@media (max-width: 1200px)
+
+	.security-icon
+		max-width: 100%
+
+	.advantages--wrap
+		width: 90%
+
+	.accordion-box
+		width: 100%
+
+
+@media (max-width: 991px)
+
+	.header
+
+	.header-main-collapse
+		position: absolute
+		z-index: 150
+		background-color: $white
+		top: 100%
+		padding-right: 0
+		width: 100%
+
+	.navbar-brand
+		margin-left: 15px
+
+	.nav-pills
+		display: block
+		width: 100%
+		.nav-link
+			display: block
+			width: 100%
+			float: none
+			+hf
+				background-color: rgba($green, 0.07)
+		.dropdown-menu
+			display: block
+			width: 100%
+			float: none
+			box-shadow: none
+			position: static
+			padding: 0
+			&:after
+				+ct
+				clear: both
+			.nav-link
+				width: 50%
+				float: left
+				margin: 0
+				padding-right: 5px
+				padding-left: 5px
+				text-align: center
+				letter-spacing: -0.02em
+				&:nth-child(2n)
+					border-left: rgba($green, 0.4) 1px solid
+
+	.nav-pills,
+	.show > .nav-pills
+		.nav-link
+			border-bottom: rgba($green, 0.4) 1px solid
+			&.active
+				background-color: rgba($green, 0.07)
+
+	.header-main-collapse
+		border-top: rgba($green, 0.4) 1px solid
+
+	.absolute-nav-buttons
+		position: absolute
+		top: 13px
+		right: 100px
+		width: auto
+		.nav-link	
+			white-space: nowrap
+			border-bottom-color: transparent
+
+	.register-wrap
+		padding-top: 20px
+		padding-bottom: 20px
+
+	.full-page
+		padding-bottom: 90px
+
+	.footer-nav
+		display: inline-block
+
+	.item-big-img
+		display: block
+		max-width: 100%
+		height: auto
+		img
+			display: block
+			max-width: 90%
+			height: auto
+
+	.works-box
+		min-height: 400px
+
+	.py100
+		padding-top: 70px
+		padding-bottom: 70px
+
+	.ovh-card
+		width: 100%
+		margin: auto
+		overflow: hidden
+		padding-top: 40px
+		padding-bottom: 50px
+		padding-right: 10%
+		padding-left: 10%
+
+	.card-introduction
+		padding-top: 40px
+
+	.post-card
+		width: 100%
+
+	.radio-item
+		padding: 5px
+
+	.device-wrap
+		height: 150px
+
+	.second-nav-container
+		background-color: rgba(255, 255, 255, 0.95)
+
+	.second-nav 
+		.nav-link
+			+em(12)
+			font-weight: 700
+
+
+@media (max-width: 767px)
+
+	.full-page
+		padding-bottom: 120px
+
+	.forgot
+		display: inline-block
+		padding-top: 5px
+		padding-bottom: 5px
+
+	.item-big-img
+		max-width: 300px
+		margin-right: auto
+		margin-left: auto
+
+	.item-back-img
+		display: block
+		left: 50%
+		right: auto
+		max-width: 250px
+		height: auto
+		top: 0
+		img
+			display: block
+			max-width: 100%
+			height: auto
+			margin-top: 0
+
+	.advantages--wrap
+		width: 100%
+
+	.second-nav 
+		.nav-link
+			+em(14)
+
+	.accordeon-show
+		float: right
+
+	.guarantee-img
+		position: absolute
+		top: 0
+		left: 0
+		+ div
+			padding-left: 105px
+			min-height: 90px
+
+	#small-nav
+
+	.second-nav
+		display: table
+		width: 100%
+		.nav-item 
+			display: table-cell
+			padding-right: 5px
+			padding-left: 5px
+			width: auto
+			vertical-align: middle
+
+	.ovh-card
+		width: 100%
+		margin: auto
+		overflow: hidden
+		padding-top: 40px
+		padding-bottom: 50px	
+
+	.post-card
+		width: 300px
+		min-height: 1px
+		margin-right: auto
+		margin-left: auto
+
+	.security-form-wrap
+		text-align: center
+
+	.security-form
+		display: inline-block
+		margin-bottom: 30px
+
+	.absolute-nav-buttons
+		right: 85px
+
+	.work-list 
+		li
+			width: 50%
+
+	.row
+		display: block
+		flex-wrap: nowrap
+		&:after
+			+ct
+			clear: both
+
+	.col,
+	.col-1,
+	.col-10,
+	.col-11,
+	.col-12,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6,
+	.col-7,
+	.col-8,
+	.col-9,
+	.col-auto,
+	.col-lg,
+	.col-lg-1,
+	.col-lg-10,
+	.col-lg-11,
+	.col-lg-12,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5,
+	.col-lg-6,
+	.col-lg-7,
+	.col-lg-8,
+	.col-lg-9,
+	.col-lg-auto,
+	.col-md,
+	.col-md-1,
+	.col-md-10,
+	.col-md-11,
+	.col-md-12,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5,
+	.col-md-6,
+	.col-md-7,
+	.col-md-8,
+	.col-md-9,
+	.col-md-auto,
+	.col-sm,
+	.col-sm-1,
+	.col-sm-10,
+	.col-sm-11,
+	.col-sm-12,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-auto,
+	.col-xl,
+	.col-xl-1,
+	.col-xl-10,
+	.col-xl-11,
+	.col-xl-12,
+	.col-xl-2,
+	.col-xl-3,
+	.col-xl-4,
+	.col-xl-5,
+	.col-xl-6,
+	.col-xl-7,
+	.col-xl-8,
+	.col-xl-9,
+	.col-xl-auto
+		display: block
+		flex-wrap: nowrap
+		float: left
+
+	.read-more
+		&.large
+			+em(20)
+
+	.inner-section
+		padding-top: 150px
+		padding-bottom: 50px
+
+	.device-choose
+		text-align: center
+
+	.radio-item
+		display: inline-block
+		vertical-align: middle
+		width: 140px
+
+	[type="radio"] + label
+		min-height: 175px
+
+	.device-wrap
+		width: 105px
+		margin-right: auto
+		margin-left: auto
+		height: 105px
+
+	.device-item
+		max-width: 100%
+		max-height: 100%
+
+	.choice-background
+		padding-top: 20px
+		padding-bottom: 20px
+
+	.card-introduction
+		padding-top: 0
+
+
+@media (max-width: 575px)
+
+	h3
+		+em(20)
+
+	.logo
+		width: 180px
+		height: 48px
+
+	.new-user-list
+		display: block
+		text-align: center
+		.nav-item
+			display: inline-block
+
+	.navbar-toggler
+		position: absolute
+		top: 0	
+		right: 0
+
+	.register-form
+		padding-right: 0
+		padding-left: 0
+
+	.footer-nav
+		margin-bottom: 10px
+		li
+			display: inline-block
+			vertical-align: middle
+			float: none
+
+	.absolute-nav-buttons
+		top: 8px
+		.nav-link
+			padding-right: 10%
+			padding-left: 10%
+
+	.main-box
+		overflow: hidden
+		padding-top: 150px
+
+	.security-icon
+		margin-right: auto
+		margin-left: auto
+		margin-bottom: 10px
+
+	.security-items
+		margin-bottom: 25px
+
+	.post-card
+		width: 100%
+		img
+			min-width: 1px
+			height: 200px
+			max-width: 200%
+			width: auto
+
+	#second-nav-container
+		position: absolute!important
+		top: 0 !important
+
+	.second-nav
+		display: block
+		text-align: center
+		.nav-item
+			display: inline-block
+			width: 32%
+			vertical-align: middle
+		.nav-link
+			padding-right: 5px
+			padding-left: 5px
+			+em(12)
+
+	.post-info
+		&:before
+			top: -82px
+
+	.card-header
+		h3
+			position: relative
+			padding-left: 50px
+			min-height: 40px
+			span
+				position: absolute
+				top: 0
+				left: 0
+				width: 40px
+				height: 40px
+
+	.accordion-box 
+		.card-block
+			padding-left: 0
+
+
+@media (max-width: 479px)
+
+	.full-page
+		padding-bottom: 150px
+
+	.absolute-nav-buttons
+		position: static
+		width: 100%
+		.nav-link	
+			display: block
+			width: 50%
+			float: left
+
+	.work-list 
+		li
+			width: 100%
+			float: none
+
+	.post-info
+		&:before
+			top: -72px
+
+	.read-more
+		&.large
+			+em(18)
+
+	.radio-item
+		display: block
+		width: 100%
+		background-color: rgba(255, 255, 255, 0.8)
+		border-radius: 5px
+		padding: 15px 20px 
+
+	[type="radio"] + label
+		min-height: 1px
+		border: 1px solid $blue
+
+	.device-wrap
+		display: none
+
+	.steps
+		margin-bottom: 20px
