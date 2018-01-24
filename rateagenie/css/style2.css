@@ -1,0 +1,279 @@
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+  display: none !important; }
+
+.col-xs-6 {
+  width: 50%;
+  float: left; }
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.input-lg {
+  height: 49px;
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 1.3333333;
+  border-radius: 6px; }
+
+#contact-form-submit {
+  padding: 14px 75px; }
+
+.contactTeam {
+  font-size: 16px;
+  font-weight: normal;
+  color: #6e6e6e; }
+  .contactTeam h1 {
+    text-align: left;
+    margin: 45px 0 30px;
+    font-weight: bold;
+    color: #6e6e6e; }
+  .contactTeam .ajax-indicator {
+    display: inline; }
+  .contactTeam .form-group {
+    margin-bottom: 10px;
+    padding-bottom: 0; }
+    .contactTeam .form-group:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .contactTeam .form-group label {
+      font-weight: normal;
+      width: 30%;
+      float: left;
+      margin-top: 10px; }
+      .contactTeam .form-group label .mandatory {
+        display: none; }
+    .contactTeam .form-group .form-control {
+      width: 70%;
+      float: right;
+      font-size: 16px;
+      border-color: #dcd8d8; }
+    .contactTeam .form-group textarea {
+      height: 120px; }
+    .contactTeam .form-group .ajax-form-error p.error {
+      font-size: 14px;
+      font-weight: bold;
+      color: #E12A7A;
+      margin: 0; }
+  .contactTeam .btn-primary {
+    background-color: #41a5dd;
+    padding: 14px 75px;
+    border: 0;
+    float: right;
+    margin-top: 12px; }
+    .contactTeam .btn-primary:hover {
+      background-color: #337ab7;
+      border-color: #2e6da4; }
+  .contactTeam .callteam {
+    margin-top: 80px;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    padding: 20px;
+    position: relative; }
+    .contactTeam .callteam .oscar {
+      min-height: 70px; }
+      .contactTeam .callteam .oscar img {
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+        position: absolute;
+        width: 80px;
+        height: 80px; }
+      .contactTeam .callteam .oscar p {
+        font-weight: bold;
+        padding-left: 100px;
+        padding-top: 6px; }
+    .contactTeam .callteam .phone {
+      text-decoration: none !important;
+      color: #41a5dd;
+      font-size: 38px;
+      font-weight: bold; }
+      .contactTeam .callteam .phone .number {
+        background: url("../img/contact/phone.png") no-repeat 0 0;
+        padding-left: 50px;
+        height: 40px; }
+      .contactTeam .callteam .phone .icon {
+        position: relative;
+        top: 5px;
+        font-size: 48px;
+        margin-right: 10px; }
+  .contactTeam .officeWrapper {
+    margin: 50px 0 -13px;
+    background-image: url("../img/contact/office.jpg");
+    background-size: cover;
+    height: 410px; }
+    .contactTeam .officeWrapper .cs {
+      margin-top: 50px;
+      background: #fff;
+      color: #41a5dd;
+      font-size: 38px;
+      font-weight: bold;
+      padding: 18px 30px;
+      border-radius: 6px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contactTeam .callteam .phone {
+    font-size: 36px; }
+    .contactTeam .callteam .phone .number {
+      background: url(../img/contact/phone_small.png) no-repeat 0 0;
+      padding-left: 40px; }
+    .contactTeam .callteam .phone .icon {
+      font-size: 42px;
+      top: 8px; }
+  .contactTeam .officeWrapper .cs {
+    font-size: 38px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contactTeam .callteam .phone {
+    font-size: 36px; }
+    .contactTeam .callteam .phone .number {
+      background: url(../img/contact/phone_small.png) no-repeat 0 0;
+      padding-left: 40px; }
+  .contactTeam .officeWrapper .cs {
+    font-size: 38px; } }
+@media (max-width: 767px) {
+  .contactTeam h1 {
+    text-align: center;
+    margin: 30px 0 15px; }
+  .contactTeam p.visible-xs {
+    text-align: center;
+    margin-bottom: 20px; }
+  .contactTeam .form-row label {
+    width: auto;
+    float: none;
+    display: block;
+    margin-top: 0; }
+  .contactTeam .form-row .form-control {
+    width: 100%;
+    float: none; }
+  .contactTeam #recaptcha_area {
+    float: none !important; }
+  .contactTeam .btn-primary {
+    width: 100%; }
+  .contactTeam .infoblock {
+    padding: 0; }
+  .contactTeam .callteam {
+    margin-top: 35px;
+    padding: 30px 0;
+    border-radius: 0; }
+    .contactTeam .callteam .oscar {
+      background: url("../img/contact/oscar_big.png") right bottom no-repeat;
+      padding-bottom: 320px; }
+      .contactTeam .callteam .oscar p {
+        padding: 0 15px;
+        text-align: center;
+        font-size: 24px; }
+    .contactTeam .callteam .phone {
+      border: 1px solid #dcd8d8;
+      border-radius: 5px;
+      margin: 20px 15px;
+      width: calc(100% - 30px);
+      text-align: center;
+      display: block;
+      font-size: 28px;
+      padding: 0 0 5px; }
+      .contactTeam .callteam .phone .number {
+        background: url(../img/contact/phone_small.png) no-repeat 0 0;
+        padding-left: 40px; }
+      .contactTeam .callteam .phone .icon {
+        top: 8px;
+        font-size: 38px; }
+    .contactTeam .callteam .row {
+      margin: 0; }
+  .contactTeam .csMob {
+    margin: 30px 0; }
+    .contactTeam .csMob p {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold; }
+  .contactTeam .officeWrapper {
+    margin-top: 0; } }
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; }
+
+  .visible-xs {
+    display: block !important; }
+
+  .contactTeam .callteam {
+    margin-top: 35px;
+    padding: 30px 0;
+    border-radius: 0; }
+  .contactTeam .infoblock {
+    padding: 0; }
+  .contactTeam .form-group label {
+    width: auto;
+    float: none;
+    display: block;
+    margin-top: 0; }
+  .contactTeam .form-group .form-control {
+    width: 100%;
+    float: none; } }
+@media (min-width: 768px) {
+  .container {
+    width: 100%; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%; }
+
+  .col-lg-4 {
+    width: 33.33333333%; } }
+
+/*# sourceMappingURL=style2.css.map */
