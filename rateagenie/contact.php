@@ -42,7 +42,7 @@
                     </div>
                     <div class="form-group">
                         <label for="contact_form_phone">Contact Number</label>
-                        <input class="form-control form_phone" type="text" placeholder="Contact Number" name="contact_form_phone" id="contact_form_phone">
+                        <input class="form-control input-lg form_phone" type="text" placeholder="Contact Number" name="contact_form_phone" id="contact_form_phone">
                         <p class="error">Please enter correct information</p>
                     </div>
                     <div class="form-group">
