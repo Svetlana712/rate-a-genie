@@ -10,26 +10,34 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
 
-    <title>Contact us</title>
+    <title>Contact the team</title>
 </head>
 </head>
 <body>
-<div class="container">
-    <h1>Contact the team</h1>
+<div class="contactTeam">
+<div class="container clearfix">
     <div class="row">
+        <div class="col-xs-12">
+            <h1>Contact the team</h1>
+            <p class="visible-xs">
+                Use the contact form to get in touch with us, one of our support team
+                will reply to you regarding your enquiry as soon as possible, this can
+                take up to 24 hours.
+            </p>
+        </div>
     </div>
     <div class="row">
-        <div class="col-12 col-md-8">
+        <div class="col-xs-12 col-sm-7 col-lg-6">
             <form action="contact_form.php" method="post" enctype="multipart/form-data"  id="contactform" class="clearfix" accept-charset="UTF-8">
-                <div class="col-12 col-md-6 wrap">
+                <div class="innerwrap">
                     <div class="form-group">
-                        <label for="contact_form_name">Your Name <span class="mandatory">*</span></label>
-                        <input class="form-control" type="text" placeholder="Your Name" name="contact_form_name" id="contact_form_name" >
+                        <label for="contact_form_name">Your Name* <span class="mandatory">*</span></label>
+                        <input class="form-control input-lg" type="text" placeholder="Your Name" name="contact_form_name" id="contact_form_name" required="required">
                         <p class="error">Please enter correct information</p>
                     </div>
                     <div class="form-group">
-                        <label for="contact_form_email">E-mail <span class="mandatory">*</span></label>
-                        <input class="form-control" type="text" placeholder="E-mail (phone for mobile accounts)" name="contact_form_email" id="contact_form_email">
+                        <label for="contact_form_email">E-mail* <span class="mandatory">*</span></label>
+                        <input class="form-control input-lg" type="text" placeholder="E-mail (phone for mobile accounts)" name="contact_form_email" id="contact_form_email" required="required">
                         <p class="error">Please enter correct information</p>
                     </div>
                     <div class="form-group">
@@ -38,7 +46,7 @@
                         <p class="error">Please enter correct information</p>
                     </div>
                     <div class="form-group">
-                        <label for="contact_form_msgtype">Message Type*</label>
+                        <label for="contact_form_msgtype">Message Type* <span class="mandatory">*</span></label>
                         <select id="contact_form_msgtype" name="contact_form_msgtype" class="form-control input-lg">
                             <option value="suggestions@rateagenie.com">Suggestion</option>
                             <option value="feedback@rateagenie.com">Feedback</option>
@@ -50,14 +58,19 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="contact_form_subj">Message Subject <span class="mandatory">*</span></label>
-                        <input class="form-control" type="text" placeholder="Message Subject" name="contact_form_subj" id="contact_form_subj">
+                        <label for="contact_form_subj">Message Subject* <span class="mandatory">*</span></label>
+                        <input class="form-control input-lg" type="text" placeholder="Message Subject" name="contact_form_subj" id="contact_form_subj" required="required">
                         <p class="error">Please enter correct information</p>
                     </div>
                     <div class="form-group">
-                        <label for="contact_form_msg">Message <span class="mandatory">*</span></label>
-                        <textarea placeholder="Message" name="contact_form_msg" id="contact_form_msg"></textarea>
+                        <label for="contact_form_msg">Message* <span class="mandatory">*</span></label>
+                        <textarea class="form-control input-lg" placeholder="Message" name="contact_form_msg" id="contact_form_msg" required="required"></textarea>
                         <p class="error">Please enter correct information</p>
+                    </div>
+                    <div class="form-group">
+                        <div id="captcha">
+
+                        </div>
                     </div>
                     <div class="form-actions">
                         <input type="submit" value="Send" class="btn btn-primary btn-lg button" id="contact-form-submit" name="contact-form-submit">
@@ -66,18 +79,23 @@
                 </div>
             </form>
         </div>
-        <div class="col-12 col-md-4">
-            <p>Use the contact form to get in touch with us, one of our support team will reply to you regarding your enquiry as soon as possible, this can take up to 24 hours. </p>
-            <div class="call_us">
-                <div class="oscar"><!--<img class="hidden-xs" src="https://cdn.anyvan.com/images/v3/oscar.png" alt="">-->
+
+        <div class="col-xs-12 col-sm-5 col-lg-offset-2 col-lg-4 infoblock"> <!--infoBox-->
+            <p class="hidden-xs">
+                Use the contact form to get in touch with us, one of our support team
+                will reply to you regarding your enquiry as soon as possible, this can
+                take up to 24 hours.
+            </p>
+            <div class="callteam">
+                <div class="oscar"><img class="hidden-xs" src="https://cdn.anyvan.com/images/v3/oscar.png" alt="">
                     <p>
                         For a faster response you can give us a phone call.
                         We look forward to hearing from you.
                     </p>
-                </div><a class="tel" href="tel:+440000000000"><span class="icon icon-telephone-circle-1"></span>000 0000 0000</a>
+                </div><a class="phone" href="tel:+442038723050"><span class="number"> 020 3872 3050</span></a>
                 <div class="row">
                     <div class="col-xs-6">Monday to Friday</div>
-                    <div class="col-xs-6">8:00am - 10:00pm</div>
+                    <div class="col-xs-6">8:00am - 9:00pm</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">Saturday</div>
@@ -85,7 +103,21 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-6">Sunday</div>
-                    <div class="col-xs-6">10:00am - 6:00pm</div>
+                    <div class="col-xs-6">9:00am - 5:00pm</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="csMob visible-xs">
+        <p>Our customer service team are waiting to help you.</p>
+    </div>
+
+</div>
+    <div class="officeWrapper">
+        <div class="container hidden-xs">
+            <div class="row">
+                <div class="col-sm-7 col-lg-6">
+                    <div class="cs">Our customer service team<br>are waiting to help you.</div>
                 </div>
             </div>
         </div>
