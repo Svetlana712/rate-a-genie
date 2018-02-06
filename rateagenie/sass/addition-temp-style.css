@@ -1,0 +1,10 @@
+#mailbox-inbox .grid-header-row a.sorted-desc,
+#mailbox-sent .grid-header-row a.sorted-desc {
+  background: url("../img/dashboard/arrupdown.png") no-repeat 100% -28px;
+  padding-right: 20px; }
+#mailbox-inbox .grid-header-row a.sorted-asc,
+#mailbox-sent .grid-header-row a.sorted-asc {
+  background: url("../img/dashboard/arrupdown.png") no-repeat 100% 2px;
+  padding-right: 20px; }
+
+/*# sourceMappingURL=addition-temp-style.css.map */

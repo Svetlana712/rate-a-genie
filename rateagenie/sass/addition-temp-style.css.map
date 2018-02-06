@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGI;4CAAa;EACX,UAAU,EAAE,0DAA0D;EACtE,aAAa,EAAE,IAAI;AACrB;2CAAY;EACV,UAAU,EAAE,wDAAwD;EACpE,aAAa,EAAE,IAAI",
+"sources": ["addition-temp-style.sass"],
+"names": [],
+"file": "addition-temp-style.css"
+}

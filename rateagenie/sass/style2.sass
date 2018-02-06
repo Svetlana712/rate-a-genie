@@ -1,3 +1,18 @@
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+@mixin linearGradient($top, $bottom, $colstop1, $colstop2)
+  background-color: $top /* Old browsers */
+  background-image: -moz-linear-gradient(top,  $top $colstop1, $bottom  $colstop2) /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop($colstop1,$top), color-stop( $colstop2,$bottom)) /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top,  $top $colstop1,$bottom  $colstop2) /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top,  $top $colstop1,$bottom  $colstop2) /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top,  $top $colstop1,$bottom  $colstop2) /* IE10+ */
+  background-image: linear-gradient(to bottom,  $top $colstop1,$bottom  $colstop2) /* W3C */
+
 .visible-xs, .visible-sm, .visible-md, .visible-lg
   display: none !important
 
@@ -66,7 +81,259 @@
   padding: 10px 16px
   font-size: 20px
   line-height: 1.3333333
-  border-radius: 6px
+  @include border-radius(6px)
+/*-------------------Header------------------------------*/
+.logo
+  display: inline-block
+  width: auto
+  margin-right: 30px
+  float: left
+  padding: 16px 14px 0 0
+  img
+    max-width: 200px
+
+header
+  top: 0
+  border-bottom: 1px solid #d8d8d8
+  width: 100%
+  z-index: 10000
+  background-color: #ffffff
+  min-height: 50px
+
+  h2
+    &.phone_number
+      line-height: 27px
+      padding: 16px 14px 16px 14px
+      border-left: 1px solid #d8d8d8
+      border-right: 1px solid #d8d8d8
+      margin: 0
+      font-size: 20px
+      font-weight: 600
+      width: auto
+      float: left
+
+  #main-menu
+    float: right
+    margin: 0
+    padding: 0
+
+    li
+      list-style: none
+      float: left
+      position: relative
+
+      a
+        color: #979797
+        border-left: 1px solid #d8d8d8
+        line-height: 27px
+        padding: 16px 10px
+        font-size: 14px
+        display: inline-block
+        *display: inline
+        width: 100%
+
+        &.menu-account
+          background: url("../img/dashboard/profile.png") no-repeat 10px 50% / 16px auto
+          padding-left: 30px
+
+      ul
+        position: absolute
+        z-index: 10000
+        display: none
+        background: none #F6F4F4
+        padding-top: 0
+        margin-top: 0
+        min-width: 175px
+        border: 1px solid #d8d8d8
+
+        li
+          float: none
+
+          a
+            border-left: none
+            border-right: none
+            border-bottom: 1px solid #d8d8d8
+            padding: 10px
+          &:hover
+            a
+              color: #000000
+
+      &:hover
+        background: #F6F4F4
+
+      &:hover,
+      &:active,
+      &:focus
+
+        ul
+          display: block
+
+    .menu-quotes
+      color: #ffffff
+      border-left: none
+
+
+.header-wrap
+  width: 940px
+  margin: 0 auto
+  padding: 0 10px
+
+.header-left
+  float: left
+
+.header-right
+  float: right
+
+.bluelink
+  color: #28a4da
+
+.phone-info
+  position: relative
+  padding-left: 20px
+  background: url("../img/dashboard/phone.png") no-repeat 0 50% / 16px auto
+
+  .phone-info-box
+    position: absolute
+    background-color: #ECECEC
+    border: 1px solid #ECECEC
+    border-radius: 5px
+    color: #636363
+    padding: 20px
+    width: 192px
+    font-size: 0.6em
+    left: -20px
+    top: 41px
+    z-index: 80000
+    display: none
+    font-weight: normal
+    line-height: normal
+    text-align: left
+
+    .arrow
+      background: url(../img/dashboard/arrow-gray-up.png) no-repeat center
+      display: block
+      position: absolute
+      top: -11px
+      width: 18px
+      height: 11px
+      left: 49%
+
+    span
+      &.text
+        display: block
+        font-size: 15px
+        width: 220px
+        font-weight: 600
+        margin-bottom: 20px
+
+      &.list
+        .list-item
+          display: block
+
+          & + .list-item
+            padding-top: 5px
+            margin-top: 9px
+            border-top: 1px dashed #979797
+
+          strong
+            font-weight: 800
+            display: block
+
+          span
+            font-size: 18px
+            color: #2DAFE2
+            font-weight: lighter
+
+  &:hover,
+  &:focus,
+  &:active
+    .phone-info-box
+      display: block
+
+/*-------------------Footer-------------------------------*/
+footer
+  display: table
+  width: 100%
+  clear: both
+  background: #454545
+  color: #FFFFFF
+
+  .footer-wrap
+    width: 940px
+    margin: 10px auto 0 auto
+    padding: 0 10px
+
+  h3
+    color: #28a4da
+    font-size: 20px
+    font-weight: normal
+    margin: 15px 0
+    text-align: left
+
+
+  ul
+    padding: 0
+    margin: 0
+
+    li
+      list-style: none
+      line-height: 16px
+      font-size: 16px
+      padding-bottom: 8px
+
+      a
+        color: #FFFFFF
+        text-decoration: none
+        display: inline-block
+        *display: inline
+        width: 100%
+        &:hover
+          color: #28a4da
+
+  .social
+    background: url(../img/dashboard/footer_social.png) no-repeat 0 0
+    float: right
+    margin-left: 10px
+    margin-top: 17px
+    width: auto
+    a
+      width: 52px
+      height: 52px
+      display: block
+    &.facebook
+      background-position: 0 0
+    &.twitter
+      background-position: -58px 0
+    &.google_plus
+      background-position: -114px 0
+
+  #copyright
+    margin: 20px 0
+    text-align: center
+    clear: both
+    width: 100%
+
+    ul
+      text-align: center
+      width: 100%
+      li
+        display: inline-block
+        *display: inline
+        margin: 0 10px
+
+
+.footer_nav
+  float: left
+  width: auto
+  max-width: 25%
+  margin-right: 80px
+
+.footer_right
+  float: right
+  width: auto
+  max-width: 25%
+
+/*------------Contact the team page----------------------*/
 
 #contact-form-submit
   padding: 14px 75px
@@ -134,7 +401,7 @@
   .callteam
     margin-top: 80px
     background-color: #f6f6f6
-    border-radius: 6px
+    @include border-radius(6px)
     padding: 20px
     position: relative
 
@@ -143,7 +410,7 @@
 
       img
         border: 1px solid #e0e0e0
-        border-radius: 50%
+        @include border-radius(50%)
         position: absolute
         width: 80px
         height: 80px
@@ -184,7 +451,894 @@
       font-size: 38px
       font-weight: bold
       padding: 18px 30px
-      border-radius: 6px
+      @include border-radius(6px)
+
+
+/*--------------------FAQ page----------------------------*/
+.faq-search-form
+  height: 80px
+
+.clearfix
+  clear: both
+
+.page_title
+  margin-top: 20px
+  margin-bottom: 10px
+
+#faqs
+  header,
+  footer
+    a
+      text-decoration: none
+
+  body
+    font-family: 'Open Sans', sans-serif
+    font-size: 10px
+    color: #464646
+    height: 100%
+    background-color: #ffffff
+    margin: 0
+
+  .container
+    width: 100%
+    max-width: 100%
+
+  .row
+    &.fullwidth
+      background: #def3ff
+      padding: 30px 0
+
+  .wrap
+    margin: 0 auto
+    width: 960px
+    padding: 0 10px
+
+  a
+    text-decoration: underline
+
+  h4
+    color: #125978
+    font-weight: normal
+    font-size: 28px
+    margin: 30px auto
+    width: 100%
+    text-align: center
+
+    .faqs-icon
+      background: url(../img/faqs/faqs_graphics.png) no-repeat 0 0
+      padding-left: 40px
+      line-height: 34px
+      display: inline-block
+      width: auto
+
+    &.myaccount
+      .faqs-icon
+        background-position: 0 -116px
+        padding-left: 55px
+
+    &.listingitems
+      .faqs-icon
+        background-position: 0 -229px
+        padding-left: 60px
+
+    &.managelistings
+      .faqs-icon
+        background-position: 0 -338px
+        padding-left: 55px
+
+    &.bidacceptance
+      .faqs-icon
+        background-position: 0 -442px
+        padding-left: 45px
+
+    &.recommendations
+      .faqs-icon
+        background-position: 0 -550px
+
+  .accordionwrap
+    margin: 5px auto
+
+  .accordion
+    background-color: #def3ff
+    color: #125978
+    cursor: pointer
+    padding: 12px 20px
+    width: 100%
+    text-align: left
+    border: none
+    outline: none
+    transition: 0.4s
+    font-size: 17px
+    position: relative
+
+
+    &.active,
+    &:hover
+      background-color: #87CEFA
+
+    &:after
+      content: '\02795' /* Unicode character for "plus" sign (+) */
+      font-size: 13px
+      color: #125978
+      float: right
+      position: absolute
+      right: 10px
+      bottom: 10px
+
+
+    &.active
+      &:after
+        content: "\2796" /* Unicode character for "minus" sign (-) */
+
+  /* Style the accordion panel. Note: hidden by default */
+  .accordion-content
+    padding: 0 18px
+    background-color: #ececec
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    border: none
+    margin-top: 1px
+    @include border-radius(0)
+    font-size: 14px
+    color: #404040
+
+    p
+      margin: 14px 0
+      font-size: 14px
+      line-height: 18px
+
+  #faqs_contact
+    background: #eeeeee
+    height: 350px
+    margin: 20px auto
+    padding: 20px
+    display: table
+
+    h3
+      color: #125978
+      font-size: 28px
+      font-weight: normal
+      margin: 0
+      text-align: left
+
+    .contact_support
+      margin-top: 20px
+
+      h5
+        color: #125978
+        font-weight: normal
+        font-size: 20px
+        line-height: 16px
+
+  .contact_support_team
+    margin-top: 20px
+    text-align: center
+
+    .team-member
+      width: auto
+      display: inline-block
+      margin: 0 5px 10px 5px
+
+    .member-img
+      margin-bottom: 5px
+      img
+        @include border-radius(60px)
+        border: 3px solid gray
+
+
+.pinkbtn,
+.linkbtn
+  color: #ffffff !important
+  padding: 9px 25px
+  @include border-radius(4px)
+  text-decoration: none
+  font-weight: 600
+  border: none
+  font-size: 14px
+  cursor: pointer
+  -webkit-appearance: none
+  box-shadow: 1px 1px 2px #888888
+
+.linkbtn
+  display: block
+  text-align: center
+
+.pinkbtn
+  @include linearGradient(#ff0080, #D62362, 1%, 51%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0080', endColorstr='#D62362',GradientType=0 )
+  &:hover
+    @include linearGradient(#D62362, #ff0080, 1%, 51%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D62362', endColorstr='#ff0080',GradientType=0 )
+
+.greenbtn
+  @include linearGradient(#32CD32, #4CBC10, 1%, 51%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32CD32', endColorstr='#4CBC10',GradientType=0 )
+  &:hover
+    @include linearGradient(#4CBC10, #32CD32, 1%, 51%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4CBC10', endColorstr='#32CD32',GradientType=0 )
+
+.bluebtn
+  @include linearGradient(#2DAFE2, #2391D6, 14%, 57%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2DAFE2', endColorstr='#2391D6',GradientType=0 )
+  &:hover
+    @include linearGradient(#2391D6, #2DAFE2, 14%, 57%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2391D6', endColorstr='#2DAFE2',GradientType=0 )
+
+.faq-search-form
+  .form-row
+    float: left
+    width: auto
+    margin-right: 10px
+    margin-left: 0
+
+  label
+    color: #145D79
+    font-size: 20px
+    float: left
+    margin-top: 7px
+
+  input[type="text"]
+    width: 480px
+    height: 30px
+    margin-left: 33px
+    color: #444
+    font-style: italic
+    float: left
+    font-size: 14px
+    padding: 5px 10px
+    -webkit-box-sizing: content-box
+    -moz-box-sizing: content-box
+    box-sizing: content-box
+
+  #faqs-submit,
+  #faqs-search
+    float: right
+
+.faq-jump
+  width: 100%
+  float: left
+  font-size: 15px
+  margin-top: 20px
+  a
+    color: #25A6DB
+    margin: 0 10px
+
+.page_title h1
+  color: #266992
+  font-size: 34px
+  margin-bottom: 4px
+  font-weight: normal
+  margin-top: 0
+  text-align: left
+
+/* Breadcrumbs */
+
+#breadcrumb
+  overflow: hidden
+  z-index: 10
+  margin: 0 0 20px 0
+  max-width: 730px
+  padding: 0
+  float: left
+  width: auto
+  a
+    color: #999
+    padding: 0 4px 0 0
+
+  li
+    float: left
+    display: inline
+    color: #999
+    padding: 0 4px 0 0
+    line-height: 1.3em
+    font-size: 14px
+    &:after
+      content: ' > '
+
+    &:last-child:after
+      content: ''
+
+/**/
+.action-buttons
+  float: right
+
+  a
+    color: #25A6DB
+    font-size: 13px
+
+.wordSelected
+  background: #ffff00
+
+
+/*************Dashboard**********************/
+
+#dashboard
+  .container
+    width: 970px
+
+  .container-fluid
+    max-width: 1200px
+
+
+  #tabs
+    margin-bottom: 30px
+
+  .ui-widget
+    &.ui-widget-content
+      border: none
+
+  .ui-widget-header
+    background: #d8f0fe
+
+  .ui-tabs
+    padding: 0
+    .ui-tabs-panel
+      padding: 0
+
+  .tab-inner
+    color: #464646
+
+    a
+      text-decoration: underline
+      color: #464646
+
+      &.linkbtn,
+      &.view-prof
+        text-decoration: none
+
+  .tab-item
+    .img-container
+      position: relative
+      text-align: left
+      img
+        max-width: 100%
+
+      .accepted
+        display: none
+        position: absolute
+        left: 0
+        top: 0
+        background: url("../img/dashboard/accepted-overlay.png") no-repeat 0
+        width: 76px
+        height: 76px
+        max-width: 100%
+        max-height: 100%
+
+      &.acceptedvis
+        .accepted
+          display: block
+
+    &.listing
+      .col4
+        a
+          margin: 7px 0
+
+      .main-container
+        background: #d8f0fe
+        margin-top: 10px
+        margin-bottom: 0
+        width: 100%
+        border: 1px solid #ADDDF3
+        border-bottom: none
+        position: relative
+        -webkit-transform-style: preserve-3d
+        -moz-transform-style: preserve-3d
+        transform-style: preserve-3d
+        box-sizing: border-box
+        //height: 150px
+        padding: 10px
+
+        .main-options
+          a
+            display: block !important
+            text-align: center
+            color: #fff
+            font-weight: bold
+            padding: 9px 7px
+
+        .cols
+          position: relative
+          //display: inline-block
+          display: block
+          float: left
+          vertical-align: middle
+          padding: 0 5px
+
+        .col1
+          //width: 120px
+          width: 15%
+          text-align: center
+
+        .col2
+          //width: 340px
+          width: 45%
+
+          .title
+            font-size: 18px
+            line-height: 20px
+
+          .date
+            font-size: 15px
+            margin-top: 10px
+
+          .distance
+            font-size: 13px
+            font-weight: bold
+
+        .col3
+          //width: 230px
+          width: 20%
+
+          .best_price
+            font-size: 14px
+            line-height: 12px
+            font-weight: normal
+            text-align: left
+            margin: 0 10px 0 0
+            display: inline-block
+            //width: 110px
+
+            &.expired
+              width: auto
+
+            span
+              text-decoration: underline
+              color: #464646
+              font-weight: 600
+
+          .quote
+            font-size: 35px
+            font-weight: bold
+            color: #246b95
+            margin: 0
+            text-align: left
+            display: inline-block
+            line-height: 35px
+
+        .col4
+          //width: 210px
+          width: 20%
+
+
+      .listing-more-options
+        width: 100%
+        background: #fff
+        border: 1px solid #ADDDF3
+        border-top: none
+
+        ul
+          padding: 0
+          margin: 0
+          width: 100%
+          display: table
+
+          li
+            display: table-cell
+            list-style-type: none
+            font-size: 13px
+            line-height: 14px
+            border-left: 1px solid #ADDDF3
+            padding: 10px 20px 10px 15px
+            color: #246b95
+            text-align: center
+
+            a
+              background: url(../img/dashboard/dashboard_links_icons.png) 0 2px no-repeat
+              padding-left: 23px
+              color: #464646
+
+            &.option-delete,
+            &.option-archive
+              a
+                background: url(../img/dashboard/dashboard-close.png) no-repeat left center
+
+            &.option-addresses
+              a
+                background: url(../img/dashboard/dashboard-edit.png) no-repeat left center
+
+            &.option-view-invoice
+              a
+                background: url(../img/dashboard/dashboard-view.png) no-repeat left center
+
+            &:first-child
+              border-left: none
+
+
+/*-----------------------Dashboard Mailbox------------------------------*/
+
+#mailbox-selector
+  font-size: 15px
+
+  p
+    text-align: right
+    margin: 15px 0px
+
+#mailbox-inbox .grid-header-row,
+#mailbox-sent .grid-header-row
+  color: #464646
+  font-weight: 600
+  border-bottom: 1px solid #BAE2F5
+  @include linearGradient(#FDFDFD, #EFEFEF, 1%, 99%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDFDFD', endColorstr='#EFEFEF',GradientType=0 )
+
+  border-top: 1px solid #BAE2F5
+  border-left: 1px solid #BAE2F5
+  border-top-left-radius: 4px
+  border-right: 1px solid #BAE2F5
+  border-top-right-radius: 4px
+
+  a
+    text-decoration: none
+    color: #464646
+
+.grid-header-row
+  width: 100%
+  font-size: 14px
+  font-weight: bold
+  clear: both
+  & > div > span.cols
+    line-height: 44px
+.mobile-grid-header-row
+  display: none
+  width: 100%
+
+.message
+  width: 100%
+  padding: 10px 0
+  background: #f4f4f4
+  clear: both
+  border-bottom: 1px solid #BAE2F5
+  border-left: 1px solid #BAE2F5
+  border-right: 1px solid #BAE2F5
+  color: rgb(36, 107, 149)
+
+  &:nth-child(2n)
+    background: #edeeef
+
+  &.last-row
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
+
+
+  &:hover
+    background: #d0eeff
+    cursor: pointer
+
+  &.open
+    .is-more
+      display: table
+    &:hover
+      background: #f4f4f4
+
+#dashboard
+  .tab-inner
+    .message
+      a,
+      label
+        color: #3f6a7d
+
+    .main-pagination
+      ul
+        text-align: center
+        margin: 10px 0
+        li
+          display: inline-block
+          *display: inline
+          list-style: none
+          a
+            color: #28a4da
+
+.customer.online,
+.provider.online
+  color: #080 !important
+
+.rollup
+  position: absolute
+  left: -10px
+  bottom: -10px
+  width: 100%
+  height: 30px
+  background: url(../img/dashboard/dashboard_rollup.png) 50% 0 no-repeat
+  z-index: 30
+
+.mailbox
+  .inner-cont
+    width: 100%
+    display: table
+    clear: both
+
+  .is-more
+    width: 98%
+    margin: 0 auto
+    //display: table
+    display: none
+    clear: both
+    padding: 20px
+    position: relative
+
+    label
+      display: block
+
+    textarea
+      width: 100%
+      height: 90px
+      border: 1px solid #34abdc
+      font-size: 12px
+      margin-bottom: 10px
+      padding: 10px
+
+    .chatting_nickname
+      word-wrap: break-word
+
+    .buttons
+      display: table
+      width: 100%
+      clear: both
+      margin-bottom: 10px
+
+      .mes-reply
+        float: left
+        margin-right: 5px
+
+      .mes-reply-all
+        float: right
+        margin-left: 5px
+
+    .reply-form
+      width: 100%
+      margin: 0 0 20px 0
+      padding: 0 0 20px 0
+      border-bottom: 1px solid #a0a0a0
+
+    .message_sending,
+    .message_sent
+      display: none
+      margin: 30px
+      text-align: center
+
+    .thread_item
+      width: 100%
+      clear: both
+      display: table
+      margin: 0 0 20px 0
+      .user
+        width: 9%
+        margin-right: 1%
+        float: left
+        text-align: center
+
+      .bubble
+        width: 65%
+        float: left
+        @include border-radius(10px)
+        padding: 10px
+        background-color: #ffffff
+        position: relative
+        margin-bottom: 10px
+
+        .created_at
+          font-weight: bold
+
+        .sent
+          display: inline-block
+          margin: 0 0 0 5px
+          background: url('../img/dashboard/badge_provider_accredited.png') no-repeat left 2px
+          text-indent: 15px
+
+        .arrow
+          position: absolute
+          top: 5px
+          left: -15px
+          width: 20px
+          height: 20px
+          background: url('../img/dashboard/mes-arr.png') no-repeat 0 0
+
+      &.own
+
+        .user
+          float: right
+          margin: 0 0 0 1%
+
+        .bubble
+          float: right
+          background: #cfeeff
+
+          .arrow
+            left: 100%
+            top: 6px
+            background-position: -21px 0
+
+    .whois
+      width: 24%
+      margin-left: 1%
+      float: left
+      background-color: #ffffff
+      border: 1px solid #2DAFE2
+      position: relative
+      .whois-arrow
+        width: 60px
+        height: 27px
+        background: url(../img/dashboard/about_arrow.png) no-repeat center
+        position: absolute
+        left: -42px
+        top: -5px
+
+      .view-prof
+        width: 90%
+        margin: 10px auto
+        display: block
+        clear: both
+        padding: 5px 10px
+        color: #ffffff !important
+        font-weight: bold
+
+    .about-title
+      width: 100%
+      text-align: center
+      @include linearGradient(#2DAFE2, #2391D6, 14%, 57%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2DAFE2', endColorstr='#2391D6',GradientType=0 )
+      color: #ffffff
+      font-weight: bold
+      padding: 10px
+
+    ul.about
+      width: auto
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        display: inline-block
+        *display: inline
+        width: 100%
+        padding: 5px 10px
+        position: relative
+        span
+          font-weight: bold
+          //position: absolute
+          //right: 10px
+          display: block
+          float: right
+
+          &.tick
+            background: url("../img/dashboard/green-tick.png") no-repeat 100% 50%
+            width: 19px
+            height: 15px
+            display: inline-block
+            *display: block
+          &.cross
+            background: url("../img/dashboard/red-cross.png") no-repeat 100% 50%
+            width: 15px
+            height: 15px
+            display: inline-block
+            *display: block
+
+  .profile-image
+    display: inline-block
+    position: relative
+
+    img
+      max-width: 100%
+
+    .badge_container
+      position: absolute
+      width: 100%
+      top: -7px
+      left: 3px
+      span
+        display: block
+        float: right
+        width: 25px
+        height: 25px
+        margin-left: 2px
+        background-position: center
+        background-repeat: no-repeat
+        &.recommended_lvl5
+          background: url(../img/dashboard/badges/smallgold.svg) no-repeat 0 0 / 25px auto
+        &.power_shield_gold
+          background: url(../img/dashboard/badges/smallpm.svg) no-repeat 0 0 / 20px auto
+
+  .reply_block
+    margin: 0 0 20px 0
+    text-align: right
+  .message-accept-button
+    background: url(../img/dashboard/black-tick.png) no-repeat 0px 1px
+    display: inline-block
+    *display: inline
+    padding-left: 20px
+
+  .cols
+    padding: 0 5px
+    display: block
+    float: left
+    font-size: 13px
+    line-height: 30px
+    font-weight: normal
+
+  .col1
+    width: 6%
+
+  .col2
+    width: 48%
+
+  .col3
+    width: 20%
+
+  .col4
+    width: 10%
+
+  .col5
+    width: 10%
+
+  .col6
+    width: 6%
+    text-align: center
+
+  .status
+    background: url(../img/dashboard/envelopes.png) no-repeat 50% -86px
+    height: 33px
+    &.read
+      background-position: 50% -43px
+
+    &.replied
+      background-position: 50% 0
+
+/***********Profile page********************/
+#profile
+  [type="radio"] + label,
+  [type="radio"]:checked + label,
+  [type="radio"] + label:hover
+    border: none
+    background: none
+    color: inherit
+    transition: none
+    text-shadow: none
+    display: inline-block
+    *display: inline
+
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked)
+    position: relative
+    left: 0
+
+  #profile_image
+    display: none
+
+  .file-preview
+    .linkbtn
+      margin: 10px 0
+
+#user_info
+  width: 100%
+  display: table
+  clear: both
+  background: #d8f0fe
+  @include border-radius(4px)
+  margin-bottom: 20px
+  padding: 15px
+
+#left-col
+  width: 19%
+  margin-right: 1%
+  float: left
+  text-align: center
+  img
+    max-width: 100%
+
+#right-col
+  width: 80%
+  float: left
+  display: table
+
+  .form-group
+    width: 49%
+    margin-left: 1%
+    float: left
+    padding-bottom: 20px
+
+
+
 
 @media (max-width: 1199px)
   .contactTeam
@@ -196,20 +1350,79 @@
           background: url(../img/contact/phone_small.png) no-repeat 0 0
           padding-left: 40px
 
-@media (min-width: 992px)
-  .col-lg-4,
-  .col-lg-6
-    ms-flex: auto
-    flex: auto
-    max-width: auto
-
-@media (min-width: 992px) and (max-width: 1199px)
-  .contactTeam
     .officeWrapper
       .cs
-        font-size: 36px
+        font-size: 26px
+
+
+  #faqs
+    .wrap
+      width: 1000px
+
+  .faq-search-form
+    input[type="text"]
+      width: 520px
+
+@media (max-width: 991px)
+  #faqs
+    .faq-search-form
+      input[type="text"]
+        margin-left: 0
+        width: 100%
+
+      #faqs-submit,
+      #faqs-search
+        margin-top: 45px
+
+  .mailbox
+    .is-more
+      ul.about,
+      .chatting_nickname
+        font-size: 14px
+        line-height: 16px
+
+    .cols
+      line-height: 16px
+
+  #dashboard
+    .tab-item
+      .img-container
+        .accepted
+          background-size: contain
+
+      &.listing
+        .main-container
+          .col3
+            .quote
+              font-size: 28px
+
+@media (min-width: 768px) and (max-width: 1023px)
+  header
+    .header-wrap
+      width: 760px
+
+  footer
+    .footer-wrap
+      width: 760px
+    .footer_nav
+      width: 23%
+      margin-right: 2%
+
+    .social
+      float: none
+
+@media (max-width: 799px)
+  #dashboard
+    .tab-item
+      &.listing
+        .main-container
+          .main-options
+            a
+              font-size: 12px
+              padding: 5px
 
 @media (min-width: 768px) and (max-width: 991px)
+
   .contactTeam
     .callteam
       .phone
@@ -219,11 +1432,35 @@
         margin-top: 4px
         font-size: 13px
 
-    .officeWrapper
-      .cs
-        font-size: 26px
+  #faqs
+    .wrap
+      width: 740px
+  .faq-search-form
+    .form-row
+      width: 570px
 
 @media (max-width: 767px)
+  footer
+    .footer_right
+      float: none
+      clear: both
+      text-align: center
+      width: 100%
+      max-width: 100%
+
+    .social
+      float: none
+      display: inline-block
+      *display: inline
+
+  #faqs
+    .contact_support_team
+      .member-img
+        img
+          width: 80px
+          height: auto
+          @include border-radius(40px)
+
   .contactTeam
     h1
       text-align: center
@@ -257,7 +1494,7 @@
     .callteam
       margin-top: 35px
       padding: 30px 0
-      border-radius: 0
+      @include border-radius(0)
 
       .oscar
         background: url('../img/contact/oscar_big.png') right bottom no-repeat
@@ -270,7 +1507,7 @@
 
       .phone
         border: 1px solid #dcd8d8
-        border-radius: 5px
+        @include border-radius(5px)
         margin: 20px 15px
         width: calc(100% - 30px)
         text-align: center
@@ -300,7 +1537,6 @@
     .officeWrapper
       margin-top: 0
 
-@media (max-width: 767px)
   .hidden-xs
     display: none !important
 
@@ -311,7 +1547,7 @@
     .callteam
       margin-top: 35px
       padding: 30px 0
-      border-radius: 0
+      @include border-radius(0)
 
     .infoblock
       padding: 0
@@ -326,6 +1562,37 @@
       .form-control
         width: 100%
         float: none
+
+@media (max-width: 735px)
+  .mailbox
+    .is-more
+      padding: 20px 10px
+      .thread_item
+        .bubble
+          font-size: 14px
+          line-height: 16px
+          width: 60%
+
+        .whois
+          width: 28%
+
+      .about-title
+        padding: 5px
+        font-size: 14px
+        line-height: 14px
+
+      .about
+        font-size: 12px
+        line-height: 13px
+
+        li
+          padding: 2px 5px
+
+    .col2
+      width: 46%
+
+    .col6
+      width: 8%
 
 @media (min-width: 768px)
   .container
@@ -351,10 +1618,295 @@
   .col-sm-12
     float: left
 
+@media (min-width: 576px) and (max-width: 767px)
+  .logo
+    float: none
+    margin-right: 0
+    padding: 5px 0 0 0
+
+    img
+      max-width: 150px
+
+  header
+    .header-wrap
+      width: 570px
+
+    h2
+      &.phone_number
+        float: none
+        border: none
+        padding: 0
+        font-size: 18px
+        line-height: 25px
+
+    #main-menu
+      li
+        a
+          font-size: 16px
+          padding: 22px 10px
+
+  .phone-info
+    .phone-info-box
+      top: 35px
+
+  footer
+    .footer-wrap
+      width: 570px
+
+    .footer_nav
+      width: 30%
+      max-width: 100%
+      margin-right: 3%
+
+  #faqs
+    .wrap
+      width: 560px
+
+  .faq-search-form
+    .form-row
+      width: 390px
+
 @media (min-width: 576px)
   .col-sm-5,
   .col-sm-7
     max-width: 100%
+
+@media (max-width: 575px)
+  .logo
+    margin-right: 0
+    padding: 5px 0 0 0
+
+    img
+      max-width: 150px
+
+  header
+    .header-wrap
+      width: 98%
+
+    .header-left
+      float: none
+      margin-bottom: 10px
+
+    .header-right
+      float: none
+      clear: both
+      width: 100%
+
+    #main-menu
+      float: none
+
+      & > li a
+        border-top: 1px solid #d8d8d8
+
+      .menu-quotes
+        border-top: none
+
+
+    h2
+      &.phone_number
+        border: none
+        float: right
+
+  footer
+    .footer-wrap
+      width: 98%
+
+    .footer_nav,
+    .footer_right
+      width: 49%
+      max-width: 100%
+      margin-right: 1%
+
+    .footer_right
+      float: left
+      clear: none
+      text-align: left
+
+      .social
+        margin-left: 0
+        margin-right: 10px
+
+  #faqs
+    .wrap
+      width: 98%
+
+    .faq-search-form
+      #faqs-submit,
+      #faqs-search
+        margin-top: 10px
+        float: left
+
+      .form-row
+        margin-right: 0
+
+  #dashboard
+    .tab-item
+      &.listing
+        .main-container
+          .col3
+            .best_price
+              font-size: 12px
+              line-height: 12px
+
+            .quote
+              font-size: 26px
+              line-height: 26px
+
+  .mailbox
+    .col2
+      width: 40%
+    .col4
+      width: 11%
+    .col5
+      width: 12%
+    .col6
+      width: 10%
+
+    .is-more
+      .thread_item
+        .user
+          width: 14%
+        .bubble
+          width: 50%
+        .whois
+          width: 33%
+
+@media (max-width: 532px)
+  #faqs
+    h4
+      font-size: 24px
+
+  .mailbox
+    .cols
+      width: 100%
+      float: none
+      clear: both
+      margin: 5px 0
+      &:before
+        font-weight: bold
+      &.subject
+        &:before
+          content: "Subject: "
+      &.username
+        &:before
+          content: "From: "
+      &.lowest_bid
+        &:before
+          content: "Quote: "
+      &.date
+        &:before
+          content: "Received: "
+
+  #mailbox-inbox .grid-header-row,
+  #mailbox-sent .grid-header-row
+    display: none
+
+  .mobile-grid-header-row
+    display: block
+
+@media (max-width: 479px)
+  .page_title
+    h1
+      font-size: 30px
+      line-height: 36px
+  #faqs
+
+    #faqs_contact
+      .contact_support
+        h5
+          strong
+            display: block
+            margin: 10px 0
+
+      h3
+        font-size: 24px
+        line-height: 30px
+
+  #dashboard
+    .ui-tabs
+      .ui-tabs-nav
+        padding: 0
+        .ui-tabs-anchor
+          padding: 5px
+          font-size: 12px
+
+    .tab-item
+      &.listing
+        .main-container
+          .cols
+            float: none
+            clear: both
+            width: 100%
+
+          .main-options
+            a
+              padding: 9px 7px
+
+        .listing-more-options
+          ul
+            li
+              padding: 5px
+              a
+                padding-top: 5px
+                padding-bottom: 5px
+                line-height: 16px
+
+      .img-container
+        margin-bottom: 10px
+
+  .mailbox
+    .is-more
+      .thread_item
+        .user
+          width: 29%
+        .bubble
+          width: 70%
+        .whois
+          width: 100%
+          float: none
+          clear: both
+          margin-left: 0
+          .whois-arrow
+            -webkit-transform: rotate(120deg)
+            -moz-transform: rotate(120deg)
+            top: -15px
+            left: 0
+            background-size: 70%
+
+@media (max-width: 359px)
+  header
+    #main-menu
+      .menu-quotes
+        width: 100px
+        line-height: 20px
+        padding: 10px
+
+    h2
+      &.phone_number
+        padding: 8px 0 0 5px
+        font-size: 16px
+
+  .phone-info
+    .phone-info-box
+      left: auto
+      right: 40px
+      top: 31px
+
+      .arrow
+        left: 80%
+
+
+@media (max-width: 320px)
+  footer
+    .footer_nav,
+    .footer_right
+      width: 100%
+      max-width: 100%
+      margin-right: 0
+      clear: both
+
+    .footer_right
+      text-align: center
 
 @media (min-width: 1200px)
   .container
