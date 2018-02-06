@@ -1287,7 +1287,8 @@ footer
 #profile
   [type="radio"] + label,
   [type="radio"]:checked + label,
-  [type="radio"] + label:hover
+  [type="radio"] + label:hover,
+  [type="radio"]:checked + label:hover
     border: none
     background: none
     color: inherit
@@ -1295,6 +1296,8 @@ footer
     text-shadow: none
     display: inline-block
     *display: inline
+    font-size: 17px
+    line-height: 18px
 
 
   [type="radio"]:checked,
@@ -1307,7 +1310,7 @@ footer
 
   .file-preview
     .linkbtn
-      margin: 10px 0
+      margin: 10px auto
 
 #user_info
   width: 100%
@@ -1317,6 +1320,20 @@ footer
   @include border-radius(4px)
   margin-bottom: 20px
   padding: 15px
+
+  .wrapper
+    label,
+    label:hover
+      display: inline
+
+  h3
+    text-align: left
+    font-size: 20px
+    line-height: 22px
+    margin: 20px auto 10px auto
+
+  #profile-submit
+    clear: both
 
 #left-col
   width: 19%
@@ -1336,6 +1353,13 @@ footer
     margin-left: 1%
     float: left
     padding-bottom: 20px
+
+.highlight-text
+  padding: 5px
+  background: lightcyan
+  @include border-radius(4px)
+
+
 
 
 

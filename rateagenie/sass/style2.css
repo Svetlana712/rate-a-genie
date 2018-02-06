@@ -1121,14 +1121,17 @@ footer {
 /***********Profile page******************* */
 #profile [type="radio"] + label,
 #profile [type="radio"]:checked + label,
-#profile [type="radio"] + label:hover {
+#profile [type="radio"] + label:hover,
+#profile [type="radio"]:checked + label:hover {
   border: none;
   background: none;
   color: inherit;
   transition: none;
   text-shadow: none;
   display: inline-block;
-  *display: inline; }
+  *display: inline;
+  font-size: 17px;
+  line-height: 18px; }
 #profile [type="radio"]:checked,
 #profile [type="radio"]:not(:checked) {
   position: relative;
@@ -1136,7 +1139,7 @@ footer {
 #profile #profile_image {
   display: none; }
 #profile .file-preview .linkbtn {
-  margin: 10px 0; }
+  margin: 10px auto; }
 
 #user_info {
   width: 100%;
@@ -1149,6 +1152,16 @@ footer {
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 15px; }
+  #user_info .wrapper label,
+  #user_info .wrapper label:hover {
+    display: inline; }
+  #user_info h3 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 20px auto 10px auto; }
+  #user_info #profile-submit {
+    clear: both; }
 
 #left-col {
   width: 19%;
@@ -1167,6 +1180,14 @@ footer {
     margin-left: 1%;
     float: left;
     padding-bottom: 20px; }
+
+.highlight-text {
+  padding: 5px;
+  background: lightcyan;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
 
 @media (max-width: 1199px) {
   .contactTeam .callteam .phone {
