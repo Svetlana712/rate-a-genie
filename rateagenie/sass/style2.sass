@@ -174,9 +174,10 @@ header
 
 
 .header-wrap
-  width: 940px
+  //width: 940px
+  width: 1170px
   margin: 0 auto
-  padding: 0 10px
+  padding: 0
 
 .header-left
   float: left
@@ -258,16 +259,18 @@ footer
   background: #454545
   color: #FFFFFF
 
+
   .footer-wrap
-    width: 940px
+    width: 1170px
     margin: 10px auto 0 auto
-    padding: 0 10px
+    padding: 0
 
   h3
     color: #28a4da
-    font-size: 20px
+    font-size: 16px
+    line-height: 23px
     font-weight: normal
-    margin: 15px 0
+    margin: 16px 0 15px 0
     text-align: left
 
 
@@ -277,8 +280,8 @@ footer
 
     li
       list-style: none
-      line-height: 16px
-      font-size: 16px
+      line-height: 14px
+      font-size: 12px
       padding-bottom: 8px
 
       a
@@ -309,12 +312,14 @@ footer
 
   #copyright
     margin: 20px 0
-    text-align: center
+    text-align: right
     clear: both
     width: 100%
 
+    p
+      font-size: 14px
+
     ul
-      text-align: center
       width: 100%
       li
         display: inline-block
@@ -760,21 +765,80 @@ footer
   .container-fluid
     max-width: 1200px
 
+  .dashboard-information
+    clear: both
+    width: 100%
+    padding: 20px
+    background: #f1f9fd
+    font-size: 15px
+
 
   #tabs
-    margin-bottom: 30px
+    margin-bottom: 80px
+    min-height: 500px
 
   .ui-widget
     &.ui-widget-content
       border: none
 
   .ui-widget-header
-    background: #d8f0fe
+    background: none
+    border-top: none
+    border-left: none
+    border-right: none
+    border-bottom: 2px solid #1593D1
 
   .ui-tabs
     padding: 0
     .ui-tabs-panel
       padding: 0
+
+    .ui-tabs-nav
+      padding: 0 !important
+      margin: 0
+
+      li
+        &:first-child
+          margin-left: 0
+        &:last-child
+          margin-right: 0
+
+      .ui-state-default
+        display: inline-block
+        margin: 15px 10px 0px 10px
+        padding: 1px 0 0 0
+        text-align: center
+        border: 2px #1593d1 solid
+        border-bottom: none
+
+
+        a,
+          &:link
+            width: 180px
+            padding: 15px !important
+            font-size: 15px
+            color: #0f2e73
+            background-color: #ffffff
+            border-top-right-radius: 4px
+            border-top-left-radius: 4px
+            font-weight: 600
+
+        &.ui-state-active
+          border: none
+          padding: 0
+          margin-top: 2px
+
+          a,
+            &:link,
+            &:visited
+              font-weight: 600
+              @include linearGradient(#2DAFE2, #2391D6, 14%, 57%)
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2DAFE2', endColorstr='#2391D6',GradientType=0 )
+              padding: 26px 15px 20px !important
+              border-top-right-radius: 4px
+              border-top-left-radius: 4px
+              color: #ffffff
+              border: none
 
   .tab-inner
     color: #464646
@@ -1294,8 +1358,7 @@ footer
     color: inherit
     transition: none
     text-shadow: none
-    display: inline-block
-    *display: inline
+    display: inline
     font-size: 17px
     line-height: 18px
 
@@ -1335,24 +1398,24 @@ footer
   #profile-submit
     clear: both
 
-#left-col
-  width: 19%
-  margin-right: 1%
-  float: left
-  text-align: center
-  img
-    max-width: 100%
-
-#right-col
-  width: 80%
-  float: left
-  display: table
-
-  .form-group
-    width: 49%
-    margin-left: 1%
+  #left-col
+    width: 19%
+    margin-right: 1%
     float: left
-    padding-bottom: 20px
+    text-align: center
+    img
+      max-width: 100%
+
+  #right-col
+    width: 80%
+    float: left
+    display: table
+
+    .form-group
+      width: 49%
+      margin-left: 1%
+      float: left
+      padding-bottom: 20px
 
 .highlight-text
   padding: 5px
@@ -1653,7 +1716,7 @@ footer
 
   header
     .header-wrap
-      width: 570px
+      width: 690px
 
     h2
       &.phone_number
@@ -1694,6 +1757,39 @@ footer
   .col-sm-5,
   .col-sm-7
     max-width: 100%
+
+@media (max-width: 660px)
+  #user_info
+    #left-col
+      .linkbtn
+        padding: 9px 15px
+
+    #right-col
+      .form-group
+        width: 100%
+        float: none
+        margin-left: 0
+        padding-bottom: 10px
+
+  #dashboard
+    .ui-tabs
+      .ui-tabs-nav
+        .ui-state-default
+          margin: 15px 5px 0px 5px
+          a,
+            &:link,
+            &:visited
+              width: 150px
+              padding: 10px !important
+
+          &.ui-state-active
+            a,
+              &:link,
+              &:visited
+                padding: 24px 15px 12px !important
+
+
+
 
 @media (max-width: 575px)
   .logo
@@ -1827,6 +1923,44 @@ footer
 
   .mobile-grid-header-row
     display: block
+
+  #user_info
+    #left-col
+      width: 100%
+      display: table
+      clear: both
+      margin: 0 0 20px 0
+      float: none
+
+      #profile-image-thumb
+        float: left
+        margin-right: 20px
+        max-width: 100px
+      .linkbtn
+        float: left
+        margin-right: 20px
+        padding: 9px 25px
+    #right-col
+      width: 100%
+      float: none
+
+  #dashboard
+    .ui-tabs
+      .ui-tabs-nav
+        .ui-state-default, .ui-state-default.ui-state-active
+          margin-left: 2px
+          margin-right: 2px
+
+          a,
+            &:link,
+            &:visited
+              padding-left: 5px !important
+              padding-right: 5px !important
+              font-size: 12px
+              line-height: 12px
+              width: auto
+              min-width: 82px
+
 
 @media (max-width: 479px)
   .page_title
