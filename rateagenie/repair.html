@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="sass/style2.css">
 
-    <title>Contact the team</title>
+    <title>Repair your device</title>
 </head>
 <body>
 
@@ -86,114 +86,81 @@
     </div>
 </header>
 
-<div class="contactTeam">
+<div class="repair">
 <div class="container clearfix">
     <div class="row">
         <div class="col-xs-12">
-            <h1>Contact the team</h1>
-            <p class="visible-xs">
-                Use the contact form to get in touch with us, one of our support team
-                will reply to you regarding your enquiry as soon as possible, this can
-                take up to 24 hours.
-            </p>
+            <h1>Repair your device</h1>
+
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-sm-7 col-lg-6">
-            <form action="contact_form.php" method="post" enctype="multipart/form-data"  id="contactform" class="clearfix" accept-charset="UTF-8">
+        <div class="col-xs-12">
+            <form action="contact_form.php" method="post" enctype="multipart/form-data"  id="repairform" class="clearfix" accept-charset="UTF-8">
                 <div class="innerwrap">
+                    <div class="text"><p>Our trusted genies will send you quotes so you can chose which to fix your broken device</p></div>
                     <div class="form-group">
-                        <label for="contact_form_name">Your Name* <span class="mandatory">*</span></label>
-                        <input class="form-control input-lg" type="text" placeholder="Your Name" name="contact_form_name" id="contact_form_name" required="required">
-                        <p class="error">Please enter correct information</p>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact_form_email">E-mail* <span class="mandatory">*</span></label>
-                        <input class="form-control input-lg" type="text" placeholder="E-mail (phone for mobile accounts)" name="contact_form_email" id="contact_form_email" required="required">
-                        <p class="error">Please enter correct information</p>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact_form_phone">Contact Number</label>
-                        <input class="form-control input-lg form_phone" type="text" placeholder="Contact Number" name="contact_form_phone" id="contact_form_phone">
-                        <p class="error">Please enter correct information</p>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact_form_msgtype">Message Type* <span class="mandatory">*</span></label>
-                        <select id="contact_form_msgtype" name="contact_form_msgtype" class="form-control input-lg">
-                            <option value="suggestions@rateagenie.com">Suggestion</option>
-                            <option value="feedback@rateagenie.com">Feedback</option>
-                            <option value="report@rateagenie.com">Report Violation</option>
-                            <option value="help@rateagenie.com">Help</option>
-                            <option value="administrator@rateagenie.com">Support</option>
-                            <option value="press@rateagenie.com">Marketing</option>
-                            <option value="info@rateagenie.com">Other</option>
+                        <label for="repair_form_issue">Issue</label>
+                        <select id="repair_form_issue" name="repair_form_issue" class="form-control" required="required">
+                            <option value="1" selected>Broken screen</option>
+                            <option value="2">Software</option>
+                            <option value="3">Replacing the battery</option>
+                            <option value="4">Replacing the speaker</option>
+                            <option value="5">Replacing the microphone</option>
+                            <option value="6">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="contact_form_subj">Message Subject* <span class="mandatory">*</span></label>
-                        <input class="form-control input-lg" type="text" placeholder="Message Subject" name="contact_form_subj" id="contact_form_subj" required="required">
+                        <label for="repair_form_descr">Description</label>
+                        <textarea class="form-control" placeholder="Description" name="repair_form_descr" id="repair_form_descr"></textarea>
                         <p class="error">Please enter correct information</p>
                     </div>
                     <div class="form-group">
-                        <label for="contact_form_msg">Message* <span class="mandatory">*</span></label>
-                        <textarea class="form-control input-lg" placeholder="Message" name="contact_form_msg" id="contact_form_msg" required="required"></textarea>
-                        <p class="error">Please enter correct information</p>
+                        <label for="repair_form_type">Type of device</label>
+                        <select id="repair_form_type" name="repair_form_type" class="form-control">
+                            <option value="1">smartphone</option>
+                            <option value="2">laptop</option>
+                            <option value="3">pc</option>
+                            <option value="4">tv</option>
+                            <option value="5">monitor</option>
+                            <option value="6">other</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <div id="captcha">
+                        <label for="repair_form_brand">Brand</label>
+                        <select id="repair_form_brand" name="repair_form_brand" class="form-control">
+                            <option value="0">All</option>
+                            <option value="1">Desktop Computers</option>
+                            <option value="2">Laptops</option>
+                            <option value="3">Mobiles / Tablets</option>
+                            <option value="4">TVs / Monitors</option>
+                            <option value="5">Other...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="repair_form_model">Model</label>
+                        <select id="repair_form_model" name="repair_form_model" class="form-control">
+                            <option value="0">All</option>
+                            <option value="1">Iphone</option>
+                            <option value="2">Macbook</option>
 
-                        </div>
+                        </select>
                     </div>
+
                     <div class="form-actions">
-                        <input type="submit" value="Send" class="btn btn-primary btn-lg button" id="contact-form-submit" name="contact-form-submit">
+                        <input type="submit" value="Get prices" class="linkbtn greenbtn button" id="contact-form-submit" name="contact-form-submit">
                     </div>
 
                 </div>
             </form>
         </div>
 
-        <div class="col-xs-12 col-sm-5 col-lg-offset-2 col-lg-4 infoblock"> <!--infoBox-->
-            <p class="hidden-xs">
-                Use the contact form to get in touch with us, one of our support team
-                will reply to you regarding your enquiry as soon as possible, this can
-                take up to 24 hours.
-            </p>
-            <div class="callteam">
-                <div class="oscar"><img class="hidden-xs" src="https://cdn.anyvan.com/images/v3/oscar.png" alt="">
-                    <p>
-                        For a faster response you can give us a phone call.
-                        We look forward to hearing from you.
-                    </p>
-                </div><a class="phone" href="tel:+442038723050"><span class="number"> 020 3872 3050</span></a>
-                <div class="row">
-                    <div class="col-xs-6">Monday to Friday</div>
-                    <div class="col-xs-6">8:00am - 9:00pm</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">Saturday</div>
-                    <div class="col-xs-6">9:00am - 6:00pm</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">Sunday</div>
-                    <div class="col-xs-6">9:00am - 5:00pm</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="csMob visible-xs">
-        <p>Our customer service team are waiting to help you.</p>
+
     </div>
 
+
 </div>
-    <div class="officeWrapper">
-        <div class="container hidden-xs">
-            <div class="row">
-                <div class="col-sm-7 col-lg-6">
-                    <div class="cs">Our customer service team<br>are waiting to help you.</div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </div>
 
 <footer>
@@ -267,7 +234,7 @@
 <script type="text/javascript">
     jQuery(window).on('load',function() {
         jQuery(".form_phone").mask("(999) 999-99-99");
-        jQuery( "#contactform" ).on( "submit", function( event ) {
+        jQuery( "#repairform" ).on( "submit", function( event ) {
             event.preventDefault();
             //console.log( $( this ).serialize() );
         });
