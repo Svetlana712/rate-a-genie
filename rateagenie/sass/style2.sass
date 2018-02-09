@@ -997,11 +997,13 @@ footer
               a
                 background: url(../img/dashboard/dashboard-close.png) no-repeat left center
 
-            &.option-addresses
+            &.option-addresses,
+            &.option-change
               a
                 background: url(../img/dashboard/dashboard-edit.png) no-repeat left center
 
-            &.option-view-invoice
+            &.option-view-invoice,
+            &.option-view
               a
                 background: url(../img/dashboard/dashboard-view.png) no-repeat left center
 
@@ -1393,7 +1395,7 @@ footer
     text-align: left
     font-size: 20px
     line-height: 22px
-    margin: 20px auto 10px auto
+    margin: 20px/ auto 10px auto
 
   #profile-submit
     clear: both
@@ -1422,11 +1424,77 @@ footer
   background: lightcyan
   @include border-radius(4px)
 
+/*****************Dashboard Genie*************************/
+#dashboard
+  &.genie
+    .bids
+      .cols
+        position: relative
+        display: block
+        float: left
+        vertical-align: middle
+        padding: 0 5px
+      .col1
+        width: 15%
+      .col2
+        width: 45%
+      .col3
+        width: 20%
+      .col4
+        width: 20%
 
 
 
+      .var2
+        .col2
+          width: 35%
+        .col3
+          width: 14%
+        .col4
+          width: 14%
+        .col5
+          width: 12%
+        .col6
+          width: 10%
+
+.bids
+  .grid-header-row
+    display: table
+    width: 100%
+    clear: both
+    padding: 0 10px
 
 
+
+/*************************Repair form*****************************/
+
+/*#514A9D, #24C6DC*/
+#repairform
+  padding: 20px
+  margin: 0 auto 30px auto
+  max-width: 600px
+  @include linearGradient(#514A9D, #2391D6, 5%, 100%)
+  @include border-radius(4px)
+  color: #ffffff
+
+  .linkbtn
+    font-size: 25px
+    line-height: 25px
+    font-weight: normal
+
+  #contact-form-submit
+    padding: 14px 65px
+  .text
+    border-bottom: 2px solid #FFFFFF
+    margin-bottom: 10px
+    p
+      text-align: center
+      font-size: 20px
+      line-height: 22px
+
+
+
+/***************************Media**************************/
 @media (max-width: 1199px)
   .contactTeam
     .callteam

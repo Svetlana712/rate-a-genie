@@ -867,9 +867,9 @@ footer {
         color: #464646; }
       #dashboard .tab-item.listing .listing-more-options ul li.option-delete a, #dashboard .tab-item.listing .listing-more-options ul li.option-archive a {
         background: url(../img/dashboard/dashboard-close.png) no-repeat left center; }
-      #dashboard .tab-item.listing .listing-more-options ul li.option-addresses a {
+      #dashboard .tab-item.listing .listing-more-options ul li.option-addresses a, #dashboard .tab-item.listing .listing-more-options ul li.option-change a {
         background: url(../img/dashboard/dashboard-edit.png) no-repeat left center; }
-      #dashboard .tab-item.listing .listing-more-options ul li.option-view-invoice a {
+      #dashboard .tab-item.listing .listing-more-options ul li.option-view-invoice a, #dashboard .tab-item.listing .listing-more-options ul li.option-view a {
         background: url(../img/dashboard/dashboard-view.png) no-repeat left center; }
       #dashboard .tab-item.listing .listing-more-options ul li:first-child {
         border-left: none; }
@@ -1213,7 +1213,7 @@ footer {
     text-align: left;
     font-size: 20px;
     line-height: 22px;
-    margin: 20px auto 10px auto; }
+    margin: 20px/auto 10px auto; }
   #user_info #profile-submit {
     clear: both; }
   #user_info #left-col {
@@ -1241,6 +1241,71 @@ footer {
   -ms-border-radius: 4px;
   border-radius: 4px; }
 
+/*****************Dashboard Genie************************ */
+#dashboard.genie .bids .cols {
+  position: relative;
+  display: block;
+  float: left;
+  vertical-align: middle;
+  padding: 0 5px; }
+#dashboard.genie .bids .col1 {
+  width: 15%; }
+#dashboard.genie .bids .col2 {
+  width: 45%; }
+#dashboard.genie .bids .col3 {
+  width: 20%; }
+#dashboard.genie .bids .col4 {
+  width: 20%; }
+#dashboard.genie .bids .var2 .col2 {
+  width: 35%; }
+#dashboard.genie .bids .var2 .col3 {
+  width: 14%; }
+#dashboard.genie .bids .var2 .col4 {
+  width: 14%; }
+#dashboard.genie .bids .var2 .col5 {
+  width: 12%; }
+#dashboard.genie .bids .var2 .col6 {
+  width: 10%; }
+
+.bids .grid-header-row {
+  display: table;
+  width: 100%;
+  clear: both;
+  padding: 0 10px; }
+
+/*************************Repair form**************************** */
+/*#514A9D, #24C6DC */
+#repairform {
+  padding: 20px;
+  margin: 0 auto 30px auto;
+  max-width: 600px;
+  background-color: #514A9D;
+  background-image: -moz-linear-gradient(top, #514A9D 5%, #2391D6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #514A9D), color-stop(100%, #2391D6));
+  background-image: -webkit-linear-gradient(top, #514A9D 5%, #2391D6 100%);
+  background-image: -o-linear-gradient(top, #514A9D 5%, #2391D6 100%);
+  background-image: -ms-linear-gradient(top, #514A9D 5%, #2391D6 100%);
+  background-image: linear-gradient(to bottom, #514A9D 5%, #2391D6 100%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  color: #ffffff; }
+  #repairform .linkbtn {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: normal; }
+  #repairform #contact-form-submit {
+    padding: 14px 65px; }
+  #repairform .text {
+    border-bottom: 2px solid #FFFFFF;
+    margin-bottom: 10px; }
+    #repairform .text p {
+      text-align: center;
+      font-size: 20px;
+      line-height: 22px; }
+
+/***************************Media************************* */
 @media (max-width: 1199px) {
   .contactTeam .callteam .phone {
     font-size: 36px; }
