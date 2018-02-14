@@ -931,17 +931,15 @@ footer
             font-weight: bold
 
         .col3
-          //width: 230px
           width: 20%
 
           .best_price
             font-size: 14px
-            line-height: 12px
+            line-height: 14px
             font-weight: normal
             text-align: left
             margin: 0 10px 0 0
             display: inline-block
-            //width: 110px
 
             &.expired
               width: auto
@@ -1042,6 +1040,7 @@ footer
   width: 100%
   font-size: 14px
   font-weight: bold
+  display: table
   clear: both
   & > div > span.cols
     line-height: 44px
@@ -1084,16 +1083,24 @@ footer
       label
         color: #3f6a7d
 
-    .main-pagination
-      ul
-        text-align: center
-        margin: 10px 0
-        li
-          display: inline-block
-          *display: inline
-          list-style: none
-          a
-            color: #28a4da
+    .main-pagination ul li a
+      color: #28a4da
+      text-decoration: none
+
+
+.main-pagination
+  ul
+    text-align: center
+    margin: 10px 0
+    li
+      display: inline-block
+      *display: inline
+      list-style: none
+      a
+        color: #28a4da
+
+      &.page-indicator
+        margin: 0 15px
 
 .customer.online,
 .provider.online
@@ -1108,7 +1115,49 @@ footer
   background: url(../img/dashboard/dashboard_rollup.png) 50% 0 no-repeat
   z-index: 30
 
-.mailbox
+.mailbox .is-more .whois,
+.job .is-more .whois
+  .about-title
+    width: 100%
+    text-align: center
+    @include linearGradient(#2DAFE2, #2391D6, 14%, 57%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2DAFE2', endColorstr='#2391D6',GradientType=0 )
+    color: #ffffff
+    font-weight: bold
+    padding: 10px
+
+  ul.about
+    width: auto
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      display: inline-block
+      *display: inline
+      width: 100%
+      padding: 5px 10px
+      position: relative
+      span
+        font-weight: bold
+        //position: absolute
+        //right: 10px
+        display: block
+        float: right
+
+        &.tick
+          background: url("../img/dashboard/green-tick.png") no-repeat 100% 50%
+          width: 19px
+          height: 15px
+          display: inline-block
+          *display: block
+        &.cross
+          background: url("../img/dashboard/red-cross.png") no-repeat 100% 50%
+          width: 15px
+          height: 15px
+          display: inline-block
+          *display: block
+.mailbox,
+.job
   .inner-cont
     width: 100%
     display: table
@@ -1239,45 +1288,7 @@ footer
         color: #ffffff !important
         font-weight: bold
 
-    .about-title
-      width: 100%
-      text-align: center
-      @include linearGradient(#2DAFE2, #2391D6, 14%, 57%)
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2DAFE2', endColorstr='#2391D6',GradientType=0 )
-      color: #ffffff
-      font-weight: bold
-      padding: 10px
 
-    ul.about
-      width: auto
-      padding: 0
-      margin: 0
-      li
-        list-style: none
-        display: inline-block
-        *display: inline
-        width: 100%
-        padding: 5px 10px
-        position: relative
-        span
-          font-weight: bold
-          //position: absolute
-          //right: 10px
-          display: block
-          float: right
-
-          &.tick
-            background: url("../img/dashboard/green-tick.png") no-repeat 100% 50%
-            width: 19px
-            height: 15px
-            display: inline-block
-            *display: block
-          &.cross
-            background: url("../img/dashboard/red-cross.png") no-repeat 100% 50%
-            width: 15px
-            height: 15px
-            display: inline-block
-            *display: block
 
   .profile-image
     display: inline-block
@@ -1419,6 +1430,9 @@ footer
       float: left
       padding-bottom: 20px
 
+      .error
+        bottom: 0
+
 .highlight-text
   padding: 5px
   background: lightcyan
@@ -1426,16 +1440,29 @@ footer
 
 /*****************Dashboard Genie*************************/
 #dashboard
-  &.genie
-    .bids
-      .cols
-        position: relative
-        display: block
-        float: left
-        vertical-align: middle
-        padding: 0 5px
+  .bids
+    .grid-header-row,
+    .tab-item.listing
       .col1
         width: 15%
+      .col2
+        width: 35%
+      .col3
+        width: 14%
+      .col4
+        width: 14%
+      .col5
+        width: 12%
+      .col6
+        width: 10%
+
+  .searchbid
+    .grid-header-row,
+    .tab-item.listing
+      .col0
+        width: 5%
+      .col1
+        width: 10%
       .col2
         width: 45%
       .col3
@@ -1443,37 +1470,349 @@ footer
       .col4
         width: 20%
 
-
-
-      .var2
-        .col2
-          width: 35%
-        .col3
-          width: 14%
-        .col4
-          width: 14%
-        .col5
-          width: 12%
-        .col6
-          width: 10%
-
-.bids
+.bids,
+.searchbid
   .grid-header-row
     display: table
     width: 100%
     clear: both
     padding: 0 10px
 
+.grid-header-row,
+.tab-item.listing
+  .cols
+    position: relative
+    display: block
+    float: left
+    vertical-align: middle
+    padding: 0 5px
+
+.tab-item
+  display: table
+  width: 100%
+
+/*************************Search job*****************************/
+.search-form
+  input[type="text"]
+    border: 1px solid #26a5da
+    padding: 10px
+    @include border-radius(4px)
+    width: 300px
+    font-size: 14px
+    line-height: 16px
+
+
+#dashboard.findjob
+  .page_title
+    .wrap
+      width: auto
+      float: left
+      padding-right: 10px
+    #search
+      width: auto
+      float: right
+      margin-top: 10px
+
+      #job-search
+        float: right
+
+      .form-row
+        float: left
+        width: auto
+        margin-right: 10px
+        margin-left: 0
+
+
+
+  .tab-item.listing
+    .main-container
+      font-size: 14px
+      line-height: 16px
+
+      .primary-mark
+        display: none
+        position: absolute
+        left: 0
+        top: 0
+        background: url("../img/dashboard/premium-overlay.png") no-repeat 0
+        width: 76px
+        height: 76px
+        max-width: 100%
+        max-height: 100%
+
+    .main-container,
+    .expanded-content
+      background: #d8f0fe
+      border: 1px solid #ADDDF3
+
+    .expanded-content
+      padding: 10px
+      display: none
+      margin-top: 10px
+
+    .img-container
+        margin-bottom: 10px
+
+    .client-name
+      text-align: center
+      font-size: 14px
+      line-height: 15px
+      margin-top: 10px
+    label
+      margin: 0 5px 0 0
+      font-weight: bold
+    .title,
+    .describe
+      margin-bottom: 10px
+
+    .col3
+      text-align: center
+      .best_price
+        font-size: 14px
+        line-height: 14px
+        display: block
+        text-align: inherit
+
+      a
+        display: block
+        color: #236a96
+
+      .quote
+        font-size: 35px
+        line-height: 35px
+        font-weight: bold
+        color: #246b95
+        display: block
+        text-align: inherit
+        margin-top: 10px
+
+
+
+    &.primary
+      .main-container
+        .primary-mark
+          display: block
+
+      .main-container,
+      .expanded-content
+        background: #FDE2EC
+        border: 1px solid #ffc0cb
+
+    &.open
+      .expanded-content
+        display: block
+
+  .premium-text
+    color: #dc286f
+    font-weight: bold
+    margin-top: 10px
+    font-size: 12px
+    line-height: 12px
+    text-align: center
+
+.search-expander
+  background: url("../img/dashboard/toggle.png") no-repeat 50% 0
+  padding-top: 30px
+  display: inline-block
+  *display: inline
+  margin-top: 50px
+  &:hover
+    cursor: pointer
+  &.search-expander-expanded
+    background: url("../img/dashboard/toggle.png") no-repeat 50% -52px
+
+
+#search-results_per_page
+  float: right
+  margin: 10px 0
+  clear: both
+
+header
+  &.genie
+    #main-menu
+      float: left
+
+    .search-form
+      float: right
+      margin: 10px 0 0 10px
+      #form-row-query
+        float: left
+        margin-right: 10px
+        input[type="text"]
+          width: auto
+
+      #headerjob-search
+        float: right
+/********************Customer view listing********************************************/
+.job
+  .container
+    padding-bottom: 30px
+  #bids
+    .cols
+      padding: 0 5px
+      display: block
+      float: left
+    .col1
+      width: 40%
+    .col2
+      width: 15%
+    .col3
+      width: 15%
+    .col4
+      width: 10%
+    .col5
+      width: 20%
+    .inner-block
+      display: none
+
+    &.open-block
+      .inner-block
+        display: block
+
+
+
+  #bid-title
+    border-left: 1px solid #D1DFE5
+    border-right: 1px solid #D1DFE5
+    .col1
+      padding-left: 35px
+
+  #overview,
+  #bid-title,
+  #bid-container,
+  .colwrap
+    display: table
+    width: 100%
+    clear: both
+
+  #overview
+    margin-bottom: 30px
+
+  .is-more
+    padding: 10px 5px
+    display: none
+
+  .bid
+    &.open
+      .is-more
+        display: block
+      .bid-expander
+        background-position: 0 -30px
+
+    .bid-expander
+      background-position: 0 8px
+
+  .genie-mes
+    background: #ffffff
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
+    padding: 5px
+    border: 1px solid #27A4D9
+
+
+  #bid-container
+    background: #F4FAFD
+    border-left: 1px solid #D1DFE5
+    border-right: 1px solid #D1DFE5
+    border-bottom: 1px solid #D1DFE5
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
+
+    .bid:nth-child(2n)
+      background: #E9F6FA
+
+  .container
+    h3
+      display: block
+      position: relative
+      cursor: pointer
+      margin: 0
+      padding: 6px 0 7px 35px
+      background: url("../img/dashboard/arrdown.png") no-repeat 5px 50% #27A4D9
+      color: #FFFFFF
+      font-size: 14px
+      line-height: 14px
+      font-weight: 700
+      text-align: left
+
+  .bid-expander
+    width: 25px
+    display: inline-block
+    *display: inline
+    background: url("../img/dashboard/toggle.png") no-repeat 0 8px / 20px auto
+    cursor: pointer
+    padding: 5px 0
+
+
+  .bidder
+    a
+      display: inline-block
+      *display: inline
+
+
+
+  .job-details
+    width: 74%
+    float: left
+    & > div
+      margin-bottom: 10px
+
+  .lowest_bid
+    width: 25%
+    float: right
+    border: 1px solid #27A4D9
+    .title
+      text-align: center
+      color: #FFFFFF
+      font-weight: bold
+      background: #27A4D9
+      padding: 5px 0
+
+    .inner
+      padding: 5px
+      background: #F4FAFD
+      & > div
+        margin-bottom: 5px
+
+    label
+      width: 50%
+
+  .linkbtn
+    margin: 10px auto
+    max-width: 220px
+    line-height: 27px
+
+  .rollup
+    bottom: 0
+    cursor: pointer
+
+  label
+    font-weight: bold
+    padding-right: 5px
+    margin-bottom: 0
+
+    &.label-block
+      display: block
+      clear: both
+
+
+
+
+
+
+
+
+
 
 
 /*************************Repair form*****************************/
 
-/*#514A9D, #24C6DC*/
 #repairform
   padding: 20px
   margin: 0 auto 30px auto
   max-width: 600px
   @include linearGradient(#514A9D, #2391D6, 5%, 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#514A9D', endColorstr='#2391D6',GradientType=0 )
   @include border-radius(4px)
   color: #ffffff
 
@@ -1784,7 +2123,7 @@ footer
 
   header
     .header-wrap
-      width: 690px
+      width: 570px
 
     h2
       &.phone_number
