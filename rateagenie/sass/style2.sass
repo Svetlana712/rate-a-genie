@@ -1106,7 +1106,8 @@ footer
 .provider.online
   color: #080 !important
 
-.rollup
+.rollup,
+.rollup-quest
   position: absolute
   left: -10px
   bottom: -10px
@@ -1438,6 +1439,10 @@ footer
   background: lightcyan
   @include border-radius(4px)
 
+.form-mes
+  margin: 5px 0
+  color: #4CBC10
+
 /*****************Dashboard Genie*************************/
 #dashboard
   .bids
@@ -1648,6 +1653,7 @@ header
   .container
     padding-bottom: 30px
   #bids
+    margin-bottom: 10px
     .cols
       padding: 0 5px
       display: block
@@ -1669,9 +1675,33 @@ header
       .inner-block
         display: block
 
+  #quests
+    .cols
+      padding: 0 5px
+      display: block
+      float: left
+    .col1
+      width: 40%
+    .col2
+      width: 10%
+    .col3
+      width: 40%
+    .col4
+      width: 10%
+    .inner-block
+      display: none
+
+    &.open-block
+      .inner-block
+        display: block
+
+    .quest
+      .col3
+        line-height: 16px
 
 
-  #bid-title
+  #bid-title,
+  #quest-title
     border-left: 1px solid #D1DFE5
     border-right: 1px solid #D1DFE5
     .col1
@@ -1702,6 +1732,20 @@ header
     .bid-expander
       background-position: 0 8px
 
+  .quest
+    &.open
+      .quest-reply
+        display: none
+      .is-more
+        display: block
+      .quest-expander
+        background-position: 0 -30px
+
+    .quest-expander
+      background-position: 0 8px
+
+
+
   .genie-mes
     background: #ffffff
     border-top-left-radius: 4px
@@ -1710,7 +1754,8 @@ header
     border: 1px solid #27A4D9
 
 
-  #bid-container
+  #bid-container,
+  #quest-container
     background: #F4FAFD
     border-left: 1px solid #D1DFE5
     border-right: 1px solid #D1DFE5
@@ -1718,7 +1763,8 @@ header
     border-bottom-left-radius: 4px
     border-bottom-right-radius: 4px
 
-    .bid:nth-child(2n)
+    .bid:nth-child(2n),
+    .quest:nth-child(2n)
       background: #E9F6FA
 
   .container
@@ -1735,7 +1781,8 @@ header
       font-weight: 700
       text-align: left
 
-  .bid-expander
+  .bid-expander,
+  .quest-expander
     width: 25px
     display: inline-block
     *display: inline
@@ -1777,12 +1824,15 @@ header
     label
       width: 50%
 
-  .linkbtn
-    margin: 10px auto
-    max-width: 220px
-    line-height: 27px
+  #overview,
+  #bids
+    .linkbtn
+      margin: 10px auto
+      max-width: 220px
+      line-height: 27px
 
-  .rollup
+  .rollup,
+  .rollup-quest
     bottom: 0
     cursor: pointer
 
@@ -1794,6 +1844,27 @@ header
     &.label-block
       display: block
       clear: both
+
+  .upgrade-box
+    width: 100%
+    display: table
+    clear: both
+    background: #FDE2EC
+    border: 1px solid #ffc0cb
+    padding: 10px
+    margin-bottom: 10px
+
+    .upgradebtn
+      width: 24%
+      margin-right: 2%
+      display: inline-block
+      *display: inline
+
+    .motivation
+      width: 73%
+      display: inline-block
+      *display: inline
+      vertical-align: middle
 
 
 

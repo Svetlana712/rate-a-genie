@@ -962,7 +962,8 @@ footer {
 .provider.online {
   color: #080 !important; }
 
-.rollup {
+.rollup,
+.rollup-quest {
   position: absolute;
   left: -10px;
   bottom: -10px;
@@ -1298,6 +1299,10 @@ footer {
   -ms-border-radius: 4px;
   border-radius: 4px; }
 
+.form-mes {
+  margin: 5px 0;
+  color: #4CBC10; }
+
 /*****************Dashboard Genie************************ */
 #dashboard .bids .grid-header-row .col1,
 #dashboard .bids .tab-item.listing .col1 {
@@ -1479,28 +1484,50 @@ header.genie .search-form {
 /********************Customer view listing******************************************* */
 .job .container {
   padding-bottom: 30px; }
-.job #bids .cols {
+.job #bids {
+  margin-bottom: 10px; }
+  .job #bids .cols {
+    padding: 0 5px;
+    display: block;
+    float: left; }
+  .job #bids .col1 {
+    width: 40%; }
+  .job #bids .col2 {
+    width: 15%; }
+  .job #bids .col3 {
+    width: 15%; }
+  .job #bids .col4 {
+    width: 10%; }
+  .job #bids .col5 {
+    width: 20%; }
+  .job #bids .inner-block {
+    display: none; }
+  .job #bids.open-block .inner-block {
+    display: block; }
+.job #quests .cols {
   padding: 0 5px;
   display: block;
   float: left; }
-.job #bids .col1 {
+.job #quests .col1 {
   width: 40%; }
-.job #bids .col2 {
-  width: 15%; }
-.job #bids .col3 {
-  width: 15%; }
-.job #bids .col4 {
+.job #quests .col2 {
   width: 10%; }
-.job #bids .col5 {
-  width: 20%; }
-.job #bids .inner-block {
+.job #quests .col3 {
+  width: 40%; }
+.job #quests .col4 {
+  width: 10%; }
+.job #quests .inner-block {
   display: none; }
-.job #bids.open-block .inner-block {
+.job #quests.open-block .inner-block {
   display: block; }
-.job #bid-title {
+.job #quests .quest .col3 {
+  line-height: 16px; }
+.job #bid-title,
+.job #quest-title {
   border-left: 1px solid #D1DFE5;
   border-right: 1px solid #D1DFE5; }
-  .job #bid-title .col1 {
+  .job #bid-title .col1,
+  .job #quest-title .col1 {
     padding-left: 35px; }
 .job #overview,
 .job #bid-title,
@@ -1520,20 +1547,32 @@ header.genie .search-form {
   background-position: 0 -30px; }
 .job .bid .bid-expander {
   background-position: 0 8px; }
+.job .quest.open .quest-reply {
+  display: none; }
+.job .quest.open .is-more {
+  display: block; }
+.job .quest.open .quest-expander {
+  background-position: 0 -30px; }
+.job .quest .quest-expander {
+  background-position: 0 8px; }
 .job .genie-mes {
   background: #ffffff;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding: 5px;
   border: 1px solid #27A4D9; }
-.job #bid-container {
+.job #bid-container,
+.job #quest-container {
   background: #F4FAFD;
   border-left: 1px solid #D1DFE5;
   border-right: 1px solid #D1DFE5;
   border-bottom: 1px solid #D1DFE5;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px; }
-  .job #bid-container .bid:nth-child(2n) {
+  .job #bid-container .bid:nth-child(2n),
+  .job #bid-container .quest:nth-child(2n),
+  .job #quest-container .bid:nth-child(2n),
+  .job #quest-container .quest:nth-child(2n) {
     background: #E9F6FA; }
 .job .container h3 {
   display: block;
@@ -1547,7 +1586,8 @@ header.genie .search-form {
   line-height: 14px;
   font-weight: 700;
   text-align: left; }
-.job .bid-expander {
+.job .bid-expander,
+.job .quest-expander {
   width: 25px;
   display: inline-block;
   *display: inline;
@@ -1579,11 +1619,13 @@ header.genie .search-form {
       margin-bottom: 5px; }
   .job .lowest_bid label {
     width: 50%; }
-.job .linkbtn {
+.job #overview .linkbtn,
+.job #bids .linkbtn {
   margin: 10px auto;
   max-width: 220px;
   line-height: 27px; }
-.job .rollup {
+.job .rollup,
+.job .rollup-quest {
   bottom: 0;
   cursor: pointer; }
 .job label {
@@ -1593,6 +1635,24 @@ header.genie .search-form {
   .job label.label-block {
     display: block;
     clear: both; }
+.job .upgrade-box {
+  width: 100%;
+  display: table;
+  clear: both;
+  background: #FDE2EC;
+  border: 1px solid #ffc0cb;
+  padding: 10px;
+  margin-bottom: 10px; }
+  .job .upgrade-box .upgradebtn {
+    width: 24%;
+    margin-right: 2%;
+    display: inline-block;
+    *display: inline; }
+  .job .upgrade-box .motivation {
+    width: 73%;
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle; }
 
 /*************************Repair form**************************** */
 #repairform {
