@@ -46,7 +46,7 @@
                     <a href="#" class="has-submenu">Menu</a>
                     <ul>
                         <li><a href="repair.html">Post a Job</a></li>
-                        <li><a href="#">Search Jobs</a></li>
+                        <li><a href="findjob.html">Search Jobs</a></li>
                         <li><a href="#">How Does It Work?</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
@@ -72,7 +72,7 @@
                         <li><a href="dashcust.html">My Messages</a></li>
                         <li><a href="profile.html">Edit My Profile</a></li>
                         <li><a href="#">Recommend a Friend</a></li>
-                        <li class="right"><a href="#">Log out</a></li>
+                        <li class="right"><a href="/logout">Log out</a></li>
                     </ul>
                 </li>
                 <li class="button">
@@ -91,7 +91,6 @@
     <div class="row">
         <div class="col-xs-12">
             <h1>Repair your device</h1>
-
         </div>
     </div>
     <div class="row">
@@ -100,20 +99,12 @@
                 <div class="innerwrap">
                     <div class="text"><p>Our trusted genies will send you quotes so you can chose which to fix your broken device</p></div>
                     <div class="form-group">
-                        <label for="repair_form_issue">Issue</label>
-                        <select id="repair_form_issue" name="repair_form_issue" class="form-control" required="required">
-                            <option value="1" selected>Broken screen</option>
-                            <option value="2">Software</option>
-                            <option value="3">Replacing the battery</option>
-                            <option value="4">Replacing the speaker</option>
-                            <option value="5">Replacing the microphone</option>
-                            <option value="6">Other</option>
-                        </select>
+                        <label for="repair_form_issue" title="Mandatory field">Issue <span class="mandatory">*</span></label>
+                        <textarea class="form-control" placeholder="Issue" name="repair_form_issue" id="repair_form_issue" required="required"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="repair_form_descr">Description</label>
                         <textarea class="form-control" placeholder="Description" name="repair_form_descr" id="repair_form_descr"></textarea>
-                        <p class="error">Please enter correct information</p>
                     </div>
                     <div class="form-group">
                         <label for="repair_form_type">Type of device</label>
@@ -227,9 +218,9 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="js/popper.min.js" crossorigin="anonymous"></script>
+<script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
     jQuery(window).on('load',function() {
