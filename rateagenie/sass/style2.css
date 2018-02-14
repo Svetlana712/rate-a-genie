@@ -1884,7 +1884,10 @@ header.genie .search-form {
     width: 100%;
     float: none;
     margin-left: 0;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    margin-bottom: 17px; }
+    #user_info #right-col .form-group .error {
+      bottom: -10px; }
 
   #dashboard .ui-tabs .ui-tabs-nav .ui-state-default {
     margin: 15px 5px 0px 5px; }
