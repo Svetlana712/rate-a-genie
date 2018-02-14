@@ -300,7 +300,7 @@ footer {
   .contactTeam .ajax-indicator {
     display: inline; }
   .contactTeam .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     padding-bottom: 0; }
     .contactTeam .form-group:after {
       content: "";
@@ -320,11 +320,10 @@ footer {
       border-color: #dcd8d8; }
     .contactTeam .form-group textarea {
       height: 120px; }
-    .contactTeam .form-group .ajax-form-error p.error {
-      font-size: 14px;
-      font-weight: bold;
-      color: #E12A7A;
-      margin: 0; }
+    .contactTeam .form-group .error {
+      bottom: -20px;
+      left: auto;
+      right: 0; }
   .contactTeam .btn-primary {
     background-color: #41a5dd;
     padding: 14px 75px;
@@ -1620,7 +1619,8 @@ header.genie .search-form {
   .job .lowest_bid label {
     width: 50%; }
 .job #overview .linkbtn,
-.job #bids .linkbtn {
+.job #bids .linkbtn,
+.job #quests .linkbtn {
   margin: 10px auto;
   max-width: 220px;
   line-height: 27px; }
