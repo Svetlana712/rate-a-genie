@@ -1368,6 +1368,11 @@ footer {
   font-size: 14px;
   line-height: 16px; }
 
+.clear-all {
+  width: 100%;
+  display: table;
+  clear: both; }
+
 #dashboard.findjob .page_title .wrap {
   width: auto;
   float: left;
@@ -1462,10 +1467,26 @@ footer {
   .search-expander.search-expander-expanded {
     background: url("../img/dashboard/toggle.png") no-repeat 50% -52px; }
 
-#search-results_per_page {
-  float: right;
+.filters {
   margin: 10px 0;
-  clear: both; }
+  padding-bottom: 10px;
+  border-bottom: 2px solid #1593D1; }
+  .filters .form-control {
+    display: inline-block;
+    *display: inline;
+    width: 150px; }
+
+#search-results_per_page {
+  width: auto;
+  float: right; }
+
+#form-search-filter {
+  width: auto;
+  float: left; }
+  #form-search-filter .form-inner > div {
+    width: auto;
+    float: left;
+    margin-right: 20px; }
 
 header.genie #main-menu {
   float: left; }
