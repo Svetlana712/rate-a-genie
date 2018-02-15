@@ -133,13 +133,62 @@
 
                     <div id="tabs-1"  class="searchbid">
                         <div class="tab-inner">
+                            <div class="filters clear-all">
 
-                            <select id="search-results_per_page" name="search-results_per_page" class="right">
-                                <option value="25" selected="selected">25 results per page</option>
-                                <option value="50">50 results per page</option>
-                                <option value="100">100 results per page</option>
-                                <option value="250">250 results per page</option>
-                            </select>
+                                <form action="" method="" id="form-search-filter" accept-charset="UTF-8">
+                                    <div class="form-inner">
+                                        <div id="filter-issue" class="search-item">
+                                            <label for="issue_id">Issue</label>
+                                            <select name="issue_id" id="issue_id" class="form-control">
+                                                <option value="1">Broken screen</option>
+                                            </select>
+                                        </div>
+                                        <div id="filter-type" class="search-item">
+                                            <label for="device_type_id">Type</label>
+                                            <select name="device_type_id" id="device_type_id" class="form-control">
+                                                <option value="1">smartphone</option>
+                                                <option value="2">laptop</option>
+                                                <option value="3">pc</option>
+                                                <option value="4">tv</option>
+                                                <option value="5">monitor</option>
+                                                <option value="6">other</option>
+                                            </select>
+                                        </div>
+                                        <div id="filter-brand" class="search-item">
+                                            <label for="brand_id">Brand</label>
+                                            <select name="brand_id" id="brand_id" class="form-control">
+                                                <option value="">All</option>
+                                                <option value="1">Desktop Computers</option>
+                                                <option value="2">Laptops</option>
+                                                <option value="3">Mobiles / Tablets</option>
+                                                <option value="4">TVs / Monitors</option>
+                                                <option value="5">Other...</option>
+                                            </select>
+                                        </div>
+                                        <div id="filter-model" class="search-item">
+                                            <label for="device_model_id" id="device_model_id">Model</label>
+                                            <select name="device_model_id" class="form-control">
+                                                <option value="">All</option>
+                                                <option value="1">Iphone</option>
+                                                <option value="2">Macbook</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-submit-button">
+                                            <input id="submit-filter" name="submit-filter" value="Filter" class="form-submit linkbtn bluebtn" type="submit">
+                                        </div>
+
+                                </div>
+
+                                </form>
+
+                                <select id="search-results_per_page" name="search-results_per_page" class="right form-control">
+                                    <option value="25" selected="selected">25 results per page</option>
+                                    <option value="50">50 results per page</option>
+                                    <option value="100">100 results per page</option>
+                                    <option value="250">250 results per page</option>
+                                </select>
+                            </div>
 
                             <!--<div class="grid-header-row">
                                 <div class="inner-cont">
