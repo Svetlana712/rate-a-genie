@@ -12,7 +12,8 @@
 
     <title>Customer view listing</title>
 </head>
-<body class="job customer">
+<body>
+<div class="job customer">
 
 <header class="admin-header customer">
     <div class="header-wrap">
@@ -107,9 +108,22 @@
         </div>
     </div>
     <div class="row">
+        <div class="upgrade-box">
+            <div class="upgradebtn"><span class="linkbtn pinkbtn">Upgrade your listing to premium</span></div>
+            <div class="motivation">Every 2 minutes another Rate A Genie job is booked! Will yours be next?</div>
+        </div>
+    </div>
+
+    <div class="row">
         <div>
             <div id="overview">
+
                 <div class="job-details">
+                    <div class="listing-actions">
+                        <span class="linkbtn greenbtn listing-edit">Edit this listing</span>
+                        <span class="linkbtn bluebtn listing-deactivate">Deactivate this listing</span>
+                        <span class="linkbtn pinkbtn listing-delete">Delete this listing</span>
+                    </div>
                     <div class="describe">
                         <label class="label-block">Description of issue:</label>
                         Here client describes what need to fix. Here client describes what need to fix.
@@ -414,7 +428,7 @@
                     </div>
                 </div>
             </div>
-            <!--<div id="quest" class="openable open-block">
+            <div id="quests" class="openable open-block">
                 <h3 class="block-header" title="Click to hide or expand">Questions</h3>
                 <div class="inner-block">
                     <div id="quest-title">
@@ -428,6 +442,7 @@
                         <div class="quest">
                             <div class="colwrap">
                                 <div class="cols col1 bidder">
+                                    <div class="quest-expander" id="id-for-this-quest-5101178" title="Click to expand or hide reply form">&nbsp;</div>
                                     <a href="#" title="View profile">
                                         <span class="provider accredited branded">
                                             DLSvans
@@ -439,7 +454,8 @@
                                     </a>
                                 </div>
                                 <div class="cols col2 when">11 hours ago</div>
-                                <div class="cols col3 quest">Question about issue</div>
+                                <div class="cols col3 quest">Question about issue. Here client describes what need to fix. Here client describes what need to fix. Here client describes what need to fix. Here client describes what need to fix.</div>
+                                <div class="cols col4 actions"><span class="main-option linkbtn pinkbtn quest-reply">Reply</span></div>
 
                             </div>
 
@@ -474,7 +490,7 @@
 
                                 <div class="clearfix"></div>
 
-                                <div class="rollup"></div>
+                                <div class="rollup-quest"></div>
                             </div>
 
 
@@ -483,6 +499,7 @@
                         <div class="quest">
                             <div class="colwrap">
                                 <div class="cols col1 bidder">
+                                    <div class="quest-expander" id="id-for-this-quest-5141178" title="Click to expand or hide reply form">&nbsp;</div>
                                     <a href="#" title="View profile">
                                         <span class="provider accredited branded">
                                             DLSvans
@@ -495,6 +512,7 @@
                                 </div>
                                 <div class="cols col2 when">11 hours ago</div>
                                 <div class="cols col3 quest">Question about issue</div>
+                                <div class="cols col4 actions"><span class="main-option linkbtn pinkbtn quest-reply">Reply</span></div>
 
                             </div>
 
@@ -503,20 +521,20 @@
                                     <div class="reply-options">
                                     </div>
                                     <div class="reply-form">
-                                        <form action="" method="post" enctype="multipart/form-data" id="reply-form5a871ad0d3040" accept-charset="UTF-8">
+                                        <form action="" method="post" enctype="multipart/form-data" id="reply-forma871ad0d3040" accept-charset="UTF-8">
                                             <div>
-                                                <input name="__IDENTreply-form5a871ad0d3040__" value="1" type="hidden">
+                                                <input name="__IDENTreply-forma871ad0d3040__" value="1" type="hidden">
                                                 <input name="__TIMESTAMP" value="1517583867" type="hidden">
                                                 <input name="__fw-token" value="__fw-token-ffac0666042757c9167b481cd10e52325a747dfbea03f" type="hidden">
                                             </div>
-                                            <input name="send_all" id="reply-form5a871ad0d3040-send_all" value="0" type="hidden">
-                                            <div class="form-row" id="form-row-reply-form5a871ad0d3040-message_response">
-                                                <label for="reply-form5a871ad0d3040-message_response">Reply Now:</label>
-                                                <textarea id="reply-form5a871ad0d3040-message_response" name="message_response"></textarea>
+                                            <input name="send_all" id="reply-forma871ad0d3040-send_all" value="0" type="hidden">
+                                            <div class="form-row" id="form-row-reply-forma871ad0d3040-message_response">
+                                                <label for="reply-forma871ad0d3040-message_response">Reply Now:</label>
+                                                <textarea id="reply-forma871ad0d3040-message_response" name="message_response"></textarea>
                                             </div>
                                             <div class="buttons">
-                                                <input value="Send" class="mes-reply pinkbtn button" id="reply-form5a871ad0d3040-submit-1" name="reply-form5a871ad0d3040-submit-1" type="submit">
-                                                <input value="Send to All" class="mes-reply-all linkbtn bluebtn button disabled" id="reply-form5a871ad0d3040-submit" name="reply-form5a871ad0d3040-submit" type="submit">
+                                                <input value="Send" class="mes-reply pinkbtn button" id="reply-forma871ad0d3040-submit-1" name="reply-forma871ad0d3040-submit-1" type="submit">
+                                                <input value="Send to All" class="mes-reply-all linkbtn bluebtn button disabled" id="reply-forma871ad0d3040-submit" name="reply-forma871ad0d3040-submit" type="submit">
                                             </div>
                                             <div class="clearfix"></div>
                                         </form>
@@ -529,7 +547,7 @@
 
                                 <div class="clearfix"></div>
 
-                                <div class="rollup"></div>
+                                <div class="rollup-quest"></div>
                             </div>
 
 
@@ -544,7 +562,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
 
         </div>
@@ -618,7 +636,7 @@
 
     </div>
 </footer>
-
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
@@ -626,24 +644,7 @@
 <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    $( ".bid-expander" ).click(function() {
-        $( this )
-            .closest('.bid')
-            .toggleClass( "open" );
 
-    });
-    $( ".rollup" ).click(function() {
-        $( this )
-            .closest('.bid')
-            .toggleClass( "open" );
-
-    });
-    $( ".exp-mes" ).click(function() {
-        $( this )
-            .closest('.bid')
-            .toggleClass( "open" );
-
-    });
     $( ".block-header" ).click(function() {
         $( this )
             .closest('.openable')
@@ -651,6 +652,22 @@
 
     });
 
+    function click_expander(event) {
+        $( this )
+            .closest(event.data.selector)
+            .toggleClass( "open" );
+    }
+
+
+    $( ".rollup-quest" ).on('click',{selector: '.quest'},click_expander);
+    $( ".rollup" ).on('click',{selector: '.bid'},click_expander);
+    $( ".bid-expander" ).on('click',{selector: '.bid'},click_expander);
+    $( ".exp-mes" ).on('click',{selector: '.bid'},click_expander);
+    $( ".quest-expander" ).on('click',{selector: '.quest'},click_expander);
+    $( ".quest-reply" ).on('click',{selector: '.quest'},click_expander);
+
+
 </script>
+
 </body>
 </html>

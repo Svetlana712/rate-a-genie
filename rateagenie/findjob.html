@@ -13,7 +13,8 @@
 
     <title>Search job</title>
 </head>
-<body id="dashboard" class="findjob genie">
+<body>
+<div id="dashboard" class="findjob genie">
 <header class="admin-header genie">
     <div class="header-wrap">
         <div class="header-left">
@@ -377,6 +378,7 @@
 
         </div>
     </footer>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
@@ -386,19 +388,20 @@
 <script src="js/popper.min.js" crossorigin="anonymous"></script>
 <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 
-    <script>
-        $( function() {
-            $( "#tabs" ).tabs();
-        } );
+<script>
+    $( function() {
+        $( "#tabs" ).tabs();
+    } );
 
-        $( ".search-expander" ).click(function() {
-            $( this )
-                .toggleClass( "search-expander-expanded" );
-            $( this )
-                .closest('.tab-item')
-                .toggleClass( "open" );
-        });
+    $( ".search-expander" ).click(function() {
+        $( this )
+            .toggleClass( "search-expander-expanded" );
+        $( this )
+            .closest('.tab-item')
+            .toggleClass( "open" );
+    });
 
-    </script>
+</script>
+
 </body>
 </html>
