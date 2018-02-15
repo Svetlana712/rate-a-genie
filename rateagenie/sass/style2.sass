@@ -385,7 +385,6 @@ footer
     textarea
       height: 120px
 
-
     .error
       bottom: -20px
       left: auto
@@ -1709,7 +1708,8 @@ header
   #overview,
   #bid-title,
   #bid-container,
-  .colwrap
+  .colwrap,
+  .listing-actions
     display: table
     width: 100%
     clear: both
@@ -1742,8 +1742,6 @@ header
 
     .quest-expander
       background-position: 0 8px
-
-
 
   .genie-mes
     background: #ffffff
@@ -1830,6 +1828,21 @@ header
       margin: 10px auto
       max-width: 220px
       line-height: 27px
+
+  #overview
+    .listing-actions
+      border-bottom: 1px solid grey
+
+      .linkbtn
+        width: 30%
+        max-width: 30%
+        margin: 10px 2%
+        display: block
+        float: left
+        &:first-child
+          margin-left: 0
+        &:last-child
+          margin-right: 0
 
   .rollup,
   .rollup-quest

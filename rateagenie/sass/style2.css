@@ -1531,7 +1531,8 @@ header.genie .search-form {
 .job #overview,
 .job #bid-title,
 .job #bid-container,
-.job .colwrap {
+.job .colwrap,
+.job .listing-actions {
   display: table;
   width: 100%;
   clear: both; }
@@ -1624,6 +1625,18 @@ header.genie .search-form {
   margin: 10px auto;
   max-width: 220px;
   line-height: 27px; }
+.job #overview .listing-actions {
+  border-bottom: 1px solid grey; }
+  .job #overview .listing-actions .linkbtn {
+    width: 30%;
+    max-width: 30%;
+    margin: 10px 2%;
+    display: block;
+    float: left; }
+    .job #overview .listing-actions .linkbtn:first-child {
+      margin-left: 0; }
+    .job #overview .listing-actions .linkbtn:last-child {
+      margin-right: 0; }
 .job .rollup,
 .job .rollup-quest {
   bottom: 0;
