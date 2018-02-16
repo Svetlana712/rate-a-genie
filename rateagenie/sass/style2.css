@@ -216,10 +216,6 @@ footer {
   clear: both;
   background: #454545;
   color: #FFFFFF; }
-  footer .footer-wrap {
-    width: 1170px;
-    margin: 10px auto 0 auto;
-    padding: 0; }
   footer h3 {
     color: #28a4da;
     font-size: 16px;
@@ -272,6 +268,11 @@ footer {
         display: inline-block;
         *display: inline;
         margin: 0 10px; }
+
+.footer-wrap {
+  width: 1170px;
+  margin: 10px auto 0 auto;
+  padding: 0; }
 
 .footer_nav {
   float: left;
@@ -990,7 +991,8 @@ footer {
 .job .is-more .whois ul.about {
   width: auto;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  color: #246b95; }
   .mailbox .is-more .whois ul.about li,
   .job .is-more .whois ul.about li {
     list-style: none;
@@ -1511,11 +1513,12 @@ header #main-menu .pinkbtn {
 .job .container {
   padding-bottom: 30px; }
 .job #bids {
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   .job #bids .cols {
-    padding: 0 5px;
+    padding: 7px 5px;
     display: block;
-    float: left; }
+    float: left;
+    line-height: 17px; }
   .job #bids .col1 {
     width: 40%; }
   .job #bids .col2 {
@@ -1531,23 +1534,26 @@ header #main-menu .pinkbtn {
   .job #bids.open-block .inner-block {
     display: block; }
 .job #quests .cols {
-  padding: 0 5px;
+  padding: 7px 5px;
   display: block;
-  float: left; }
+  float: left;
+  line-height: 17px; }
 .job #quests .col1 {
-  width: 40%; }
+  width: 30%; }
 .job #quests .col2 {
   width: 10%; }
 .job #quests .col3 {
-  width: 40%; }
+  width: 45%; }
 .job #quests .col4 {
-  width: 10%; }
+  width: 15%; }
 .job #quests .inner-block {
   display: none; }
 .job #quests.open-block .inner-block {
   display: block; }
 .job #quests .quest .col3 {
   line-height: 16px; }
+.job #quests .is-more .reply-form {
+  border-bottom: none; }
 .job #bid-title,
 .job #quest-title {
   border-left: 1px solid #D1DFE5;
@@ -1571,17 +1577,17 @@ header #main-menu .pinkbtn {
 .job .bid.open .is-more {
   display: block; }
 .job .bid.open .bid-expander {
-  background-position: 0 -30px; }
+  background-position: 0 -34px; }
 .job .bid .bid-expander {
-  background-position: 0 8px; }
+  background-position: 0 4px; }
 .job .quest.open .quest-reply {
   display: none; }
 .job .quest.open .is-more {
   display: block; }
 .job .quest.open .quest-expander {
-  background-position: 0 -30px; }
+  background-position: 0 -34px; }
 .job .quest .quest-expander {
-  background-position: 0 8px; }
+  background-position: 0 4px; }
 .job .genie-mes {
   background: #ffffff;
   border-top-left-radius: 4px;
@@ -1618,7 +1624,7 @@ header #main-menu .pinkbtn {
   width: 25px;
   display: inline-block;
   *display: inline;
-  background: url("../img/dashboard/toggle.png") no-repeat 0 8px/20px auto;
+  background: url("../img/dashboard/toggle.png") no-repeat 0 4px/20px auto;
   cursor: pointer;
   padding: 5px 0; }
 .job .bidder a {
@@ -1641,7 +1647,8 @@ header #main-menu .pinkbtn {
     padding: 5px 0; }
   .job .lowest_bid .inner {
     padding: 5px;
-    background: #F4FAFD; }
+    background: #F4FAFD;
+    color: #246b95; }
     .job .lowest_bid .inner > div {
       margin-bottom: 5px; }
   .job .lowest_bid label {
@@ -1652,6 +1659,10 @@ header #main-menu .pinkbtn {
   margin: 10px auto;
   max-width: 220px;
   line-height: 27px; }
+.job #bids .actions .linkbtn:first-child {
+  margin-top: 0; }
+.job #bids .actions .linkbtn:last-child {
+  margin-bottom: 0; }
 .job #overview .listing-actions {
   border-bottom: 1px solid grey; }
   .job #overview .listing-actions .linkbtn {
@@ -1728,6 +1739,11 @@ header #main-menu .pinkbtn {
 
 /***************************Media************************* */
 @media (max-width: 1199px) {
+  .header-wrap,
+  .footer-wrap,
+  .container {
+    width: 98%; }
+
   .contactTeam .callteam .phone {
     font-size: 36px; }
     .contactTeam .callteam .phone .number {
@@ -1737,10 +1753,24 @@ header #main-menu .pinkbtn {
     font-size: 26px; }
 
   #faqs .wrap {
-    width: 1000px; }
+    width: 98%; }
 
   .faq-search-form input[type="text"] {
-    width: 520px; } }
+    width: 520px; }
+
+  .job .upgrade-box .upgradebtn {
+    width: 30%; }
+  .job .upgrade-box .motivation {
+    width: 67%; } }
+@media (max-width: 1023px) {
+  .job #overview .listing-actions .linkbtn {
+    font-size: 14px;
+    line-height: 16px;
+    height: 52px; }
+  .job .job-details {
+    width: 65%; }
+  .job .lowest_bid {
+    width: 34%; } }
 @media (max-width: 991px) {
   #faqs .faq-search-form input[type="text"] {
     margin-left: 0;
@@ -1750,10 +1780,10 @@ header #main-menu .pinkbtn {
     margin-top: 45px; }
 
   .mailbox .is-more ul.about,
-  .mailbox .is-more .chatting_nickname {
+  .mailbox .is-more .chatting_nickname,
+  .job .is-more ul.about,
+  .job .is-more .chatting_nickname {
     font-size: 14px;
-    line-height: 16px; }
-  .mailbox .cols {
     line-height: 16px; }
 
   #dashboard .tab-item .img-container .accepted {
@@ -1774,16 +1804,16 @@ header #main-menu .pinkbtn {
 @media (max-width: 799px) {
   #dashboard .tab-item.listing .main-container .main-options a {
     font-size: 12px;
-    padding: 5px; } }
+    padding: 5px; }
+
+  .job .upgrade-box .motivation {
+    vertical-align: top; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .contactTeam .callteam .phone {
     font-size: 28px; }
   .contactTeam .callteam .row {
     margin-top: 4px;
     font-size: 13px; }
-
-  #faqs .wrap {
-    width: 740px; }
 
   .faq-search-form .form-row {
     width: 570px; } }
@@ -1892,32 +1922,55 @@ header #main-menu .pinkbtn {
     margin-top: 0; }
   .contactTeam .form-group .form-control {
     width: 100%;
-    float: none; } }
+    float: none; }
+
+  .job #bids .linkbtn,
+  .job #quests .linkbtn {
+    padding-left: 10px;
+    padding-right: 10px; } }
 @media (max-width: 735px) {
-  .mailbox .is-more {
+  .mailbox .is-more,
+  .job .is-more {
     padding: 20px 10px; }
-    .mailbox .is-more .thread_item .bubble {
+    .mailbox .is-more .thread_item .bubble,
+    .job .is-more .thread_item .bubble {
       font-size: 14px;
       line-height: 16px;
       width: 60%; }
-    .mailbox .is-more .thread_item .whois {
+    .mailbox .is-more .thread_item .whois,
+    .job .is-more .thread_item .whois {
       width: 28%; }
-    .mailbox .is-more .about-title {
+    .mailbox .is-more .about-title,
+    .job .is-more .about-title {
       padding: 5px;
       font-size: 14px;
       line-height: 14px; }
-    .mailbox .is-more .about {
+    .mailbox .is-more .about,
+    .job .is-more .about {
       font-size: 12px;
       line-height: 13px; }
-      .mailbox .is-more .about li {
+      .mailbox .is-more .about li,
+      .job .is-more .about li {
         padding: 2px 5px; }
-  .mailbox .col2 {
+  .mailbox .col2,
+  .job .col2 {
     width: 46%; }
-  .mailbox .col6 {
-    width: 8%; } }
+  .mailbox .col6,
+  .job .col6 {
+    width: 8%; }
+
+  .job .lowest_bid .inner {
+    font-size: 14px;
+    line-height: 16px; }
+  .job #bids .col1 {
+    width: 34%; }
+  .job #bids .col4 {
+    width: 14%; }
+  .job #bids .col5 {
+    width: 22%; } }
 @media (min-width: 768px) {
   .container {
-    width: 100%; }
+    width: 98%; }
 
   .col-sm-7 {
     width: 58.33333333%; }
@@ -1946,8 +1999,6 @@ header #main-menu .pinkbtn {
     .logo img {
       max-width: 150px; }
 
-  header .header-wrap {
-    width: 570px; }
   header h2.phone_number {
     float: none;
     border: none;
@@ -1961,15 +2012,10 @@ header #main-menu .pinkbtn {
   .phone-info .phone-info-box {
     top: 35px; }
 
-  footer .footer-wrap {
-    width: 570px; }
   footer .footer_nav {
     width: 30%;
     max-width: 100%;
     margin-right: 3%; }
-
-  #faqs .wrap {
-    width: 560px; }
 
   .faq-search-form .form-row {
     width: 390px; } }
@@ -1995,7 +2041,20 @@ header #main-menu .pinkbtn {
       width: 150px;
       padding: 10px !important; }
     #dashboard .ui-tabs .ui-tabs-nav .ui-state-default.ui-state-active a:link, #dashboard .ui-tabs .ui-tabs-nav .ui-state-default.ui-state-active a:visited {
-      padding: 24px 15px 12px !important; } }
+      padding: 24px 15px 12px !important; }
+
+  .job #overview .linkbtn {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .job .upgrade-box {
+    text-align: center; }
+    .job .upgrade-box .upgradebtn {
+      width: auto;
+      float: none;
+      margin: 0 auto 10px auto; }
+    .job .upgrade-box .motivation {
+      width: 300px;
+      float: none; } }
 @media (max-width: 575px) {
   .logo {
     margin-right: 0;
@@ -2003,11 +2062,10 @@ header #main-menu .pinkbtn {
     .logo img {
       max-width: 150px; }
 
-  header .header-wrap {
-    width: 98%; }
   header .header-left {
     float: none;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    width: 98%; }
   header .header-right {
     float: none;
     clear: both;
@@ -2022,8 +2080,12 @@ header #main-menu .pinkbtn {
     border: none;
     float: right; }
 
+  .phone-info .phone-info-box {
+    left: auto;
+    right: 20px; }
+
   footer .footer-wrap {
-    width: 98%; }
+    width: 90%; }
   footer .footer_nav,
   footer .footer_right {
     width: 49%;
@@ -2037,8 +2099,6 @@ header #main-menu .pinkbtn {
       margin-left: 0;
       margin-right: 10px; }
 
-  #faqs .wrap {
-    width: 98%; }
   #faqs .faq-search-form #faqs-submit,
   #faqs .faq-search-form #faqs-search {
     margin-top: 10px;
@@ -2061,34 +2121,70 @@ header #main-menu .pinkbtn {
     width: 12%; }
   .mailbox .col6 {
     width: 10%; }
-  .mailbox .is-more .thread_item .user {
+
+  .mailbox .is-more .thread_item .user,
+  .job .is-more .thread_item .user {
     width: 14%; }
-  .mailbox .is-more .thread_item .bubble {
+  .mailbox .is-more .thread_item .bubble,
+  .job .is-more .thread_item .bubble {
     width: 50%; }
-  .mailbox .is-more .thread_item .whois {
+  .mailbox .is-more .thread_item .whois,
+  .job .is-more .thread_item .whois {
     width: 33%; } }
 @media (max-width: 532px) {
   #faqs h4 {
     font-size: 24px; }
 
-  .mailbox .cols {
+  .mailbox .cols,
+  .job #bids .cols,
+  .job #quests .cols {
     width: 100%;
     float: none;
     clear: both;
     margin: 5px 0; }
-    .mailbox .cols:before {
+    .mailbox .cols:before,
+    .job #bids .cols:before,
+    .job #quests .cols:before {
       font-weight: bold; }
-    .mailbox .cols.subject:before {
-      content: "Subject: "; }
-    .mailbox .cols.username:before {
-      content: "From: "; }
-    .mailbox .cols.lowest_bid:before {
-      content: "Quote: "; }
-    .mailbox .cols.date:before {
-      content: "Received: "; }
+
+  .mailbox .cols.subject:before {
+    content: "Subject: "; }
+  .mailbox .cols.username:before {
+    content: "From: "; }
+  .mailbox .cols.lowest_bid:before {
+    content: "Quote: "; }
+  .mailbox .cols.date:before {
+    content: "Received: "; }
+
+  .job .job-details,
+  .job .lowest_bid {
+    width: 100%;
+    float: none; }
+  .job .cols.bidder .provider:before {
+    content: "Bidder: ";
+    font-weight: bold; }
+  .job .cols.amount:before {
+    content: "Amount: "; }
+  .job .cols.when:before {
+    content: "When: "; }
+  .job .cols.dates:before {
+    content: "Dates: "; }
+
+  .job #bids .cols,
+  .job #quests .cols {
+    padding: 0 5px; }
+  .job #bids .col1.bidder,
+  .job #quests .col1.bidder {
+    position: relative; }
+  .job .bid-expander,
+  .job .quest-expander {
+    position: absolute;
+    right: 10px; }
 
   #mailbox-inbox .grid-header-row,
-  #mailbox-sent .grid-header-row {
+  #mailbox-sent .grid-header-row,
+  .job #bid-title,
+  .job #quest-title {
     display: none; }
 
   .mobile-grid-header-row {
@@ -2154,16 +2250,20 @@ header #main-menu .pinkbtn {
   #dashboard .tab-item .img-container {
     margin-bottom: 10px; }
 
-  .mailbox .is-more .thread_item .user {
+  .mailbox .is-more .thread_item .user,
+  .job .is-more .thread_item .user {
     width: 29%; }
-  .mailbox .is-more .thread_item .bubble {
+  .mailbox .is-more .thread_item .bubble,
+  .job .is-more .thread_item .bubble {
     width: 70%; }
-  .mailbox .is-more .thread_item .whois {
+  .mailbox .is-more .thread_item .whois,
+  .job .is-more .thread_item .whois {
     width: 100%;
     float: none;
     clear: both;
     margin-left: 0; }
-    .mailbox .is-more .thread_item .whois .whois-arrow {
+    .mailbox .is-more .thread_item .whois .whois-arrow,
+    .job .is-more .thread_item .whois .whois-arrow {
       -webkit-transform: rotate(120deg);
       -moz-transform: rotate(120deg);
       top: -15px;
@@ -2194,9 +2294,6 @@ header #main-menu .pinkbtn {
   footer .footer_right {
     text-align: center; } }
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px; }
-
   .col-lg-6 {
     width: 50%; }
 

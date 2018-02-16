@@ -260,10 +260,7 @@ footer
   color: #FFFFFF
 
 
-  .footer-wrap
-    width: 1170px
-    margin: 10px auto 0 auto
-    padding: 0
+
 
   h3
     color: #28a4da
@@ -326,6 +323,10 @@ footer
         *display: inline
         margin: 0 10px
 
+.footer-wrap
+  width: 1170px
+  margin: 10px auto 0 auto
+  padding: 0
 
 .footer_nav
   float: left
@@ -1130,6 +1131,7 @@ footer
     width: auto
     padding: 0
     margin: 0
+    color: rgb(36, 107, 149)
     li
       list-style: none
       display: inline-block
@@ -1139,8 +1141,6 @@ footer
       position: relative
       span
         font-weight: bold
-        //position: absolute
-        //right: 10px
         display: block
         float: right
 
@@ -1679,11 +1679,12 @@ header
   .container
     padding-bottom: 30px
   #bids
-    margin-bottom: 10px
+    margin-bottom: 20px
     .cols
-      padding: 0 5px
+      padding: 7px 5px
       display: block
       float: left
+      line-height: 17px
     .col1
       width: 40%
     .col2
@@ -1703,17 +1704,18 @@ header
 
   #quests
     .cols
-      padding: 0 5px
+      padding: 7px 5px
       display: block
       float: left
+      line-height: 17px
     .col1
-      width: 40%
+      width: 30%
     .col2
       width: 10%
     .col3
-      width: 40%
+      width: 45%
     .col4
-      width: 10%
+      width: 15%
     .inner-block
       display: none
 
@@ -1724,6 +1726,10 @@ header
     .quest
       .col3
         line-height: 16px
+
+    .is-more
+      .reply-form
+        border-bottom: none
 
 
   #bid-title,
@@ -1754,10 +1760,10 @@ header
       .is-more
         display: block
       .bid-expander
-        background-position: 0 -30px
+        background-position: 0 -34px
 
     .bid-expander
-      background-position: 0 8px
+      background-position: 0 4px
 
   .quest
     &.open
@@ -1766,10 +1772,10 @@ header
       .is-more
         display: block
       .quest-expander
-        background-position: 0 -30px
+        background-position: 0 -34px
 
     .quest-expander
-      background-position: 0 8px
+      background-position: 0 4px
 
   .genie-mes
     background: #ffffff
@@ -1777,7 +1783,6 @@ header
     border-top-right-radius: 4px
     padding: 5px
     border: 1px solid #27A4D9
-
 
   #bid-container,
   #quest-container
@@ -1811,7 +1816,7 @@ header
     width: 25px
     display: inline-block
     *display: inline
-    background: url("../img/dashboard/toggle.png") no-repeat 0 8px / 20px auto
+    background: url("../img/dashboard/toggle.png") no-repeat 0 4px / 20px auto
     cursor: pointer
     padding: 5px 0
 
@@ -1820,7 +1825,6 @@ header
     a
       display: inline-block
       *display: inline
-
 
 
   .job-details
@@ -1843,6 +1847,7 @@ header
     .inner
       padding: 5px
       background: #F4FAFD
+      color: #246b95
       & > div
         margin-bottom: 5px
 
@@ -1856,6 +1861,14 @@ header
       margin: 10px auto
       max-width: 220px
       line-height: 27px
+
+  #bids
+    .actions
+      .linkbtn
+        &:first-child
+          margin-top: 0
+        &:last-child
+          margin-bottom: 0
 
   #overview
     .listing-actions
@@ -1947,6 +1960,11 @@ header
 
 /***************************Media**************************/
 @media (max-width: 1199px)
+  .header-wrap,
+  .footer-wrap,
+  .container
+    width: 98%
+
   .contactTeam
     .callteam
       .phone
@@ -1963,11 +1981,32 @@ header
 
   #faqs
     .wrap
-      width: 1000px
+      width: 98%
 
   .faq-search-form
     input[type="text"]
       width: 520px
+
+  .job
+    .upgrade-box
+      .upgradebtn
+        width: 30%
+      .motivation
+        width: 67%
+@media (max-width: 1023px)
+  .job
+    #overview
+      .listing-actions
+        .linkbtn
+          font-size: 14px
+          line-height: 16px
+          height: 52px
+
+    .job-details
+      width: 65%
+    .lowest_bid
+      width: 34%
+
 
 @media (max-width: 991px)
   #faqs
@@ -1980,15 +2019,16 @@ header
       #faqs-search
         margin-top: 45px
 
-  .mailbox
+  .mailbox,
+  .job
     .is-more
       ul.about,
       .chatting_nickname
         font-size: 14px
         line-height: 16px
 
-    .cols
-      line-height: 16px
+    //.cols
+      //line-height: 16px
 
   #dashboard
     .tab-item
@@ -2027,6 +2067,15 @@ header
               font-size: 12px
               padding: 5px
 
+  .job
+    .upgrade-box
+      .motivation
+
+        vertical-align: top
+
+
+
+
 @media (min-width: 768px) and (max-width: 991px)
 
   .contactTeam
@@ -2038,9 +2087,7 @@ header
         margin-top: 4px
         font-size: 13px
 
-  #faqs
-    .wrap
-      width: 740px
+
   .faq-search-form
     .form-row
       width: 570px
@@ -2169,8 +2216,18 @@ header
         width: 100%
         float: none
 
+  .job
+    #bids,
+    #quests
+      .linkbtn
+        padding-left: 10px
+        padding-right: 10px
+
+
+
 @media (max-width: 735px)
-  .mailbox
+  .mailbox,
+  .job
     .is-more
       padding: 20px 10px
       .thread_item
@@ -2200,9 +2257,23 @@ header
     .col6
       width: 8%
 
+  .job
+    .lowest_bid
+      .inner
+        font-size: 14px
+        line-height: 16px
+
+    #bids
+      .col1
+        width: 34%
+      .col4
+        width: 14%
+      .col5
+        width: 22%
+
 @media (min-width: 768px)
   .container
-    width: 100%
+    width: 98%
 
   .col-sm-7
     width: 58.33333333%
@@ -2234,8 +2305,6 @@ header
       max-width: 150px
 
   header
-    .header-wrap
-      width: 570px
 
     h2
       &.phone_number
@@ -2256,17 +2325,12 @@ header
       top: 35px
 
   footer
-    .footer-wrap
-      width: 570px
 
     .footer_nav
       width: 30%
       max-width: 100%
       margin-right: 3%
 
-  #faqs
-    .wrap
-      width: 560px
 
   .faq-search-form
     .form-row
@@ -2311,6 +2375,23 @@ header
               &:visited
                 padding: 24px 15px 12px !important
 
+  .job
+    #overview
+      .linkbtn
+        padding-left: 10px
+        padding-right: 10px
+
+    .upgrade-box
+      text-align: center
+      .upgradebtn
+        width: auto
+        float: none
+        margin: 0 auto 10px auto
+      .motivation
+        width: 300px
+        float: none
+
+
 
 
 
@@ -2323,12 +2404,11 @@ header
       max-width: 150px
 
   header
-    .header-wrap
-      width: 98%
 
     .header-left
       float: none
       margin-bottom: 10px
+      width: 98%
 
     .header-right
       float: none
@@ -2350,9 +2430,14 @@ header
         border: none
         float: right
 
+  .phone-info
+    .phone-info-box
+      left: auto
+      right: 20px
+
   footer
     .footer-wrap
-      width: 98%
+      width: 90%
 
     .footer_nav,
     .footer_right
@@ -2370,8 +2455,6 @@ header
         margin-right: 10px
 
   #faqs
-    .wrap
-      width: 98%
 
     .faq-search-form
       #faqs-submit,
@@ -2405,6 +2488,8 @@ header
     .col6
       width: 10%
 
+  .mailbox,
+  .job
     .is-more
       .thread_item
         .user
@@ -2419,7 +2504,9 @@ header
     h4
       font-size: 24px
 
-  .mailbox
+  .mailbox,
+  .job #bids,
+  .job #quests,
     .cols
       width: 100%
       float: none
@@ -2427,6 +2514,9 @@ header
       margin: 5px 0
       &:before
         font-weight: bold
+
+  .mailbox
+    .cols
       &.subject
         &:before
           content: "Subject: "
@@ -2440,8 +2530,44 @@ header
         &:before
           content: "Received: "
 
+  .job
+    .job-details,
+    .lowest_bid
+      width: 100%
+      float: none
+    .cols
+      &.bidder
+        .provider
+          &:before
+            content: "Bidder: "
+            font-weight: bold
+      &.amount
+        &:before
+          content: "Amount: "
+      &.when
+        &:before
+          content: "When: "
+      &.dates
+        &:before
+          content: "Dates: "
+
+  .job
+    #bids,
+    #quests
+      .cols
+        padding: 0 5px
+      .col1.bidder
+        position: relative
+    .bid-expander,
+    .quest-expander
+      position: absolute
+      right: 10px
+
+
   #mailbox-inbox .grid-header-row,
-  #mailbox-sent .grid-header-row
+  #mailbox-sent .grid-header-row,
+  .job #bid-title,
+  .job #quest-title
     display: none
 
   .mobile-grid-header-row
@@ -2535,7 +2661,8 @@ header
       .img-container
         margin-bottom: 10px
 
-  .mailbox
+  .mailbox,
+  .job
     .is-more
       .thread_item
         .user
@@ -2590,8 +2717,8 @@ header
       text-align: center
 
 @media (min-width: 1200px)
-  .container
-    width: 1170px
+  //.container
+  //  width: 1170px
 
   .col-lg-6
     width: 50%
