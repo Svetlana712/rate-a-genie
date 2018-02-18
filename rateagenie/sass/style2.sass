@@ -875,7 +875,7 @@ footer
 
     &.listing
       .col4
-        a
+        .linkbtn
           margin: 7px 0
 
       .main-container
@@ -1461,6 +1461,10 @@ footer
         width: 10%
 
   .searchbid
+    display: table
+    width: 100%
+    clear: both
+
     .grid-header-row,
     .tab-item.listing
       .col0
@@ -1542,24 +1546,27 @@ footer
         position: absolute
         left: 0
         top: 0
-        background: url("../img/dashboard/premium-overlay.png") no-repeat 0
+        background: url("../img/dashboard/premium-overlay.png") no-repeat 0 0 / 100% auto
         width: 76px
         height: 76px
         max-width: 100%
         max-height: 100%
 
     .main-container,
-    .expanded-content
+    .expanded-content,
+    .send-bid
       background: #d8f0fe
       border: 1px solid #ADDDF3
 
-    .expanded-content
+    .expanded-content,
+    .send-bid
       padding: 10px
       display: none
       margin-top: 10px
 
     .img-container
         margin-bottom: 10px
+        text-align: center
 
     .client-name
       text-align: center
@@ -1594,6 +1601,12 @@ footer
         text-align: inherit
         margin-top: 10px
 
+      .applied-bid
+        .quote
+          color: #dc286f
+          margin-top: 0
+          font-size: 30px
+          line-height: 30px
 
 
     &.primary
@@ -1602,21 +1615,41 @@ footer
           display: block
 
       .main-container,
-      .expanded-content
+      .expanded-content,
+      .send-bid
         background: #FDE2EC
         border: 1px solid #ffc0cb
 
     &.open
       .expanded-content
         display: block
+    &.bidding
+      .send-bid
+        display: block
+      .bidbtn
+        display: none
 
-  .premium-text
-    color: #dc286f
+  .premium-text,
+  .applied-text
     font-weight: bold
     margin-top: 10px
     font-size: 12px
     line-height: 12px
     text-align: center
+  .premium-text
+    color: #dc286f
+
+  .applied-text
+    color: #246b95
+
+  .applied-bid
+    border-top: 2px solid #246b95
+    padding-top: 5px
+    margin-top: 5px
+    color: #dc286f
+    p
+      margin-bottom: 0
+
 
 .search-expander
   background: url("../img/dashboard/toggle.png") no-repeat 50% 0
@@ -1649,7 +1682,37 @@ footer
   .form-inner > div
     width: auto
     float: left
+    margin-right: 15px
+
+.send-bid-form
+  .form-group
+    padding-bottom: 20px
+    display: block
+    width: auto
+    float: left
     margin-right: 20px
+
+  .your-bid
+    input
+      width: 135px
+
+  .pdate,
+  .ddate
+    input
+      width: auto
+
+  .mesbid,
+  .buttons
+    width: 100%
+    float: none
+    clear: both
+
+
+.cancelbtn
+  width: auto
+  display: inline-block
+  *display: inline
+  float: right
 
 
 
@@ -1959,10 +2022,24 @@ header
 
 
 /***************************Media**************************/
+@media (max-width: 1279px)
+  #form-search-filter
+    label
+      display: block
+      float: none
+      margin-bottom: 0
+
+  .filter-submit-button,
+  #search-results_per_page
+    margin-top: 24px
+
+
+
 @media (max-width: 1199px)
   .header-wrap,
   .footer-wrap,
-  .container
+  .container,
+  container-fluid
     width: 98%
 
   .contactTeam
@@ -2007,6 +2084,47 @@ header
     .lowest_bid
       width: 34%
 
+  #form-search-filter
+    .form-inner > div.search-item
+      margin: 0 1% 5px 1%
+      width: 23%
+
+    .filter-submit-button
+      margin-left: 1%
+      margin-top: 10px
+
+  #dashboard
+    &.findjob
+      .tab-item.listing
+        .main-container
+          position: relative
+          z-index: 0
+
+          .primary-mark
+            width: 60px
+            height: 60px
+
+        .col0.cols
+          position: absolute
+          bottom: 5px
+          width: auto
+          z-index: 100
+        .col1
+          width: 15%
+
+        .client-name
+          margin-top: 5px
+          padding-bottom: 20px
+
+  .search-expander
+    margin-top: 0
+    padding: 0 0 0 30px
+    background-position: 0 0
+    background-size: 25px auto
+    line-height: 25px
+    &.search-expander-expanded
+      background-position: 0 -47px
+      background-size: 25px auto
 
 @media (max-width: 991px)
   #faqs
@@ -2027,9 +2145,6 @@ header
         font-size: 14px
         line-height: 16px
 
-    //.cols
-      //line-height: 16px
-
   #dashboard
     .tab-item
       .img-container
@@ -2042,20 +2157,62 @@ header
             .quote
               font-size: 28px
 
-@media (min-width: 768px) and (max-width: 1023px)
-  header
-    .header-wrap
-      width: 760px
+@media (min-width: 640px) and (max-width: 959px)
+  #search-results_per_page
+    margin-top: -40px
 
+@media (min-width: 768px) and (max-width: 1023px)
   footer
-    .footer-wrap
-      width: 760px
     .footer_nav
       width: 23%
       margin-right: 2%
 
     .social
       float: none
+
+
+  header
+    &.genie
+      #main-menu
+        li
+          a
+            font-size: 16px
+            padding: 22px 10px
+
+            &.menu-account
+              padding-left: 30px
+
+          ul
+            li
+              a
+                padding: 10px
+
+@media (min-width: 720px) and (max-width: 1023px)
+
+  header
+    &.genie
+      .logo
+        float: none
+        margin-right: 0
+        padding: 5px 0 0 0
+
+        img
+          max-width: 150px
+
+      h2
+        &.phone_number
+          float: none
+          border: none
+          padding: 0
+          font-size: 18px
+          line-height: 25px
+
+      .phone-info
+        .phone-info-box
+          top: 35px
+
+      .search-form
+        margin-top: 15px
 
 @media (max-width: 799px)
   #dashboard
@@ -2295,6 +2452,51 @@ header
   .col-sm-12
     float: left
 
+@media (max-width: 719px)
+  header
+    &.genie
+      .search-form
+        margin-top: 15px
+        #form-row-query
+          margin-right: 0
+
+        #headerjob-search
+          background-color: #ffffff
+          text-indent: -500px
+          width: 30px
+          height: 38px
+          overflow: hidden
+          background-image: url("../img/search.png")
+          background-repeat: no-repeat
+          background-position: 50% 50%
+          background-size: 30px auto
+          border: none
+          box-shadow: none
+          &:hover
+            background-image: url("../img/search_hover.png")
+
+
+
+
+@media (max-width: 639px)
+  header
+    &.genie
+      #main-menu
+        li:last-child
+          a
+            border-right: 1px solid #d8d8d8
+
+  #form-search-filter
+    .form-inner > div.search-item
+      width: 30%
+
+    .filter-submit-button
+      margin-top: 25px
+
+  #search-results_per_page
+    margin-top: -45px
+
+
 @media (min-width: 576px) and (max-width: 767px)
   .logo
     float: none
@@ -2478,6 +2680,13 @@ header
               font-size: 26px
               line-height: 26px
 
+    &.findjob
+      .tab-item.listing
+          .main-container
+            padding: 5px
+
+
+
   .mailbox
     .col2
       width: 40%
@@ -2609,6 +2818,59 @@ header
               line-height: 12px
               width: auto
               min-width: 82px
+
+    &.findjob
+      .tab-item.listing
+        .img-container
+          img
+            max-height: 100px
+        .client-name
+          padding-bottom: 0
+        .col0.cols
+          bottom: 0
+
+        .main-container
+          padding-bottom: 30px
+          .cols
+            margin-bottom: 10px
+
+  header
+    &.genie
+      .header-right
+        position: relative
+        padding-top: 50px
+
+      #main-menu
+        float: none
+
+      .search-form
+        margin: 0 0 0 2%
+        position: absolute
+        top: 0
+        #form-row-query
+          input[type="text"]
+            width: 250px
+
+  .container-fluid
+    padding-left: 5px
+    padding-right: 5px
+
+  #form-search-filter
+    .form-inner > div.search-item
+      width: 48%
+
+    .filter-submit-button
+      margin-top: 10px
+
+  #search-results_per_page
+    margin-top: -40px
+
+  #breadcrumb
+    margin: 0
+
+
+
+
 
 
 @media (max-width: 479px)
