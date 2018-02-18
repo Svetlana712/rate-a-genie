@@ -32,7 +32,7 @@
                     <!--<div id="search">
                         <div class="search-form">
                             <div class="wrap">
-                                <div class="form-row" id="form-row-query">
+                                <div class="form-group" id="form-row-query">
                                     <input type="text" name="job-query" id="job-query" value="" maxlength="255"type="text" placeholder="">
                                 </div>
                                 <input type="button" onclick="javascript: return false;" value="Search Job" class="pinkbtn button" id="job-search" name="job-search"/>
@@ -45,13 +45,14 @@
                 </div>
 
             </div>
+        </div>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-12">
                     <div class="searchbid">
                         <div class="tab-inner">
                             <div class="filters clear-all">
 
-                                <form action="" method="" id="form-search-filter" accept-charset="UTF-8">
+                                <form class="make-bid-form" action=""method="" id="form-search-filter" accept-charset="UTF-8">
                                     <div class="form-inner">
                                         <div id="filter-issue" class="search-item">
                                             <label for="issue_id">Issue</label>
@@ -136,14 +137,115 @@
                                     </div>
                                     <div class="col4 cols">
                                         <a class="main-option linkbtn bluebtn" href="#">View details</a>
-                                        <a class="main-option linkbtn pinkbtn" href="#">Make bid</a>
+                                        <span class="bidbtn linkbtn pinkbtn">Make bid</span>
                                         <div class="premium-text">Premium Listing</div>
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="primary-mark"></div>
                                 </div>
                                 <div class="expanded-content">More info</div>
+                                <div class="send-bid">
+                                    <div class="send-bid-form">
+                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd7b" accept-charset="UTF-8">
+                                            <div class="form-group your-bid">
+                                                <label for="send-bid-form5a747dfc3fd7b-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-form5a747dfc3fd7b-bid" name="bid" class="form-control">
+                                            </div>
+                                            <div class="form-group pdate">
+                                                <label for="send-bid-form5a747dfc3fd7b-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd7b-pdate" name="pdate" class="form-control">
+                                            </div>
+                                            <div class="form-group ddate">
+                                                <label for="send-bid-form5a747dfc3fd7b-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd7b-ddate" name="ddate" class="form-control">
+                                            </div>
 
+                                            <div class="form-group mesbid">
+                                                <label for="send-bid-form5a747dfc3fd7b-mesbid">Message:</label>
+                                                <textarea id="send-bid-form5a747dfc3fd7b-mesbid" name="mesbid" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group buttons">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd7b-submit-1" name="send-bid-form5a747dfc3fd7b-submit-1" type="submit">
+                                                <span class="cancelbtn linkbtn greenbtn">Cancel</span>
+
+                                            </div>
+                                            <div class="form-mes"></div>
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-item listing primary">
+                                <div class="main-container">
+                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140178" title="Click to expand">More</div></div>
+                                    <div class="col1 cols">
+                                        <div class="img-container">
+                                            <img src="img/dashboard/dashboard_profile_default.png" alt="No thumbnail">
+                                            <div class="client-name"><a href="#">Client 1</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col2 cols">
+                                        <div class="title"><a href="#"><span>Broken screen</span></a></div>
+                                        <div class="describe">Here client describes what need to fix. Here client describes what need to fix.
+                                            Here client describes what need to fix. Here client describes what need to fix.</div>
+                                        <div class="type">
+                                            <label>Type:</label><span>Smartphone</span>
+                                        </div>
+                                        <div class="brand">
+                                            <label>Brand:</label><span>TVs / Monitors</span>
+                                        </div>
+                                        <div class="model">
+                                            <label>Model:</label><span>Iphone</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col3 cols">
+                                        <p class="best_price">Best price from <a href="#">13 quotes</a></p><p class="quote">£250</p>
+                                        <div class="applied-bid"><p>Your bid:</p><p class="quote">£250</p></div>
+                                    </div>
+                                    <div class="col4 cols">
+                                        <a class="view-list linkbtn bluebtn" href="#">View details</a>
+                                        <span class="change-bid bidbtn linkbtn pinkbtn">Change bid</span>
+                                        <span class="del-bid linkbtn greenbtn">Delete bid</span>
+                                        <div class="premium-text">Premium Listing</div>
+                                        <div class="applied-text">Applied listing</div>
+                                    </div>
+                                    <div class="primary-mark"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="expanded-content">More info</div>
+                                <div class="send-bid">
+                                    <div class="send-bid-form">
+                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                            <div class="form-group your-bid">
+                                                <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control" value="250">
+                                            </div>
+                                            <div class="form-group pdate">
+                                                <label for="send-bid-form5a747dfc3fd6b-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6b-pdate" name="pdate" class="form-control">
+                                            </div>
+                                            <div class="form-group ddate">
+                                                <label for="send-bid-form5a747dfc3fd6b-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6b-ddate" name="ddate" class="form-control">
+                                            </div>
+
+                                            <div class="form-group mesbid">
+                                                <label for="send-bid-form5a747dfc3fd6b-mesbid">Message:</label>
+                                                <textarea id="send-bid-form5a747dfc3fd6b-mesbid" name="mesbid" class="form-control">Hi! Please accept my bid</textarea>
+                                            </div>
+                                            <div class="form-group buttons">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
+                                                <span class="cancelbtn linkbtn greenbtn">Cancel</span>
+
+                                            </div>
+                                            <div class="form-mes"></div>
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="tab-item listing">
@@ -173,14 +275,47 @@
 
                                     <div class="col3 cols">
                                         <p class="best_price">Best price from <a href="#">13 quotes</a></p><p class="quote">£419</p>
+                                        <div class="applied-bid"><p>Your bid:</p><p class="quote">£550</p></div>
                                     </div>
                                     <div class="col4 cols">
-                                        <a class="main-option linkbtn bluebtn" href="#">View details</a>
-                                        <a class="main-option linkbtn pinkbtn" href="#">Make bid</a>
+                                        <a class="view-list linkbtn bluebtn" href="#">View details</a>
+                                        <span class="change-bid bidbtn linkbtn pinkbtn">Change bid</span>
+                                        <span class="del-bid linkbtn greenbtn">Delete bid</span>
+                                        <div class="applied-text">Applied listing</div>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="expanded-content">More info</div>
+                                <div class="send-bid">
+                                    <div class="send-bid-form">
+                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                            <div class="form-group your-bid">
+                                                <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control" value="550">
+                                            </div>
+                                            <div class="form-group pdate">
+                                                <label for="send-bid-form5a747dfc3fd6b-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6b-pdate" name="pdate" class="form-control">
+                                            </div>
+                                            <div class="form-group ddate">
+                                                <label for="send-bid-form5a747dfc3fd6b-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6b-ddate" name="ddate" class="form-control">
+                                            </div>
+
+                                            <div class="form-group mesbid">
+                                                <label for="send-bid-form5a747dfc3fd6b-mesbid">Message:</label>
+                                                <textarea id="send-bid-form5a747dfc3fd6b-mesbid" name="mesbid" class="form-control">Hi! Please accept my bid</textarea>
+                                            </div>
+                                            <div class="form-group buttons">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
+                                                <span class="cancelbtn linkbtn greenbtn">Cancel</span>
+
+                                            </div>
+                                            <div class="form-mes"></div>
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-item listing">
                                 <div class="main-container">
@@ -211,11 +346,41 @@
                                     </div>
                                     <div class="col4 cols">
                                         <a class="main-option linkbtn bluebtn" href="#">View details</a>
-                                        <a class="main-option linkbtn pinkbtn" href="#">Make bid</a>
+                                        <span class="bidbtn linkbtn pinkbtn">Make bid</span>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="expanded-content">More info</div>
+                                <div class="send-bid">
+                                    <div class="send-bid-form">
+                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                            <div class="form-group your-bid">
+                                                <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control">
+                                            </div>
+                                            <div class="form-group pdate">
+                                                <label for="send-bid-form5a747dfc3fd6b-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6b-pdate" name="pdate" class="form-control">
+                                            </div>
+                                            <div class="form-group ddate">
+                                                <label for="send-bid-form5a747dfc3fd6b-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6b-ddate" name="ddate" class="form-control">
+                                            </div>
+
+                                            <div class="form-group mesbid">
+                                                <label for="send-bid-form5a747dfc3fd6b-mesbid">Message:</label>
+                                                <textarea id="send-bid-form5a747dfc3fd6b-mesbid" name="mesbid" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group buttons">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
+                                                <span class="cancelbtn linkbtn greenbtn">Cancel</span>
+
+                                            </div>
+                                            <div class="form-mes"></div>
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-item listing">
                                 <div class="main-container">
@@ -246,11 +411,41 @@
                                     </div>
                                     <div class="col4 cols">
                                         <a class="main-option linkbtn bluebtn" href="#">View details</a>
-                                        <a class="main-option linkbtn pinkbtn" href="#">Make bid</a>
+                                        <span class="bidbtn linkbtn pinkbtn">Make bid</span>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="expanded-content">More info</div>
+                                <div class="send-bid">
+                                    <div class="send-bid-form">
+                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd4b" accept-charset="UTF-8">
+                                            <div class="form-group your-bid">
+                                                <label for="send-bid-form5a747dfc3fd4b-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-form5a747dfc3fd4b-bid" name="bid" class="form-control">
+                                            </div>
+                                            <div class="form-group pdate">
+                                                <label for="send-bid-form5a747dfc3fd47b-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd4b-pdate" name="pdate" class="form-control">
+                                            </div>
+                                            <div class="form-group ddate">
+                                                <label for="send-bid-form5a747dfc3fd4b-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd4b-ddate" name="ddate" class="form-control">
+                                            </div>
+
+                                            <div class="form-group mesbid">
+                                                <label for="send-bid-form5a747dfc3fd4b-mesbid">Message:</label>
+                                                <textarea id="send-bid-form5a747dfc3fd4b-mesbid" name="mesbid" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group buttons">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd4b-submit-1" name="send-bid-form5a747dfc3fd4b-submit-1" type="submit">
+                                                <span class="cancelbtn linkbtn greenbtn">Cancel</span>
+
+                                            </div>
+                                            <div class="form-mes"></div>
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="main-pagination">
                                 <ul>
@@ -292,6 +487,24 @@
             .closest('.tab-item')
             .toggleClass( "open" );
     });
+
+    function click_expander(event) {
+        $( this )
+            .closest(event.data.selector)
+            .toggleClass( "bidding" );
+    }
+    $( ".bidbtn" ).on('click',{selector: '.tab-item'},click_expander);
+    $( ".cancelbtn" ).on('click',{selector: '.tab-item'},click_expander);
+
+    jQuery(window).on('load',function() {
+        jQuery( ".make-bid-form" ).on( "submit", function( event ) {
+            event.preventDefault();
+            //console.log( $( this ).serialize() );
+        });
+
+    });
+
+
 
 </script>
 
