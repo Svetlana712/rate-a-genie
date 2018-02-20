@@ -31,6 +31,7 @@
                     <div class="form-group">
                         <label for="repair_form_issue" title="Mandatory field">Issue <span class="mandatory">*</span></label>
                         <textarea class="form-control" placeholder="Issue" name="repair_form_issue" id="repair_form_issue" required="required"></textarea>
+                        <p class="error">Issue field is required</p>
                     </div>
                     <div class="form-group">
                         <label for="repair_form_descr">Description</label>
