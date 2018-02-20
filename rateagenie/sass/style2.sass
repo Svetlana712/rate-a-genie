@@ -771,6 +771,7 @@ footer
     padding: 20px
     background: #f1f9fd
     font-size: 15px
+    display: none
 
 
   #tabs
@@ -839,6 +840,7 @@ footer
               border-top-left-radius: 4px
               color: #ffffff
               border: none
+
 
   .tab-inner
     color: #464646
@@ -1465,7 +1467,8 @@ footer
     width: 100%
     clear: both
 
-    .grid-header-row,
+#dashboard
+  &.genie
     .tab-item.listing
       .col0
         width: 5%
@@ -1514,27 +1517,7 @@ footer
   display: table
   clear: both
 
-#dashboard.findjob
-  .page_title
-    .wrap
-      width: auto
-      float: left
-      padding-right: 10px
-    #search
-      width: auto
-      float: right
-      margin-top: 10px
-
-      #job-search
-        float: right
-
-      .form-row
-        float: left
-        width: auto
-        margin-right: 10px
-        margin-left: 0
-
-
+#dashboard.genie
 
   .tab-item.listing
     .main-container
@@ -1650,6 +1633,11 @@ footer
     p
       margin-bottom: 0
 
+  .bids
+    &.accepted,
+    &.archived
+      .applied-bid
+        border-top: none
 
 .search-expander
   background: url("../img/dashboard/toggle.png") no-repeat 50% 0
@@ -1675,6 +1663,7 @@ footer
 #search-results_per_page
   width: auto
   float: right
+  margin-right: 1%
 
 #form-search-filter
   width: auto
@@ -1964,7 +1953,7 @@ header
 
   .upgrade-box
     width: 100%
-    display: table
+    //display: table
     clear: both
     background: #FDE2EC
     border: 1px solid #ffc0cb
@@ -1982,6 +1971,30 @@ header
       display: inline-block
       *display: inline
       vertical-align: middle
+
+
+  .send-bid-form
+    background: #d8f0fe
+    border: 1px solid #ADDDF3
+    padding: 10px
+
+  h2.block-header
+    margin: 0
+    background: #27A4D9
+    color: #ffffff
+    font-size: 28px
+    line-height: 40px
+
+  &.genie
+    .job-details
+      width: 100%
+      float: none
+      margin-bottom: 20px
+
+    .send-bid
+      width: 74%
+      float: left
+
 
 
 
@@ -2018,6 +2031,10 @@ header
       text-align: center
       font-size: 20px
       line-height: 22px
+
+  .error
+    color: #ffff00
+    bottom: 5px
 
 
 
@@ -2070,6 +2087,7 @@ header
         width: 30%
       .motivation
         width: 67%
+
 @media (max-width: 1023px)
   .job
     #overview
@@ -2084,7 +2102,13 @@ header
     .lowest_bid
       width: 34%
 
+    &.genie
+      .send-bid
+        width: 65%
+
   #form-search-filter
+    width: 100%
+
     .form-inner > div.search-item
       margin: 0 1% 5px 1%
       width: 23%
@@ -2094,7 +2118,7 @@ header
       margin-top: 10px
 
   #dashboard
-    &.findjob
+    &.genie
       .tab-item.listing
         .main-container
           position: relative
@@ -2115,6 +2139,17 @@ header
         .client-name
           margin-top: 5px
           padding-bottom: 20px
+
+      .ui-tabs
+        .ui-tabs-nav
+          .ui-state-default, .ui-state-default.ui-state-active
+            margin-left: 2px
+            margin-right: 2px
+
+            a,
+              &:link,
+              &:visited
+                width: auto
 
   .search-expander
     margin-top: 0
@@ -2156,6 +2191,9 @@ header
           .col3
             .quote
               font-size: 28px
+
+  .filters .form-control
+    width: 100%
 
 @media (min-width: 640px) and (max-width: 959px)
   #search-results_per_page
@@ -2229,8 +2267,6 @@ header
       .motivation
 
         vertical-align: top
-
-
 
 
 @media (min-width: 768px) and (max-width: 991px)
@@ -2428,6 +2464,24 @@ header
       .col5
         width: 22%
 
+  #dashboard
+    &.genie
+      .ui-tabs
+        .ui-tabs-nav
+          .ui-state-default, .ui-state-default.ui-state-active
+            margin-left: 2px
+            margin-right: 2px
+
+            a,
+              &:link,
+              &:visited
+                padding-left: 5px !important
+                padding-right: 5px !important
+                font-size: 12px
+                line-height: 12px
+                width: auto
+                min-width: 82px
+
 @media (min-width: 768px)
   .container
     width: 98%
@@ -2488,7 +2542,7 @@ header
 
   #form-search-filter
     .form-inner > div.search-item
-      width: 30%
+      width: 31%
 
     .filter-submit-button
       margin-top: 25px
@@ -2680,7 +2734,7 @@ header
               font-size: 26px
               line-height: 26px
 
-    &.findjob
+    &.genie
       .tab-item.listing
           .main-container
             padding: 5px
@@ -2741,6 +2795,7 @@ header
 
   .job
     .job-details,
+    .send-bid,
     .lowest_bid
       width: 100%
       float: none
@@ -2803,23 +2858,24 @@ header
       float: none
 
   #dashboard
-    .ui-tabs
-      .ui-tabs-nav
-        .ui-state-default, .ui-state-default.ui-state-active
-          margin-left: 2px
-          margin-right: 2px
+    &.customer
+      .ui-tabs
+        .ui-tabs-nav
+          .ui-state-default, .ui-state-default.ui-state-active
+            margin-left: 2px
+            margin-right: 2px
 
-          a,
-            &:link,
-            &:visited
-              padding-left: 5px !important
-              padding-right: 5px !important
-              font-size: 12px
-              line-height: 12px
-              width: auto
-              min-width: 82px
+            a,
+              &:link,
+              &:visited
+                padding-left: 5px !important
+                padding-right: 5px !important
+                font-size: 12px
+                line-height: 12px
+                width: auto
+                min-width: 82px
 
-    &.findjob
+    &.genie
       .tab-item.listing
         .img-container
           img
@@ -2851,9 +2907,7 @@ header
           input[type="text"]
             width: 250px
 
-  .container-fluid
-    padding-left: 5px
-    padding-right: 5px
+
 
   #form-search-filter
     .form-inner > div.search-item
@@ -2864,6 +2918,8 @@ header
 
   #search-results_per_page
     margin-top: -40px
+    width: 48%
+
 
   #breadcrumb
     margin: 0
@@ -2943,6 +2999,7 @@ header
             left: 0
             background-size: 70%
 
+
 @media (max-width: 359px)
   header
     #main-menu
@@ -2964,6 +3021,24 @@ header
 
       .arrow
         left: 80%
+
+  #dashboard.genie
+    .ui-tabs
+      .ui-tabs-nav
+        .ui-state-default, .ui-state-default.ui-state-active
+          margin-left: 1px
+          margin-right: 1px
+
+          a,
+            &:link,
+            &:visited
+              font-size: 9px
+              line-height: 9px
+              width: auto
+              min-width: auto
+
+  #search-results_per_page
+    width: 50%
 
 
 @media (max-width: 320px)
