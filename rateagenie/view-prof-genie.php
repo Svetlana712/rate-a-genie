@@ -38,7 +38,7 @@
                 <div class="profile-wrapper">
                     <div class="prof-left">
                         <div class="view-prof-block elite-member">
-                            <img src="img/dashboard/elite-member.png" alt="Elite Member" width="100%">
+                            <img src="img/dashboard/elite-member.png" alt="Elite Member">
                             <p>Rate A Genie Elite Member<br><a href="#">Learn More</a>
                             </p>
                         </div>
@@ -205,13 +205,13 @@
             <form accept-charset="UTF-8" action="#" id="popup_report" method="post">
 
                 <div class="form-group">
-                    <label for="contact_form_msg">Let us know why the comment is inappropriate</label>
-                    <textarea class="form-control" placeholder="Reason" name="contact_form_msg" id="contact_form_msg" required="required"></textarea>
+                    <label for="report_form_msg">Let us know why the comment is inappropriate</label>
+                    <textarea class="form-control" placeholder="Reason" name="report_form_msg" id="report_form_msg" required="required"></textarea>
                     <p class="error">This field is required</p>
                 </div>
                 <div class="form-group">
-                    <label for="contact_form_email">E-mail</label>
-                    <input class="form-control" type="text" placeholder="E-mail of current user" name="contact_form_email" id="report_form_email" required="required">
+                    <label for="report_form_email">E-mail</label>
+                    <input class="form-control" type="text" placeholder="E-mail of current user" name="report_form_email" id="report_form_email" required="required">
                     <p class="error">This field is required</p>
                 </div>
                 <div class="buttons">
