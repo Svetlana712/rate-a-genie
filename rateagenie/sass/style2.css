@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/osans/opensans-regular.eot");
+  src: url("../fonts/osans/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/osans/opensans-regular.woff") format("woff"), url("../fonts/osans/opensans-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+p:last-child {
+  margin-bottom: 0; }
+
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important; }
 
@@ -1303,7 +1312,8 @@ footer {
 
 .form-mes {
   margin: 5px 0;
-  color: #4CBC10; }
+  color: #4CBC10;
+  clear: both; }
 
 /*****************Dashboard Genie************************ */
 #dashboard .bids .grid-header-row .col1,
@@ -1509,6 +1519,14 @@ footer {
   width: auto;
   float: left;
   margin-right: 20px; }
+  .send-bid-form .form-group.buttons {
+    margin-right: 0;
+    padding-bottom: 0; }
+    .send-bid-form .form-group.buttons .linkbtn {
+      display: inline-block;
+      *display: inline;
+      width: auto;
+      min-width: 140px; }
 .send-bid-form .your-bid input {
   width: 135px; }
 .send-bid-form .pdate input,
@@ -1689,9 +1707,8 @@ header #main-menu .pinkbtn {
       margin-bottom: 5px; }
   .job .lowest_bid label {
     width: 50%; }
-.job #overview .linkbtn,
-.job #bids .linkbtn,
-.job #quests .linkbtn {
+.job .listing-actions .linkbtn,
+.job .actions .linkbtn {
   margin: 10px auto;
   max-width: 220px;
   line-height: 27px; }
@@ -1749,6 +1766,8 @@ header #main-menu .pinkbtn {
   color: #ffffff;
   font-size: 28px;
   line-height: 40px; }
+.job .cancelbtn {
+  display: none; }
 .job.genie .job-details {
   width: 100%;
   float: none;
@@ -1756,6 +1775,133 @@ header #main-menu .pinkbtn {
 .job.genie .send-bid {
   width: 74%;
   float: left; }
+.job.genie .applied-bid {
+  display: none; }
+  .job.genie .applied-bid h2 {
+    background: #ff0080; }
+.job.genie .app-bid-inner {
+  background: #FDE2EC;
+  border: 1px solid #ffc0cb;
+  padding: 10px;
+  display: table;
+  width: 100%; }
+  .job.genie .app-bid-inner > div {
+    float: left;
+    margin: 0 1%; }
+  .job.genie .app-bid-inner .mes-bid {
+    width: 58%; }
+  .job.genie .app-bid-inner .your-bid {
+    width: 18%; }
+  .job.genie .app-bid-inner .actions {
+    width: 18%; }
+  .job.genie .app-bid-inner label {
+    display: block; }
+.job.genie.applied .applied-bid {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px; }
+.job.genie.applied .cancelbtn {
+  display: inline-block;
+  *display: inline; }
+.job.genie.applied .expanded-content {
+  display: none; }
+.job.genie.applied .send-bid.open .expanded-content {
+  display: block; }
+
+/********************************Popup******************************************** */
+.popup__overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  z-index: 200; }
+  .popup__overlay:after {
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: ""; }
+
+.popup {
+  display: inline-block;
+  position: relative;
+  width: 440px;
+  max-width: 100%;
+  background: #edf0f1;
+  vertical-align: middle;
+  border: 2px solid #2391D6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  .popup.blue {
+    border: 2px solid #2391D6;
+    color: inherit; }
+    .popup.blue .form-head {
+      background: #2391D6; }
+  .popup.pink {
+    border: none; }
+    .popup.pink .form-head {
+      background: #ff0080; }
+  .popup.green {
+    border: 2px solid #32CD32; }
+    .popup.green .form-head {
+      background: #32CD32; }
+
+a.popup__close, a.popup__close:visited {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background: url("../img/dashboard/close.png") no-repeat 0 0/100% 100%; }
+  a.popup__close:hover, a.popup__close:visited:hover {
+    background-image: url("../img/dashboard/close_hover.png"); }
+
+.popup-inner {
+  padding: 20px;
+  width: 100%;
+  display: table; }
+
+/**************************Forms****************************** */
+.popup__overlay.del_event .popup {
+  width: auto;
+  max-width: 100%; }
+.popup__overlay .form-head {
+  background: #2391D6;
+  font-size: 22px;
+  line-height: 36px;
+  color: #ffffff; }
+
+.popup .form-quest {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 20px; }
+.popup .buttons .linkbtn {
+  width: auto;
+  min-width: 100px;
+  max-width: 300px; }
+.popup .buttons .yes-btn {
+  float: left; }
+.popup .buttons .no-btn {
+  float: right; }
+
+#popup_report label {
+  display: block;
+  text-align: left; }
+#popup_report .buttons {
+  display: table;
+  width: 100%;
+  clear: both; }
+#popup_report .form-mes {
+  display: none; }
 
 /*************************Repair form**************************** */
 #repairform {
@@ -1792,6 +1938,192 @@ header #main-menu .pinkbtn {
     color: #ffff00;
     bottom: 5px; }
 
+/****************View profile******************************** */
+.profile-wrapper {
+  background-color: #DEF3FF;
+  padding: 20px;
+  border-top: 6px solid #226A95;
+  margin-bottom: 30px;
+  width: 100%;
+  display: table;
+  clear: both; }
+  .profile-wrapper .feedback-icons {
+    background: url(../img/dashboard/iconPlus.png) no-repeat 0 0;
+    width: 18px;
+    height: 18px;
+    text-indent: -9000px;
+    font-size: 0;
+    line-height: 0; }
+  .profile-wrapper .iconSlash {
+    background-image: url(../img/dashboard/iconSlash.png); }
+  .profile-wrapper .iconMinus {
+    background-image: url(../img/dashboard/iconMinus.png); }
+  .profile-wrapper .inner-cont,
+  .profile-wrapper .grid-row,
+  .profile-wrapper .main-pagination {
+    display: inline-block;
+    *display: inline;
+    width: 100%;
+    clear: both; }
+  .profile-wrapper .main-pagination {
+    font-size: 13px;
+    line-height: 18px;
+    border-top: 2px solid #226A95; }
+  .profile-wrapper h3 {
+    color: #464646;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left; }
+  .profile-wrapper .prof-left {
+    width: 23%;
+    float: left; }
+    .profile-wrapper .prof-left > div {
+      background-color: #fff;
+      margin-bottom: 20px; }
+      .profile-wrapper .prof-left > div:last-child {
+        margin-bottom: 0; }
+    .profile-wrapper .prof-left h3 {
+      margin: 20px 10px; }
+  .profile-wrapper .prof-right {
+    width: 75%;
+    float: right;
+    background-color: #ffffff; }
+    .profile-wrapper .prof-right h3 {
+      margin: 30px; }
+  .profile-wrapper .noRecords {
+    margin: 30px; }
+  .profile-wrapper .user-nickname {
+    margin-right: 5px; }
+  .profile-wrapper .user-info .info-item {
+    display: table;
+    width: 100%;
+    clear: both;
+    background: #EEF9FF;
+    padding: 10px;
+    border-bottom: 2px #ffffff solid;
+    font-size: 13px;
+    line-height: 18px; }
+  .profile-wrapper .user-info label {
+    margin-bottom: 0;
+    max-width: 50%;
+    display: block;
+    float: left; }
+  .profile-wrapper .user-info .value {
+    display: block;
+    float: right;
+    max-width: 50%;
+    font-weight: bold;
+    padding-left: 5px;
+    text-align: right; }
+    .profile-wrapper .user-info .value.good-mark {
+      color: #008c00; }
+    .profile-wrapper .user-info .value.payment-methods span {
+      display: block; }
+  .profile-wrapper .view-prof-block {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center; }
+    .profile-wrapper .view-prof-block p {
+      font-size: 14px;
+      font-weight: bold;
+      color: #34719c;
+      margin-top: 0; }
+    .profile-wrapper .view-prof-block a {
+      color: #28a4da; }
+      .profile-wrapper .view-prof-block a:hover {
+        text-decoration: underline; }
+    .profile-wrapper .view-prof-block.elite-member p {
+      color: #464646; }
+
+.particulars {
+  border-top: 6px #226A95 solid;
+  padding: 0px 1px; }
+
+.feedback-summary {
+  font-size: 12px;
+  line-height: 17px; }
+  .feedback-summary .inner-cont .cols {
+    display: block;
+    float: left;
+    padding: 0 5px; }
+  .feedback-summary .grid-row {
+    padding: 5px 0; }
+  .feedback-summary .inner-cont .cols {
+    line-height: 17px;
+    text-align: center; }
+  .feedback-summary .inner-cont .col1 {
+    width: 10%; }
+  .feedback-summary .inner-cont .col2 {
+    width: 30%; }
+  .feedback-summary .inner-cont .col3 {
+    width: 30%; }
+  .feedback-summary .inner-cont .col4 {
+    width: 30%; }
+  .feedback-summary .grid-header-row {
+    padding: 10px 0;
+    color: #246b95;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: bold; }
+
+.feedback .grid-header-row {
+  text-align: center;
+  background: #045172;
+  color: #FFFFFF;
+  font-weight: normal;
+  padding: 10px 0;
+  display: inline-block;
+  *display: inline;
+  width: 100%;
+  clear: both; }
+.feedback .inner-cont {
+  font-size: 0; }
+  .feedback .inner-cont .cols {
+    font-size: 13px;
+    line-height: 18px;
+    display: inline-block;
+    *display: inline;
+    padding: 0 5px;
+    vertical-align: middle; }
+    .feedback .inner-cont .cols p {
+      font-size: inherit;
+      line-height: inherit; }
+      .feedback .inner-cont .cols p:last-child {
+        margin-bottom: 0; }
+  .feedback .inner-cont .col1 {
+    width: 30%;
+    position: relative; }
+  .feedback .inner-cont .col2 {
+    width: 15%;
+    text-align: center; }
+  .feedback .inner-cont .col3 {
+    width: 45%; }
+  .feedback .inner-cont .col4 {
+    width: 10%;
+    text-align: center; }
+.feedback .grid-row {
+  padding: 10px 0;
+  background: #def3ff; }
+  .feedback .grid-row:nth-child(2n) {
+    background: #f3f9fd; }
+.feedback .feedback-icons {
+  background-position: 0 50%;
+  position: relative;
+  z-index: 10;
+  width: 30px; }
+.feedback .descr {
+  float: right;
+  width: 100%;
+  padding-left: 30px;
+  position: relative;
+  z-index: 0; }
+.feedback .report {
+  width: 100%;
+  height: 20px;
+  background: url("../img/dashboard/report_flag.png") no-repeat 50% 50%;
+  cursor: pointer;
+  text-indent: -9000px; }
+
 /***************************Media************************* */
 @media (max-width: 1279px) {
   #form-search-filter label {
@@ -1827,6 +2159,9 @@ header #main-menu .pinkbtn {
     width: 30%; }
   .job .upgrade-box .motivation {
     width: 67%; } }
+@media (min-width: 1023px) and (max-width: 1199px) {
+  .feedback-summary .grid-header-row .inner-cont .col3 {
+    padding: 0 10px; } }
 @media (max-width: 1023px) {
   .job #overview .listing-actions .linkbtn {
     font-size: 14px;
@@ -1836,8 +2171,24 @@ header #main-menu .pinkbtn {
     width: 65%; }
   .job .lowest_bid {
     width: 34%; }
+  .job.genie .job-details {
+    width: 100%; }
   .job.genie .send-bid {
     width: 65%; }
+  .job.genie .app-bid-inner .mes-bid {
+    width: 78%; }
+  .job.genie .app-bid-inner .actions {
+    width: 100%;
+    clear: both;
+    margin: 10px 0 0 0; }
+    .job.genie .app-bid-inner .actions .linkbtn {
+      width: auto;
+      min-width: 140px;
+      line-height: inherit; }
+    .job.genie .app-bid-inner .actions .change-bid {
+      float: left; }
+    .job.genie .app-bid-inner .actions .del-bid {
+      float: right; }
 
   #form-search-filter {
     width: 100%; }
@@ -1878,7 +2229,21 @@ header #main-menu .pinkbtn {
     line-height: 25px; }
     .search-expander.search-expander-expanded {
       background-position: 0 -47px;
-      background-size: 25px auto; } }
+      background-size: 25px auto; }
+
+  .profile-wrapper {
+    padding: 15px; }
+    .profile-wrapper .prof-left {
+      width: 28%; }
+    .profile-wrapper .prof-right {
+      width: 70%; }
+
+  .feedback .descr {
+    padding-left: 22px; }
+  .feedback .inner-cont .col2 {
+    width: 17%; }
+  .feedback .inner-cont .col3 {
+    width: 43%; } }
 @media (max-width: 991px) {
   #faqs .faq-search-form input[type="text"] {
     margin-left: 0;
@@ -2154,7 +2519,92 @@ header #main-menu .pinkbtn {
       border: none;
       box-shadow: none; }
       header.genie .search-form #headerjob-search:hover {
-        background-image: url("../img/search_hover.png"); } }
+        background-image: url("../img/search_hover.png"); }
+
+  .profile-wrapper .prof-left {
+    width: 33%; }
+    .profile-wrapper .prof-left h3 {
+      text-align: center; }
+  .profile-wrapper .prof-right {
+    width: 65%; }
+  .profile-wrapper .view-prof-block {
+    padding: 10px; }
+
+  .feedback .grid-header-row {
+    display: none; }
+  .feedback .grid-cont {
+    border-top: 5px solid #226A95; }
+  .feedback .inner-cont .cols {
+    display: table;
+    width: 100%;
+    clear: both;
+    padding-left: 100px;
+    padding-bottom: 10px; }
+    .feedback .inner-cont .cols:last-child {
+      padding-bottom: 0; }
+    .feedback .inner-cont .cols:before {
+      font-weight: bold;
+      display: block;
+      float: left;
+      width: 100px;
+      margin-left: -100px;
+      text-align: left;
+      padding: 0 5px; }
+  .feedback .inner-cont .col2 {
+    text-align: left; }
+  .feedback .inner-cont .job-descr:before {
+    content: "Job Description: ";
+    font-weight: bold; }
+  .feedback .inner-cont .user-fb:before {
+    content: "Feedback: "; }
+  .feedback .inner-cont .comment:before {
+    content: "Comment: "; }
+  .feedback .report {
+    text-indent: 0;
+    height: auto;
+    color: #ffffff !important;
+    padding: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: 1px 1px 2px #888888;
+    display: block;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #2DAFE2;
+    background-image: -moz-linear-gradient(top, #2DAFE2 14%, #2391D6 57%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #2DAFE2), color-stop(57%, #2391D6));
+    background-image: -webkit-linear-gradient(top, #2DAFE2 14%, #2391D6 57%);
+    background-image: -o-linear-gradient(top, #2DAFE2 14%, #2391D6 57%);
+    background-image: -ms-linear-gradient(top, #2DAFE2 14%, #2391D6 57%);
+    background-image: linear-gradient(to bottom, #2DAFE2 14%, #2391D6 57%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2DAFE2', endColorstr='#2391D6',GradientType=0 ); }
+    .feedback .report:hover, .feedback .report:active, .feedback .report:focus {
+      background-color: #2391D6;
+      background-image: -moz-linear-gradient(top, #2391D6 14%, #2DAFE2 57%);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #2391D6), color-stop(57%, #2DAFE2));
+      background-image: -webkit-linear-gradient(top, #2391D6 14%, #2DAFE2 57%);
+      background-image: -o-linear-gradient(top, #2391D6 14%, #2DAFE2 57%);
+      background-image: -ms-linear-gradient(top, #2391D6 14%, #2DAFE2 57%);
+      background-image: linear-gradient(to bottom, #2391D6 14%, #2DAFE2 57%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2391D6', endColorstr='#2DAFE2',GradientType=0 ); }
+
+  .report_event .popup-inner {
+    padding: 10px; }
+  .report_event .form-group {
+    padding-bottom: 10px; } }
+@media (min-width: 533px) and (max-width: 719px) {
+  .profile-wrapper .user-info label,
+  .profile-wrapper .user-info .value {
+    max-width: 100%;
+    float: none;
+    text-align: center; } }
 @media (max-width: 639px) {
   header.genie #main-menu li:last-child a {
     border-right: 1px solid #d8d8d8; }
@@ -2165,7 +2615,20 @@ header #main-menu .pinkbtn {
     margin-top: 25px; }
 
   #search-results_per_page {
-    margin-top: -45px; } }
+    margin-top: -45px; }
+
+  .profile-wrapper .prof-left {
+    width: 39%; }
+  .profile-wrapper .prof-right {
+    width: 60%; }
+
+  .feedback .inner-cont .cols {
+    padding-left: 5px; }
+    .feedback .inner-cont .cols:before {
+      float: none;
+      width: 100%;
+      margin: 0 0 10px 0;
+      padding: 0; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .logo {
     float: none;
@@ -2334,10 +2797,10 @@ header #main-menu .pinkbtn {
     content: "Received: "; }
 
   .job .job-details,
-  .job .send-bid,
   .job .lowest_bid {
     width: 100%;
-    float: none; }
+    float: none;
+    clear: both; }
   .job .cols.bidder .provider:before {
     content: "Bidder: ";
     font-weight: bold; }
@@ -2347,7 +2810,6 @@ header #main-menu .pinkbtn {
     content: "When: "; }
   .job .cols.dates:before {
     content: "Dates: "; }
-
   .job #bids .cols,
   .job #quests .cols {
     padding: 0 5px; }
@@ -2358,6 +2820,9 @@ header #main-menu .pinkbtn {
   .job .quest-expander {
     position: absolute;
     right: 10px; }
+  .job.genie .send-bid {
+    width: 100%;
+    margin-bottom: 30px; }
 
   #mailbox-inbox .grid-header-row,
   #mailbox-sent .grid-header-row,
@@ -2429,7 +2894,11 @@ header #main-menu .pinkbtn {
     width: 48%; }
 
   #breadcrumb {
-    margin: 0; } }
+    margin: 0; }
+
+  .profile-wrapper .prof-left,
+  .profile-wrapper .prof-right {
+    width: 100%; } }
 @media (max-width: 479px) {
   .page_title h1 {
     font-size: 30px;
@@ -2480,7 +2949,15 @@ header #main-menu .pinkbtn {
       -moz-transform: rotate(120deg);
       top: -15px;
       left: 0;
-      background-size: 70%; } }
+      background-size: 70%; }
+
+  .popup .buttons .linkbtn {
+    width: 200px;
+    margin: 20px auto; }
+  .popup .buttons .yes-btn {
+    float: none; }
+  .popup .buttons .no-btn {
+    float: none; } }
 @media (max-width: 359px) {
   header #main-menu .menu-quotes {
     width: 100px;
