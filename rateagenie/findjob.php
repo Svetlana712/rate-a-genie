@@ -52,7 +52,7 @@
                         <div class="tab-inner">
                             <div class="filters clear-all">
 
-                                <form class="make-bid-form" action=""method="" id="form-search-filter" accept-charset="UTF-8">
+                                <form class="make-bid-form" action="#" method="post" id="form-search-filter" accept-charset="UTF-8">
                                     <div class="form-inner">
                                         <div id="filter-issue" class="search-item">
                                             <label for="issue_id">Issue</label>
@@ -83,8 +83,8 @@
                                             </select>
                                         </div>
                                         <div id="filter-model" class="search-item">
-                                            <label for="device_model_id" id="device_model_id">Model</label>
-                                            <select name="device_model_id" class="form-control">
+                                            <label for="device_model_id">Model</label>
+                                            <select name="device_model_id" id="device_model_id" class="form-control">
                                                 <option value="">All</option>
                                                 <option value="1">Iphone</option>
                                                 <option value="2">Macbook</option>
@@ -146,7 +146,7 @@
                                 <div class="expanded-content">More info</div>
                                 <div class="send-bid">
                                     <div class="send-bid-form">
-                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd7b" accept-charset="UTF-8">
+                                        <form class="make-bid-form" action="#" method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd7b" accept-charset="UTF-8">
                                             <div class="form-group your-bid">
                                                 <label for="send-bid-form5a747dfc3fd7b-bid">Your bid:</label>
                                                 <input type="text" id="send-bid-form5a747dfc3fd7b-bid" name="bid" class="form-control">
@@ -218,7 +218,7 @@
                                 <div class="expanded-content">More info</div>
                                 <div class="send-bid">
                                     <div class="send-bid-form">
-                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                        <form class="make-bid-form" action="#" method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
                                             <div class="form-group your-bid">
                                                 <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
                                                 <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control" value="250">
@@ -250,7 +250,7 @@
 
                             <div class="tab-item listing">
                                 <div class="main-container">
-                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140178" title="Click to expand">More</div></div>
+                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-514017" title="Click to expand">More</div></div>
                                     <div class="col1 cols">
                                         <div class="img-container">
                                             <img src="img/dashboard/dashboard_profile_default.png" alt="No thumbnail">
@@ -288,26 +288,26 @@
                                 <div class="expanded-content">More info</div>
                                 <div class="send-bid">
                                     <div class="send-bid-form">
-                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                        <form class="make-bid-form" action="#" method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6" accept-charset="UTF-8">
                                             <div class="form-group your-bid">
-                                                <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
-                                                <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control" value="550">
+                                                <label for="send-bid-form5a747dfc3fd6-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-form5a747dfc3fd6-bid" name="bid" class="form-control" value="550">
                                             </div>
                                             <div class="form-group pdate">
-                                                <label for="send-bid-form5a747dfc3fd6b-pdate">Pickup date:</label>
-                                                <input type="date" id="send-bid-form5a747dfc3fd6b-pdate" name="pdate" class="form-control">
+                                                <label for="send-bid-form5a747dfc3fd6-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6-pdate" name="pdate" class="form-control">
                                             </div>
                                             <div class="form-group ddate">
-                                                <label for="send-bid-form5a747dfc3fd6b-ddate">Delivery date:</label>
-                                                <input type="date" id="send-bid-form5a747dfc3fd6b-ddate" name="ddate" class="form-control">
+                                                <label for="send-bid-form5a747dfc3fd6-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd6-ddate" name="ddate" class="form-control">
                                             </div>
 
                                             <div class="form-group mesbid">
-                                                <label for="send-bid-form5a747dfc3fd6b-mesbid">Message:</label>
-                                                <textarea id="send-bid-form5a747dfc3fd6b-mesbid" name="mesbid" class="form-control">Hi! Please accept my bid</textarea>
+                                                <label for="send-bid-form5a747dfc3fd6-mesbid">Message:</label>
+                                                <textarea id="send-bid-form5a747dfc3fd6-mesbid" name="mesbid" class="form-control">Hi! Please accept my bid</textarea>
                                             </div>
                                             <div class="form-group buttons">
-                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6-submit-1" name="send-bid-form5a747dfc3fd6-submit-1" type="submit">
                                                 <span class="cancelbtn linkbtn greenbtn">Cancel</span>
 
                                             </div>
@@ -353,26 +353,26 @@
                                 <div class="expanded-content">More info</div>
                                 <div class="send-bid">
                                     <div class="send-bid-form">
-                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                        <form class="make-bid-form" action="#" method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd" accept-charset="UTF-8">
                                             <div class="form-group your-bid">
-                                                <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
-                                                <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control">
+                                                <label for="send-bid-form5a747dfc3fd-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-form5a747dfc3fd-bid" name="bid" class="form-control">
                                             </div>
                                             <div class="form-group pdate">
-                                                <label for="send-bid-form5a747dfc3fd6b-pdate">Pickup date:</label>
-                                                <input type="date" id="send-bid-form5a747dfc3fd6b-pdate" name="pdate" class="form-control">
+                                                <label for="send-bid-form5a747dfc3fd-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd-pdate" name="pdate" class="form-control">
                                             </div>
                                             <div class="form-group ddate">
-                                                <label for="send-bid-form5a747dfc3fd6b-ddate">Delivery date:</label>
-                                                <input type="date" id="send-bid-form5a747dfc3fd6b-ddate" name="ddate" class="form-control">
+                                                <label for="send-bid-form5a747dfc3fd-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-form5a747dfc3fd-ddate" name="ddate" class="form-control">
                                             </div>
 
                                             <div class="form-group mesbid">
-                                                <label for="send-bid-form5a747dfc3fd6b-mesbid">Message:</label>
-                                                <textarea id="send-bid-form5a747dfc3fd6b-mesbid" name="mesbid" class="form-control"></textarea>
+                                                <label for="send-bid-form5a747dfc3fd-mesbid">Message:</label>
+                                                <textarea id="send-bid-form5a747dfc3fd-mesbid" name="mesbid" class="form-control"></textarea>
                                             </div>
                                             <div class="form-group buttons">
-                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd-submit-1" name="send-bid-form5a747dfc3fd-submit-1" type="submit">
                                                 <span class="cancelbtn linkbtn greenbtn">Cancel</span>
 
                                             </div>
@@ -418,13 +418,13 @@
                                 <div class="expanded-content">More info</div>
                                 <div class="send-bid">
                                     <div class="send-bid-form">
-                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd4b" accept-charset="UTF-8">
+                                        <form class="make-bid-form" action="#" method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd4b" accept-charset="UTF-8">
                                             <div class="form-group your-bid">
                                                 <label for="send-bid-form5a747dfc3fd4b-bid">Your bid:</label>
                                                 <input type="text" id="send-bid-form5a747dfc3fd4b-bid" name="bid" class="form-control">
                                             </div>
                                             <div class="form-group pdate">
-                                                <label for="send-bid-form5a747dfc3fd47b-pdate">Pickup date:</label>
+                                                <label for="send-bid-form5a747dfc3fd4b-pdate">Pickup date:</label>
                                                 <input type="date" id="send-bid-form5a747dfc3fd4b-pdate" name="pdate" class="form-control">
                                             </div>
                                             <div class="form-group ddate">
@@ -467,7 +467,7 @@
 
     </div>
 
-    </div>
+
 
     <?php include 'inc/geniefooter.php'; ?>
 </div>

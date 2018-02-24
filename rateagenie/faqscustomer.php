@@ -41,7 +41,7 @@
                     <div class="wrap">
                         <div class="form-row" id="form-row-query">
                             <label for="query">What do you need help with?</label>
-                            <input type="text" name="query" id="query" value="" maxlength="255" class="fw-input-prompt" type="text" placeholder="Search for what you need help...">
+                            <input type="text" name="query" id="query" value="" maxlength="255" class="fw-input-prompt" placeholder="Search for what you need help...">
                         </div>
                         <input type="button" onclick="javascript: FindOnPage('query'); return false;" value="Search Help" class="pinkbtn button" id="faqs-search" name="faqs-search"/>
 
@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-12">
                 <div id="quest-answ" class="wrap">
-                    <a name="commonquestions"></a>
+                    <a id="commonquestions"></a>
                     <h4 class="commonquestions"><span class="faqs-icon">Common Questions</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">How do I get a delivery/removal quote?</h5>
@@ -131,7 +131,7 @@
                         <div class="accordion-content">
                             <p>Below is an approximation of the standard measurements used by our Transport Providers;</p><p></p><p>Small box:  </p><p>   Length:16" x Width:12.5" x Height:12.5"  approx. 40.64cm x 31.75cm x 31.75cm.</p><p>   Small boxes are great for books,fragile items and kitchen items.</p><p></p><p>Medium box: </p><p>   Length:18" x Width:18" x Height:16"  approx. 45.72cm x 45.72cm x 31.75cm.</p><p>   Medium boxes can carry about 20-25kg, great for carrying pots,pans and electronic appliances.</p><p></p><p>Large box:</p><p>   Length:18" x Width:18" x Height:24"  approx. 45.72cm x 45.72cm x 60.96cm.</p><p>   Large boxes can also carry about 20-25kg, great for carrying larger kitchen items, cushions and large lamps.</p>            </div>
                     </div>
-                    <a name="myaccount"></a>
+                    <a id="myaccount"></a>
                     <h4 class="myaccount"><span class="faqs-icon">My Account</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">I've lost/forgotten my password</h5>
@@ -143,7 +143,7 @@
                         <div class="accordion-content">
                             <p>This can be done easily from your My RATE A GENIE page.</p><p></p><p>Once on your My RATE A GENIE page, go to 'Edit My Profile'. You will then be taken to the profile and preferences page, where you can change your email address. Remember to save changes before leaving the page.</p>            </div>
                     </div>
-                    <a name="listingitems"></a>
+                    <a id="listingitems"></a>
                     <h4 class="listingitems"><span class="faqs-icon">Listing Items</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">How to list an Item</h5>
@@ -170,7 +170,7 @@
                         <div class="accordion-content">
                             <p>RATE A GENIE now offers a ‘Book Now’ option, which is an alternative to the traditional reverse auction. This is a quick, hassle-free alternative to waiting for quotes and liaising back and forth with transporters about your delivery.</p><p></p><p>To obtain a ‘Book Now’ price, simply list an item the same way you normally would. Once your listing is posted, if it’s eligible for ‘Book Now’, within seconds your Book Now price will be emailed to you directly, and also appear on your ‘My RATE A GENIE’ page under the “View Quotes” area.</p><p></p><p>If you are happy with your price, simply click “Proceed &amp; Book”. You will be prompted to make a small deposit payment and we will then allocate a transport provider to complete your job. You will be emailed a job sheet with the driver’s contact details so you are able to communicate with them directly.</p><p></p><p>Please Note: Book Now is only available for the following 5 categories:</p><p>•	House Removals </p><p>•	Furniture Delivery</p><p>•	Pianos</p><p>•	Car Transportation</p><p>•	Motorbikes</p>            </div>
                     </div>
-                    <a name="managelistings"></a>
+                    <a id="managelistings"></a>
                     <h4 class="managelistings"><span class="faqs-icon">Manage Listings</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">Editing Listings</h5>
@@ -187,7 +187,7 @@
                         <div class="accordion-content">
                             <p>To help you choose a transport provider to complete your job, there are a number of things to look out for on their profiles. </p><p></p><p>Besides price, these include:</p><p> - Their feedback score – Based on the positive, negative and neutral feedback comments they’re received</p><p> - Number of recommendations – The number of customers who would recommend using this provider</p><p> - Insurance cover – All providers are now required to have insurance and state their level of cover on their profile</p><p> - Previous customer feedback – You can read detailed written feedback from previous customers</p><p> - Payment options – The methods of payment providers accept</p><p></p><p>These will all give you a clear indication of how reputable and reliable a provider is, ultimately helping you make your choice.</p>            </div>
                     </div>
-                    <a name="bidacceptance"></a>
+                    <a id="bidacceptance"></a>
                     <h4 class="bidacceptance"><span class="faqs-icon">Bid Acceptance</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">Paying a deposit</h5>
@@ -224,7 +224,7 @@
                         <div class="accordion-content">
                             <p>To help both parties, RATE A GENIE provides pre-populated check-in and checkout documents to accompany all confirmation emails following an accepted job.</p><p></p><p>We encourage you to print out the check-in and checkout documents (found on your My RATE A GENIE page and within your confirmation email). These signed documents confirm the item(s) was picked up and the time the listing was delivered, as well as the condition of the item upon collection and delivery.</p><p></p><p>These documents aim to remove any potential discord between the customer and the TP. Signatures and diagrams are required if applicable.</p>            </div>
                     </div>
-                    <a name="recommendations"></a>
+                    <a id="recommendations"></a>
                     <h4 class="recommendations"><span class="faqs-icon">Recommendations</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">How does the recommendation system work?</h5>
@@ -257,7 +257,7 @@
                         <div class="contact_support_team col-xs-12 col-sm-6 col-lg-6">
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member1.png">
+                                    <img alt="photo" src="img/faqs/team-member1.png">
                                 </div>
                                 <div class="member-name">
                                     Layla
@@ -265,7 +265,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member2.png">
+                                    <img alt="photo" src="img/faqs/team-member2.png">
                                 </div>
                                 <div class="member-name">
                                     Kat
@@ -273,7 +273,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member3.png">
+                                    <img alt="photo" src="img/faqs/team-member3.png">
                                 </div>
                                 <div class="member-name">
                                     Natasha
@@ -281,7 +281,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member4.png">
+                                    <img alt="photo" src="img/faqs/team-member4.png">
                                 </div>
                                 <div class="member-name">
                                     Sandra
@@ -289,7 +289,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member5.png">
+                                    <img alt="photo" src="img/faqs/team-member5.png">
                                 </div>
                                 <div class="member-name">
                                     Sabrina
@@ -297,7 +297,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member6.png">
+                                    <img alt="photo" src="img/faqs/team-member6.png">
                                 </div>
                                 <div class="member-name">
                                     Kareen

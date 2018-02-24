@@ -93,7 +93,7 @@
 <script src="js/popper.min.js" crossorigin="anonymous"></script>
 <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.js" crossorigin="anonymous"></script>
-<script type="text/javascript">
+<script>
     jQuery(window).on('load',function() {
         jQuery(".form_phone").mask("(999) 999-99-99");
         jQuery( "#repairform" ).on( "submit", function( event ) {

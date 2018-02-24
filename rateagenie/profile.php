@@ -41,12 +41,12 @@
                     <div id="left-col">
                         <div class="form-group" id="form-group-profile_image">
                             <div class="file-preview ">
-                                <img data-value="" src="img/dashboard/dashboard_profile_default.png" id="profile-image-thumb">
+                                <img data-value="" src="img/dashboard/dashboard_profile_default.png" id="profile-image-thumb" alt="User picture">
                                 <button type="button" class="linkbtn greenbtn button upload-profile-image hidden" id="profile-image-change">Change</button>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input name="profile_image" id="profile_image" value="" data-custom-image="true" class="file-upload file-upload" type="file">
+                            <input name="profile_image" id="profile_image" data-custom-image="true" class="file-upload file-upload" type="file">
                         </div>
                     </div>
                     <div id="right-col">
@@ -67,7 +67,7 @@
                         </div>
                         <div class="form-group">
                             <label for="nickname">Username</label>
-                            <input  type="text" class="form-control" name="nickname" id="nickname" value="" maxlength="8" type="text" placeholder="Username">
+                            <input  type="text" class="form-control" name="nickname" id="nickname" value="" maxlength="8" placeholder="Username">
                             <p class="error">Please enter correct information</p>
                         </div>
                         <div class="form-group">
@@ -82,12 +82,12 @@
                         </div>
                         <div class="form-group">
                             <label for="password">New password</label>
-                            <input type="password" class="form-control" name="password" id="password" value="" maxlength="50" type="password">
+                            <input type="password" class="form-control" name="password" id="password" value="" maxlength="50">
                             <p class="error">Please enter correct information</p>
                         </div>
                         <div class="form-group">
                             <label for="confirm_password">Confirm new password</label>
-                            <input type="password" class="form-control" name="confirm_password" id="confirm_password" value="" maxlength="50" type="password">
+                            <input type="password" class="form-control" name="confirm_password" id="confirm_password" value="" maxlength="50">
                             <p class="error">Please enter correct information</p>
                         </div>
                         <div class="wrapper">
@@ -136,26 +136,6 @@
                     </div>
 
                 </form>
-
-
-                <!--
-                <div class="card-body">
-            <h5 class="card-title">Something</h5>
-            <div id="tasks_container">
-                <table class="table" id="tasks">
-                    <tbody><tr>
-                        <th>Task ID</th>
-                        <th>Brand</th>
-                        <th>Item Model</th>
-                        <th>Issue</th>
-                        <th>Bids</th>
-                        <th>Actions</th>
-                    </tr>
-
-                </tbody></table>
-            </div>
-        </div>
-                -->
 
 
             </div>

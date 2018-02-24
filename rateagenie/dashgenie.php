@@ -85,7 +85,7 @@
 
                             <div class="tab-item listing">
                                 <div class="main-container">
-                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140178" title="Click to expand">More</div></div>
+                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-51" title="Click to expand">More</div></div>
                                     <div class="col1 cols">
                                         <div class="img-container">
                                             <img src="img/dashboard/dashboard_profile_default.png" alt="No thumbnail">
@@ -131,7 +131,7 @@
                         <div class="tab-inner">
                             <div class="tab-item listing primary">
                                 <div class="main-container">
-                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140178" title="Click to expand">More</div></div>
+                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140" title="Click to expand">More</div></div>
                                     <div class="col1 cols">
                                         <div class="img-container">
                                             <img src="img/dashboard/dashboard_profile_default.png" alt="No thumbnail">
@@ -170,7 +170,7 @@
                                 <div class="expanded-content">More info</div>
                                 <div class="send-bid">
                                     <div class="send-bid-form">
-                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                        <form class="make-bid-form" action="#" method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
                                             <div class="form-group your-bid">
                                                 <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
                                                 <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control" value="250">
@@ -202,7 +202,7 @@
 
                             <div class="tab-item listing">
                                 <div class="main-container">
-                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140178" title="Click to expand">More</div></div>
+                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-51401" title="Click to expand">More</div></div>
                                     <div class="col1 cols">
                                         <div class="img-container">
                                             <img src="img/dashboard/dashboard_profile_default.png" alt="No thumbnail">
@@ -239,26 +239,26 @@
                                 <div class="expanded-content">More info</div>
                                 <div class="send-bid">
                                     <div class="send-bid-form">
-                                        <form class="make-bid-form" action=""method="post" enctype="multipart/form-data" id="send-bid-form5a747dfc3fd6b" accept-charset="UTF-8">
+                                        <form class="make-bid-form" action="#" method="post" enctype="multipart/form-data" id="send-bid-forma747dfc3fd6b" accept-charset="UTF-8">
                                             <div class="form-group your-bid">
-                                                <label for="send-bid-form5a747dfc3fd6b-bid">Your bid:</label>
-                                                <input type="text" id="send-bid-form5a747dfc3fd6b-bid" name="bid" class="form-control" value="550">
+                                                <label for="send-bid-forma747dfc3fd6b-bid">Your bid:</label>
+                                                <input type="text" id="send-bid-forma747dfc3fd6b-bid" name="bid" class="form-control" value="550">
                                             </div>
                                             <div class="form-group pdate">
-                                                <label for="send-bid-form5a747dfc3fd6b-pdate">Pickup date:</label>
-                                                <input type="date" id="send-bid-form5a747dfc3fd6b-pdate" name="pdate" class="form-control">
+                                                <label for="send-bid-forma747dfc3fd6b-pdate">Pickup date:</label>
+                                                <input type="date" id="send-bid-forma747dfc3fd6b-pdate" name="pdate" class="form-control">
                                             </div>
                                             <div class="form-group ddate">
-                                                <label for="send-bid-form5a747dfc3fd6b-ddate">Delivery date:</label>
-                                                <input type="date" id="send-bid-form5a747dfc3fd6b-ddate" name="ddate" class="form-control">
+                                                <label for="send-bid-forma747dfc3fd6b-ddate">Delivery date:</label>
+                                                <input type="date" id="send-bid-forma747dfc3fd6b-ddate" name="ddate" class="form-control">
                                             </div>
 
                                             <div class="form-group mesbid">
-                                                <label for="send-bid-form5a747dfc3fd6b-mesbid">Message:</label>
-                                                <textarea id="send-bid-form5a747dfc3fd6b-mesbid" name="mesbid" class="form-control">Hi! Please accept my bid</textarea>
+                                                <label for="send-bid-forma747dfc3fd6b-mesbid">Message:</label>
+                                                <textarea id="send-bid-forma747dfc3fd6b-mesbid" name="mesbid" class="form-control">Hi! Please accept my bid</textarea>
                                             </div>
                                             <div class="form-group buttons">
-                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
+                                                <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-forma747dfc3fd6b-submit-1" name="send-bid-forma747dfc3fd6b-submit-1" type="submit">
                                                 <span class="cancelbtn linkbtn greenbtn">Cancel</span>
 
                                             </div>
@@ -311,7 +311,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a747dfc3fd7b" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a747dfc3fd7b" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a747dfc3fd7b__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -396,7 +396,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a757c1334c65" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a757c1334c65" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a747dfc3fd7b__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -480,7 +480,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a757dce8eb86" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a757dce8eb86" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a757dce8eb86__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -568,7 +568,7 @@
                                                 <a class="message-accept-button" href="#">Accept quote</a>
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a75850316d3b" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a75850316d3b" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a757dce8eb86__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -680,7 +680,7 @@
                                                 <a class="message-accept-button" href="#">Accept quote</a>
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a770d8a6a3a7" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a770d8a6a3a7" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a757dce8eb86__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -797,7 +797,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a7714cbc0d2a" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a7714cbc0d2a" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a7714cbc0d2a__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -934,7 +934,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a771ad0d3040" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a771ad0d3040" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a771ad0d3040__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -1076,7 +1076,7 @@
                         <div class="tab-inner">
                             <div class="tab-item listing primary">
                                 <div class="main-container">
-                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140178" title="Click to expand">More</div></div>
+                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-514017" title="Click to expand">More</div></div>
                                     <div class="col1 cols">
                                         <div class="img-container">
                                             <img src="img/dashboard/dashboard_profile_default.png" alt="No thumbnail">
@@ -1114,7 +1114,7 @@
                             </div>
                             <div class="tab-item listing">
                                 <div class="main-container">
-                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-5140178" title="Click to expand">More</div></div>
+                                    <div class="col0 cols"><div class="search-expander" id="id-for-this-work-514" title="Click to expand">More</div></div>
                                     <div class="col1 cols">
                                         <div class="img-container">
                                             <img src="img/dashboard/dashboard_profile_default.png" alt="No thumbnail">

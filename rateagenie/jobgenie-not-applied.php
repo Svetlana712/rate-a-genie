@@ -13,7 +13,7 @@
     <title>Genie view listing</title>
 </head>
 <body>
-<div class="job genie applied">
+<div class="job genie">
 
     <?php include 'inc/genieheader.php'; ?>
 
@@ -62,23 +62,6 @@
 
                 </div>
                 <div class="send-bid">
-                    <div class="applied-bid">
-                        <h2 class="block-header">Your bid</h2>
-                        <div class="app-bid-inner">
-
-                            <div class="mes-bid"><label>Your message:</label>Hi! Please accept my bid. Question about issue.<br>Question about issue.</div>
-                            <div class="your-bid"><label>Your bid:</label><span class="quote">£250</span></div>
-                            <div class="actions">
-                                <span class="change-bid bidbtn linkbtn greenbtn">Change bid</span>
-                                <span class="del-bid linkbtn pinkbtn">Delete bid</span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
                     <div class="expanded-content">
                         <h2 class="block-header">Make your bid</h2>
                         <div class="send-bid-form">
@@ -102,7 +85,7 @@
                                     <textarea id="send-bid-form5a747dfc3fd6b-mesbid" name="mesbid" class="form-control">Hi! Please accept my bid</textarea>
                                 </div>
                                 <div class="form-group buttons">
-                                    <input value="Make bid" class="make-bid linkbtn pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
+                                    <input value="Make bid" class="make-bid pinkbtn button" id="send-bid-form5a747dfc3fd6b-submit-1" name="send-bid-form5a747dfc3fd6b-submit-1" type="submit">
                                     <span class="cancelbtn linkbtn greenbtn">Cancel</span>
                                 </div>
                                 <div class="form-mes"></div>
@@ -122,7 +105,7 @@
                         <div class="dates"><label>Pickup date</label><span>17th Feb</span></div>
                         <div class="dates"><label>Delivery date</label><span>Same day</span></div>
                         <div class="actions">
-
+                            
                         </div>
                     </div>
 
@@ -145,7 +128,7 @@
                         <div class="bid">
                             <div class="colwrap">
                                 <div class="cols col1 bidder">
-
+                                    
                                     <a href="#" title="View profile">
                                         <span class="provider accredited branded">
                                             DLSvans
@@ -187,7 +170,7 @@
                                 <div class="cols col3 when">yesterday</div>
                                 <div class="cols col4 dates"><strong>P:</strong> 18 Feb<br><strong>D:</strong> 18 Feb</div>
                                 <div class="cols col5 actions">
-
+                                    
                                 </div>
                             </div>
 
@@ -242,7 +225,7 @@
                         <div class="quest">
                             <div class="colwrap">
                                 <div class="cols col1 bidder">
-
+                                    
                                     <a href="#" title="View profile">
                                         <span class="provider accredited branded">
                                             DLSvans
@@ -286,30 +269,6 @@
 
     <?php include 'inc/geniefooter.php'; ?>
 </div>
-
-<div class="popup__overlay del_event">
-    <div class="popup blue">
-        <a class="popup__close" href="#" title="Close">&nbsp;</a>
-        <div class="form-head">Confirming of an action</div>
-        <div class="popup-inner">
-
-
-        <form accept-charset="UTF-8" action="#" id="popup_form" method="post">
-
-            <div class="form-quest">Are you sure that you want <span>to delete your bid for this listing</span>?</div>
-            <div class="buttons">
-                <input type="button" class="yes-btn linkbtn pinkbtn" value="Yes, delete my bid">
-                <input type="button" class="no-btn linkbtn greenbtn" value="Cancel, keep my bid">
-
-            </div>
-
-        </form>
-
-        <div class="form_mes">&nbsp;</div>
-        </div>
-    </div>
-</div>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
@@ -332,36 +291,12 @@
     }
 
 
-    $( ".bidbtn" ).on('click',{selector: '.send-bid'},click_expander);
-    $( ".cancelbtn" ).on('click',{selector: '.send-bid'},click_expander);
-
-    $( ".yes-btn" ).click(function() {
-        $('.del_event').css('display', 'none');
-        $('.job')
-            .toggleClass( "applied" );
-
-    });
-    $( ".no-btn" ).click(function() {
-        $('.del_event').css('display', 'none');
-
-    });
-
-    p = $('.del_event');
-    $('.del-bid').click(function() {
-
-        p.css('display', 'block');
-        return false;
-    });
-    p.click(function(event) {
-        e = event || window.event;
-        if (e.target == this) {
-            $(p).css('display', 'none')
-        }
-    });
-    $('.popup__close').click(function() {
-        p.css('display', 'none');
-    });
-
+    $( ".rollup-quest" ).on('click',{selector: '.quest'},click_expander);
+    $( ".rollup" ).on('click',{selector: '.bid'},click_expander);
+    $( ".bid-expander" ).on('click',{selector: '.bid'},click_expander);
+    $( ".exp-mes" ).on('click',{selector: '.bid'},click_expander);
+    $( ".quest-expander" ).on('click',{selector: '.quest'},click_expander);
+    $( ".quest-reply" ).on('click',{selector: '.quest'},click_expander);
 
 
 </script>

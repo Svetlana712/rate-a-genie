@@ -39,9 +39,9 @@
             <div class="col-xs-12 col-sm-12 col-lg-12">
                 <div class="faq-search-form">
                     <div class="wrap">
-                        <div class="form-row" id="form-row-query">
+                        <div class="form-row" id="form-help-query">
                             <label for="query">What do you need help with?</label>
-                            <input type="text" name="query" id="query" value="" maxlength="255" class="fw-input-prompt" type="text" placeholder="Search for what you need help...">
+                            <input type="text" name="query" id="query" value="" maxlength="255" class="fw-input-prompt" placeholder="Search for what you need help...">
                         </div>
                         <input type="button" onclick="javascript: FindOnPage('query'); return false;" value="Search Help" class="pinkbtn button" id="faqs-search" name="faqs-search"/>
 
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-12">
                 <div id="quest-answ" class="wrap">
-                    <a name="bidding"></a>
+                    <a id="bidding"></a>
                     <h4 class="bidding"><span class="faqs-icon">Bidding</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">How do I place a bid?</h5>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
 
-                    <a name="myaccount"></a>
+                    <a id="myaccount"></a>
                     <h4 class="myaccount"><span class="faqs-icon">My Account</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">How does registration work?</h5>
@@ -126,7 +126,7 @@
                             <p>Don't worry - Just click the forgotten your password text link on the LOGIN page at the site entrance. An email will follow shortly with a computer generated password to be used with the registered email address.</p><p></p><p>Having gained access to the site, RATE A GENIE encourages you to change your password to another of your choice using the 'Edit Profile' - Account Details' tab from your Dashboard.</p>
                         </div>
                     </div>
-                    <a name="recommendation"></a>
+                    <a id="recommendation"></a>
                     <h4 class="recommendation"><span class="faqs-icon">Recommendation</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">How does the recommendation system work?</h5>
@@ -152,7 +152,7 @@
                             <p>After one of your "recommendees" accepts a bid, payments take 7 days or after positive feedback is left in order to clear in your RATE A GENIE balance. This is to avoid users accepting bids and for the delivery not to take place. If the delivery is not successful, no funds will be passed to the recommender. We reserve the right to refuse or withdraw credit if we suspect any abuse / misuse of the recommendation facility.</p>
                         </div>
                     </div>
-                    <a name="searching"></a>
+                    <a id="searching"></a>
                     <h4 class="searching"><span class="faqs-icon">Searching</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">How do I search for work?</h5>
@@ -178,7 +178,7 @@
                             <p>Saving Searches is a very useful feature for all Transport Providers designed to help you find job types that are suitable for you.</p><p></p><p>Saving searches very easy - after using our search features to find jobs you are interested in you have the ability to save that specific search by entering a name for the search in the 'Save this Search' module. Once a search is saved you will start receiving alerts whenever a new delivery matches your search.</p><p></p><p>It gives you the ability to save frequently made journeys, so that you can receive instant notifications of deliveries relevant to your most common routes the moment customers register them with RATE A GENIE -allowing you to get ahead of the competition.</p><p></p><p>Saved Searches can be deleted at any time.</p>
                         </div>
                     </div>
-                    <a name="winning"></a>
+                    <a id="winning"></a>
                     <h4 class="winning"><span class="faqs-icon">Winning</span></h4>
                     <div class="accordionwrap">
                         <h5 class="accordion accordion-header">'The Winning Bid' - what happens next?</h5>
@@ -210,7 +210,7 @@
                         <div class="contact_support_team col-xs-12 col-sm-6 col-lg-6">
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member1.png">
+                                    <img alt="photo" src="img/faqs/team-member1.png">
                                 </div>
                                 <div class="member-name">
                                     Layla
@@ -218,7 +218,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member2.png">
+                                    <img alt="photo" src="img/faqs/team-member2.png">
                                 </div>
                                 <div class="member-name">
                                     Kat
@@ -226,7 +226,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member3.png">
+                                    <img alt="photo" src="img/faqs/team-member3.png">
                                 </div>
                                 <div class="member-name">
                                     Natasha
@@ -234,7 +234,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member4.png">
+                                    <img alt="photo" src="img/faqs/team-member4.png">
                                 </div>
                                 <div class="member-name">
                                     Sandra
@@ -242,7 +242,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member5.png">
+                                    <img alt="photo" src="img/faqs/team-member5.png">
                                 </div>
                                 <div class="member-name">
                                     Sabrina
@@ -250,7 +250,7 @@
                             </div>
                             <div class="team-member">
                                 <div class="member-img">
-                                    <img src="img/faqs/team-member6.png">
+                                    <img alt="photo" src="img/faqs/team-member6.png">
                                 </div>
                                 <div class="member-name">
                                     Kareen

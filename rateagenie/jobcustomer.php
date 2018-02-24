@@ -128,7 +128,7 @@
                                     <div class="reply-options">
                                     </div>
                                     <div class="reply-form">
-                                        <form action="" method="post" enctype="multipart/form-data" id="reply-form5a771ad0d3040" accept-charset="UTF-8">
+                                        <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a771ad0d3040" accept-charset="UTF-8">
                                             <div>
                                                 <input name="__IDENTreply-form5a771ad0d3040__" value="1" type="hidden">
                                                 <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -279,7 +279,7 @@
                                     <div class="reply-options">
                                     </div>
                                     <div class="reply-form">
-                                        <form action="" method="post" enctype="multipart/form-data" id="reply-form5a747dfc3fd7b" accept-charset="UTF-8">
+                                        <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a747dfc3fd7b" accept-charset="UTF-8">
                                             <div>
                                                 <input name="__IDENTreply-form5a747dfc3fd7b__" value="1" type="hidden">
                                                 <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -394,7 +394,7 @@
                                     <div class="reply-options">
                                     </div>
                                     <div class="reply-form">
-                                        <form action="" method="post" enctype="multipart/form-data" id="reply-form5a871ad0d3040" accept-charset="UTF-8">
+                                        <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a871ad0d3040" accept-charset="UTF-8">
                                             <div>
                                                 <input name="__IDENTreply-form5a871ad0d3040__" value="1" type="hidden">
                                                 <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -451,7 +451,7 @@
                                     <div class="reply-options">
                                     </div>
                                     <div class="reply-form">
-                                        <form action="" method="post" enctype="multipart/form-data" id="reply-forma871ad0d3040" accept-charset="UTF-8">
+                                        <form action="#" method="post" enctype="multipart/form-data" id="reply-forma871ad0d3040" accept-charset="UTF-8">
                                             <div>
                                                 <input name="__IDENTreply-forma871ad0d3040__" value="1" type="hidden">
                                                 <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -513,7 +513,7 @@
 <script src="js/popper.min.js" crossorigin="anonymous"></script>
 <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.js" crossorigin="anonymous"></script>
-<script type="text/javascript">
+<script>
 
     $( ".block-header" ).click(function() {
         $( this )

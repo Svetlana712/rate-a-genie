@@ -121,7 +121,7 @@
                                         <div class="reply-options">
                                         </div>
                                         <div class="reply-form">
-                                            <form action="" method="post" enctype="multipart/form-data" id="reply-form5a747dfc3fd7b" accept-charset="UTF-8">
+                                            <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a747dfc3fd7b" accept-charset="UTF-8">
                                                 <div>
                                                     <input name="__IDENTreply-form5a747dfc3fd7b__" value="1" type="hidden">
                                                     <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -206,7 +206,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a757c1334c65" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a757c1334c65" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a747dfc3fd7b__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -290,7 +290,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a757dce8eb86" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a757dce8eb86" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a757dce8eb86__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -378,7 +378,7 @@
                                                 <a class="message-accept-button" href="#">Accept quote</a>
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a75850316d3b" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a75850316d3b" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a757dce8eb86__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -490,7 +490,7 @@
                                                 <a class="message-accept-button" href="#">Accept quote</a>
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a770d8a6a3a7" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a770d8a6a3a7" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a757dce8eb86__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -607,7 +607,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a7714cbc0d2a" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a7714cbc0d2a" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a7714cbc0d2a__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
@@ -744,7 +744,7 @@
                                             <div class="reply-options">
                                             </div>
                                             <div class="reply-form">
-                                                <form action="" method="post" enctype="multipart/form-data" id="reply-form5a771ad0d3040" accept-charset="UTF-8">
+                                                <form action="#" method="post" enctype="multipart/form-data" id="reply-form5a771ad0d3040" accept-charset="UTF-8">
                                                     <div>
                                                         <input name="__IDENTreply-form5a771ad0d3040__" value="1" type="hidden">
                                                         <input name="__TIMESTAMP" value="1517583867" type="hidden">
