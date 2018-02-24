@@ -2023,6 +2023,8 @@ a.popup__close, a.popup__close:visited {
     background-color: #fff;
     padding: 20px;
     text-align: center; }
+    .profile-wrapper .view-prof-block img {
+      max-width: 100%; }
     .profile-wrapper .view-prof-block p {
       font-size: 14px;
       font-weight: bold;
