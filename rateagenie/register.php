@@ -58,7 +58,7 @@
                         </div>
                         <div class="form-group">
 
-                            <input class="form-control" name="nickname" id="nickname" value="" maxlength="8" placeholder="Username" type="text">
+                            <input class="form-control" name="nickname" id="nickname" value="" maxlength="8" placeholder="Username" type="text" required="required">
                             <p class="error">Please enter correct information</p>
                         </div>
                         <div class="form-group">
@@ -69,12 +69,12 @@
 
                         <div class="form-group">
 
-                            <input class="form-control" name="password" id="password" value="" maxlength="50" type="password" placeholder="Password">
+                            <input class="form-control" name="password" id="password" value="" maxlength="50" type="password" placeholder="Password" required="required">
                             <p class="error">Please enter correct information</p>
                         </div>
                         <div class="form-group">
 
-                            <input class="form-control" name="confirm_password" id="confirm_password" value="" maxlength="50" type="password" placeholder="Confirm the password">
+                            <input class="form-control" name="confirm_password" id="confirm_password" value="" maxlength="50" type="password" placeholder="Confirm the password" required="required">
                             <p class="error">Please enter correct information</p>
                         </div>
                         <div class="form-group" id="user-level">
