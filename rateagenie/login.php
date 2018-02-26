@@ -24,11 +24,13 @@
 
         <!-- STYLES -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="sass/style2.css">
 
 
     </head>
 
-    <body class="full-page">
+    <body>
+    <div class="full-page forms big-form">
 
         <div class="full-page-inside">
 
@@ -42,34 +44,37 @@
 
                     <form action="send.php" method="post" class="register-form">
                         <div class="form-group">
-                            <input class="form-control" type="text" placeholder="E-mail (phone for mobile accounts)">
-                            <p class="error">Please enter correct information</p>
+                            <input name="email" class="form-control" type="text" placeholder="E-mail (phone for mobile accounts)">
+                            <p class="error email-error">Please enter correct information</p>
                         </div>
                         <!-- form-group -->
                         <div class="form-group">
-                            <input class="form-control" type="password" placeholder="Password">
-                            <p class="error">Please enter correct information</p>
+                            <input name="password" class="form-control" type="password" placeholder="Password">
+                            <p class="error password-error">Please enter correct information</p>
                         </div>
                         <!-- form-group -->
-                        <div class="d-md-flex align-items-md-bottom justify-content-md-between mb20">
+                        <div class="remember d-md-flex align-items-md-bottom justify-content-md-between mb20">
                             <div class="checkbox">
-                                <input type="checkbox" class="required" name="check3" id="check3">
-                                <label for="check3">Remember me</label>
+                                <input type="checkbox" class="required" name="remember" id="remember">
+                                <label for="remember">Remember me</label>
                             </div>
                             <!-- checkbox -->
-                            <div class="text-center text-md-right">
-                                <a href="#" class="forgot">Forgot your password?</a>
+                            <div class="text-center text-md-right forgot-txt">
+                                <a href="reset.php" class="forgot">Forgot your password?</a>
                             </div>
                         </div>
                         <!-- d-md-flex align-items-md-bottom -->
                         <div class="enter-box mb10">
-                            <a href="#" class="btn btn-register btn-block">Login</a>
+
+                            <button class="btn btn-register btn-block">Login</button>
+
                         </div>
                         <!-- enter-box -->
                         <div class="hr-or mb10"><span>or</span></div>
                         <div class="enter-box mb10">
-                            <a href="signup.html" class="btn btn-sign-up btn-block">Sign Up</a>
+                            <a href="register.php" class="btn btn-sign-up btn-block">Sign Up</a>
                         </div>
+                        <div class="form-mes"></div>
                         <!-- enter-box -->
                     </form>
                     <!-- register-form -->
@@ -89,18 +94,21 @@
             
         </div>
         <!-- fixed-footer -->
+    </div>
+    <!-- full-page -->
+
             
         <!-- JQUERY -->
-        <script src="js/jquery-2.1.4.min.js"></script>
+
 
         <!-- BOOTSTRAP -->
-        <script src="bootstrap/tether.min.js"></script>
+
         <script src="bootstrap/bootstrap.min.js"></script>
         
         <!-- CUSTOM SCRIPT -->
-        <script src="js/script.js"></script>
+
         
     </body>
-    <!-- full-page -->
+
 
 </html>
