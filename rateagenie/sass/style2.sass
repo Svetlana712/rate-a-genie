@@ -38,6 +38,17 @@
   text-align: center
   @include border-radius($radbtn)
 
+@mixin unfix-footer
+  padding-bottom: 0
+
+  .full-page-inside
+    display: block
+    margin-bottom: 10px
+  .fixed-footer
+    position: relative
+    display: block
+
+
 @font-face
   font-family: 'OpenSansRegular'
   src: url('../fonts/osans/opensans-regular.eot')
@@ -1401,7 +1412,8 @@ footer
       background-position: 50% 0
 
 /***********Profile page********************/
-#profile
+#profile,
+.forms-wrap
   [type="radio"] + label,
   [type="radio"]:checked + label,
   [type="radio"] + label:hover,
@@ -1420,7 +1432,7 @@ footer
   [type="radio"]:not(:checked)
     position: relative
     left: 0
-
+#profile
   #profile_image
     display: none
 
@@ -2214,6 +2226,23 @@ a
 
     .form-group
       padding-bottom: 20px
+
+.rag-register
+  .forms-wrap
+    padding-top: 10px
+    padding-bottom: 10px
+    .head-text
+      margin-bottom: 10px
+
+  #user-level
+    @include clear-table
+    .rad-item
+      width: auto
+      &:nth-child(2n-1)
+        float: left
+      &:nth-child(2n)
+        float: right
+
 
 
 .forms
@@ -3227,6 +3256,39 @@ a
         .form-mes
           min-height: 20px
 
+      &.rag-register
+        .forms-wrap
+          .logo
+            height: auto
+          .head-text
+            padding-bottom: 10px
+          form
+            padding: 10px 0
+          .form-group
+            padding-bottom: 10px
+          .mb20
+            margin-bottom: 0
+
+@media (max-height: 719px)
+  .full-page
+    &.forms
+      &.rag-register
+        padding-bottom: 90px
+
+        h3
+          font-size: 16px
+          line-height: 16px
+          margin-bottom: 5px
+
+        .btn
+          font-size: 16px
+
+        .footer-nav
+          .footer-nav-link
+            padding: 5px
+
+
+
 
 @media (max-height: 660px)
   .forms-wrap
@@ -3241,6 +3303,12 @@ a
     .head-text
       margin-bottom: 0
 
+  .full-page
+    &.forms
+      &.rag-register
+        @include unfix-footer
+
+
 @media (max-height: 567px)
   .forms-wrap
     .mb20
@@ -3250,6 +3318,8 @@ a
       padding-bottom: 0
       .form-mes
         margin: 0
+
+
 
 
 @media (max-height: 532px)
@@ -3275,28 +3345,13 @@ a
 
   .full-page.forms
     &.big-form
-      padding-bottom: 0
-
-      .full-page-inside
-        display: block
-        margin-bottom: 10px
-      .fixed-footer
-        position: relative
-        display: block
+      @include unfix-footer
 
 
 @media (max-height: 359px)
   .full-page.forms
     &.middle-form
-      padding-bottom: 0
-
-      .full-page-inside
-        display: block
-        margin-bottom: 10px
-      .fixed-footer
-        position: relative
-        display: block
-
+      @include unfix-footer
 
 
 
