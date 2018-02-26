@@ -120,14 +120,7 @@ p:last-child
   @include border-radius(6px)
 
 /*-------------------Header------------------------------*/
-.logo
-  display: inline-block
-  width: auto
-  margin-right: 30px
-  float: left
-  padding: 16px 14px 0 0
-  img
-    max-width: 200px
+
 
 header
   top: 0
@@ -136,6 +129,15 @@ header
   z-index: 10000
   background-color: #ffffff
   min-height: 50px
+
+  .logo
+    display: inline-block
+    width: auto
+    margin-right: 30px
+    float: left
+    padding: 16px 14px 0 0
+    img
+      max-width: 200px
 
   h2
     &.phone_number
@@ -2192,6 +2194,42 @@ a
 
   .form-mes
     display: none
+/*****************************Reset form*********************************************/
+.forms-wrap
+  max-width: 450px
+  padding-top: 50px
+  padding-bottom: 50px
+  margin: auto
+  .logo
+    margin-right: 0
+
+  .head-text
+    padding-bottom: 20px
+    margin-bottom: 20px
+    border-bottom: 2px solid #dddddd
+
+  form
+    padding: 20px 25px
+    @include border-radius(4px)
+
+    .form-group
+      padding-bottom: 20px
+
+
+.forms
+  footer
+    background: #ffffff
+    color: rgb(82, 95, 127)
+
+    ul
+      li
+        padding-bottom: 0
+
+  .register-wrap
+    padding-top: 30px
+    padding-bottom: 30px
+
+
 /*************************Repair form*****************************/
 
 #repairform
@@ -3104,15 +3142,15 @@ a
 
 
 @media (min-width: 576px) and (max-width: 767px)
-  .logo
-    float: none
-    margin-right: 0
-    padding: 5px 0 0 0
-
-    img
-      max-width: 150px
 
   header
+    .logo
+      float: none
+      margin-right: 0
+      padding: 5px 0 0 0
+
+      img
+        max-width: 150px
 
     h2
       &.phone_number
@@ -3148,6 +3186,119 @@ a
   .col-sm-5,
   .col-sm-7
     max-width: 100%
+
+@media (max-height: 767px) and (max-width: 767px)
+  .full-page
+    padding-bottom: 120px
+    &.forms
+      &.big-form
+        .logo
+          height: auto
+        .register-wrap
+          padding: 10px 0
+        .register-form
+          padding: 10px 0
+          .form-group
+            padding-bottom: 10px
+        .mb20
+          margin-bottom: 0
+        .checkbox
+          width: auto
+          float: left
+        .forgot-txt
+          width: auto
+          float: right
+        .remember
+          @include clear-table
+          margin-bottom: 10px
+        .enter-box
+          padding: 0 25px
+          min-height: auto
+
+@media (max-height: 767px)
+  .full-page
+    &.forms
+      &.big-form
+        .register-wrap
+          padding: 10px 0
+        .enter-box
+          padding: 0 25px
+          min-height: auto
+        .form-mes
+          min-height: 20px
+
+
+@media (max-height: 660px)
+  .forms-wrap
+    padding-top: 30px
+    padding-bottom: 30px
+
+
+@media (max-height: 639px)
+  .forms-wrap
+    padding-top: 10px
+    padding-bottom: 10px
+    .head-text
+      margin-bottom: 0
+
+@media (max-height: 567px)
+  .forms-wrap
+    .mb20
+      margin-bottom: 0
+
+    form
+      padding-bottom: 0
+      .form-mes
+        margin: 0
+
+
+@media (max-height: 532px)
+  .forms-wrap
+    form
+      .form-group
+        padding-bottom: 10px
+
+    .head-text
+      padding-bottom: 10px
+      font-size: 14px
+      line-height: 16px
+
+  .full-page
+    padding-bottom: 65px
+
+    &.forms
+      .footer-nav
+        margin-bottom: 0
+
+        .footer-nav-link
+          padding: 5px
+
+  .full-page.forms
+    &.big-form
+      padding-bottom: 0
+
+      .full-page-inside
+        display: block
+        margin-bottom: 10px
+      .fixed-footer
+        position: relative
+        display: block
+
+
+@media (max-height: 359px)
+  .full-page.forms
+    &.middle-form
+      padding-bottom: 0
+
+      .full-page-inside
+        display: block
+        margin-bottom: 10px
+      .fixed-footer
+        position: relative
+        display: block
+
+
+
 
 @media (max-width: 660px)
   #user_info
@@ -3202,16 +3353,15 @@ a
 
 
 
-
 @media (max-width: 575px)
-  .logo
-    margin-right: 0
-    padding: 5px 0 0 0
-
-    img
-      max-width: 150px
 
   header
+    .logo
+      margin-right: 0
+      padding: 5px 0 0 0
+
+      img
+        max-width: 150px
 
     .header-left
       float: none
@@ -3620,6 +3770,15 @@ a
 
     .footer_right
       text-align: center
+
+  body
+    max-width: 100%
+    overflow-x: hidden
+
+  .full-page.forms.big-form
+    .register-wrap,
+    .register-form
+      padding: 10px 0 0 0
 
 @media (min-width: 1200px)
   //.container
