@@ -57,7 +57,7 @@
                             <p class="error">Please enter correct information</p>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group form-btn">
                             <button type="submit" class="btn btn-register btn-block">Save</button>
                         </div>
                         <div class="form-mes"></div>
