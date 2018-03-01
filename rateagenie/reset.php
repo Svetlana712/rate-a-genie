@@ -49,11 +49,12 @@
                             <input name="_token" value="ZxuMOGpkJw506ASmBknjqW9iqn1pwDzXAqzhX4Dv" type="hidden">
 
                             <div class="form-group">
+
                                     <input id="email" class="form-control" name="email" value="" required="" type="email" placeholder="E-mail">
                                     <p class="error">Please enter correct information</p>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group form-btn">
                                     <button type="submit" class="btn btn-register btn-block">Send</button>
                             </div>
 

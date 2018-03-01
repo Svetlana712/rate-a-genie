@@ -92,7 +92,7 @@
                             </div>
 
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-btn">
 
                             <button class="btn btn-register btn-block">Register</button>
 
