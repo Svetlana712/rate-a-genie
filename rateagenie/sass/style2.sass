@@ -47,7 +47,46 @@
   .fixed-footer
     position: relative
     display: block
+@mixin chat-img
+  position: relative
 
+  img
+    width: 40px
+    @include border-radius(20px)
+
+  &:after
+    content: ""
+    position: absolute
+    width: 16px
+    height: 16px
+    left: 32px
+    top: 28px
+    @include border-radius(50%)
+    border: 2px solid #fff
+    background: #b1b1b1
+
+  &.away
+    &:after
+      background: #fba612
+
+  &.online
+    &:after
+      background: #37a000
+
+@mixin search-icon
+  background-color: #ffffff
+  text-indent: -500px
+  width: 30px
+  height: 38px
+  overflow: hidden
+  background-image: url("../img/search.png")
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: 30px auto
+  border: none
+  box-shadow: none
+  &:hover
+    background-image: url("../img/search_hover.png")
 
 @font-face
   font-family: 'OpenSansRegular'
@@ -58,7 +97,6 @@
 
 p:last-child
   margin-bottom: 0
-
 
 .visible-xs, .visible-sm, .visible-md, .visible-lg
   display: none !important
@@ -2236,14 +2274,16 @@ a
 
   #user-level
     @include clear-table
+    h3
+      font-size: 18px
+      line-height: 18px
+
     .rad-item
       width: auto
       &:nth-child(2n-1)
         float: left
       &:nth-child(2n)
         float: right
-
-
 
 .forms
   footer
@@ -2257,6 +2297,22 @@ a
   .register-wrap
     padding-top: 30px
     padding-bottom: 30px
+
+.full-page
+  &.forms
+    //&.rag-register
+    .form-group
+      padding-bottom: 20px
+      &.form-btn
+        padding-bottom: 0
+
+      .error
+        bottom: 7px
+        font-size: 12px
+        line-height: 12px
+        font-family: Arial, Helvetica, sans-serif
+
+
 
 
 /*************************Repair form*****************************/
@@ -2514,7 +2570,227 @@ a
     text-indent: -9000px
 
 
+/***********************Messages************************************/
+$hmesbox: 130px
 
+.search-icon
+  @include search-icon
+
+.room-search
+  position: relative
+  z-index: 0
+  width: 100%
+  margin: 5px 0
+
+
+  #search-mes
+    width: 100%
+    padding-right: 30px
+
+  .search-icon
+    position: absolute
+    top: 1px
+    right: 3px
+    height: 34px
+    background-size: 20px auto
+    padding: 0
+    &:hover
+      cursor: pointer
+
+
+#messages
+  .content
+    margin-bottom: 20px
+    @include clear-table
+
+#rooms
+  position: relative
+  font-size: 14px
+  line-height: 16px
+  border: 2px solid #1593D1
+  border-top-left-radius: 4px
+  border-top-right-radius: 4px
+
+  & > div
+    @include clear-table
+
+  .left-col
+    width: 30%
+    float: left
+  .right-col
+    width: 69%
+    float: right
+
+  .room-filters
+    margin: 10px 0 10px 5px
+
+    select
+      width: 100%
+
+
+.rooms-header
+  background: #1593D1
+  color: #ffffff
+  padding: 5px
+
+  .mes-from
+    margin-bottom: 5px
+
+  .user-name
+    font-size: 20px
+    line-height: 22px
+    margin-right: 10px
+
+  .room-name
+    height: 16px
+    overflow: hidden
+
+  a
+    &:link,
+    &:visited
+      color: #FFFFFF
+      &:hover
+        color: #ffff00
+
+
+
+.current-room
+  @include clear-table
+
+  .room-title
+    width: 75%
+    float: left
+    padding-right: 10px
+
+  .actions
+    width: 25%
+    float: right
+    margin: 5px 0
+
+
+.list-room
+  height: 260px + $hmesbox
+  overflow-y: scroll
+
+.room-messages-box
+  height: 300px
+  overflow-y: scroll
+  margin-bottom: 20px
+
+.room-message-form
+  height: $hmesbox
+  width: 68%
+  position: absolute
+  bottom: 5px
+
+.room
+  @include clear-table
+  padding: 10px 0
+  border-right: 2px solid #ffffff
+
+
+  //&:nth-child(2n)
+   // background: #f9f9f9
+
+  & > div
+    display: table-cell
+    padding: 0 5px
+    vertical-align: top
+
+  .room-icon
+    width: auto
+    max-width: 15%
+    @include chat-img
+
+  .room-info
+    width: 85%
+
+  .mes-from
+    @include clear-table
+    margin-bottom: 5px
+
+    .user-name
+      max-width: 75%
+      padding-right: 5px
+      display: block
+      float: left
+      height: 16px
+      overflow: hidden
+
+    .date
+      //max-width: 20%
+      display: block
+      float: right
+
+  .job-title
+    max-height: 32px
+    overflow: hidden
+
+  &:hover,
+  &.active
+    //background: #cce0ff //#ccffcc //#e6e6ff //#f0e6ff //#ccf2ff //#f9f9f9
+    @include linearGradient(#cce0ff, #e6f0ff, 0 , 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce0ff', endColorstr='#e6f0ff',GradientType=0 )
+
+    .user-name
+      color: rgb(55, 160, 0)
+
+  &.active,
+  &.active:hover
+    border-right: 2px solid #1593D1
+
+  &:hover
+    cursor: pointer
+    border-right: 2px solid #cce0ff
+
+.room-message
+  @include clear-table
+  padding: 10px 0
+  &:nth-child(2n)
+    background: #e6f0ff //#e6ffe6 //#e6e6ff //#e6f9ff
+
+  & > div
+    display: table-cell
+    padding: 0 5px
+    vertical-align: top
+
+  .user-icon
+    width: auto
+    max-width: 6%
+    @include chat-img
+
+  .mes-content
+    width: 94%
+
+  .mes-author
+    font-weight: bold
+  .time
+    float: right
+    padding-right: 5px
+  .mes-title
+    margin-bottom: 5px
+
+.room-message-form
+  .form-inner
+    @include clear-table
+    width: 94%
+
+  textarea
+    width: 100%
+    margin-bottom: 10px
+    resize: none
+
+
+  .btn
+    margin-right: 2%
+    width: auto
+    max-width: 20%
+    float: left
+
+  .form-mes
+    width: 78%
+    float: left
+    clear: none
 
 
 
@@ -2686,6 +2962,15 @@ a
         width: 17%
       .col3
         width: 43%
+
+  .current-room
+    .actions
+      //margin: 0
+      .linkbtn
+        padding: 9px
+        font-size: 12px
+        line-height: 14px
+
 
 @media (max-width: 991px)
   #faqs
@@ -3032,6 +3317,7 @@ a
   .col-sm-12
     float: left
 
+
 @media (max-width: 719px)
   header
     &.genie
@@ -3041,19 +3327,8 @@ a
           margin-right: 0
 
         #headerjob-search
-          background-color: #ffffff
-          text-indent: -500px
-          width: 30px
-          height: 38px
-          overflow: hidden
-          background-image: url("../img/search.png")
-          background-repeat: no-repeat
-          background-position: 50% 50%
-          background-size: 30px auto
-          border: none
-          box-shadow: none
-          &:hover
-            background-image: url("../img/search_hover.png")
+          @include search-icon
+
 
   .profile-wrapper
     .prof-left
@@ -3227,8 +3502,10 @@ a
           padding: 10px 0
         .register-form
           padding: 10px 0
-          .form-group
+          //.form-group
             padding-bottom: 10px
+        .btn
+          padding: 5px 25px
         .mb20
           margin-bottom: 0
         .checkbox
@@ -3264,8 +3541,6 @@ a
             padding-bottom: 10px
           form
             padding: 10px 0
-          .form-group
-            padding-bottom: 10px
           .mb20
             margin-bottom: 0
 
@@ -3274,6 +3549,9 @@ a
     &.forms
       &.rag-register
         padding-bottom: 90px
+
+        .form-control
+          padding: 5px
 
         h3
           font-size: 16px
@@ -3324,9 +3602,9 @@ a
 
 @media (max-height: 532px)
   .forms-wrap
-    form
-      .form-group
-        padding-bottom: 10px
+    //form
+      //.form-group
+        //padding-bottom: 10px
 
     .head-text
       padding-bottom: 10px
