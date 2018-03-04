@@ -68,6 +68,7 @@
 
                         </div>
                     </div>
+                    <div class="return-list-room linkbtn pinkbtn">Back to room list</div>
                     <div class="rooms-content">
                         <div class="left-col">
                             <div class="room-filters">
@@ -89,7 +90,7 @@
                                 <div class="room active">
                                     <div class="room-icon away" title="away"><img src="img/dashboard/dashboard_profile_default.png" alt="Room icon"></div>
                                     <div class="room-info">
-                                        <div class="mes-from"><span class="user-name">Maxim Maxim Maxim Maxim Maxim</span><span class="date">12/16/18</span> </div>
+                                        <div class="mes-from"><span class="user-name">Maxim</span><span class="date">12/16/18</span> </div>
                                         <div class="mes-cont"><span class="job-title">Broken Screen GREEN 1100 Litre ROLLTOP Wheelie Bin with Drop...</span><span class="unread-col" title="Unread message">2</span></div>
                                     </div>
                                     <div class="room-messages-box">
@@ -200,7 +201,7 @@
                                                     <div class="user-icon online" title="online"><img src="img/faqs/team-member6.png" alt="Current user image"></div>
                                                     <div class="mes-content">
                                                         <div class="mes-title">
-                                                            <span class="mes-author">Laura Laura Laura Laura Laura Laura Laura Laura Laura Laura Laura Laura Laura</span><span class="edited-mes mes-changes" title="Message edited"></span>
+                                                            <span class="mes-author">Laura</span><span class="edited-mes mes-changes" title="Message edited"></span>
                                                             <span class="time" title="Tuesday, January 16, 2018 6:36 PM">16:36 PM</span>
                                                         </div>
 
@@ -787,7 +788,15 @@
             .find( ".room-name" )
             .text(job_title);
 
+        $( "#rooms" )
+            .addClass( "chatting" );
+
     });
+
+    $( ".return-list-room" ).click(function () {
+        $( "#rooms" )
+            .removeClass( "chatting" );
+    })
     
 
 
