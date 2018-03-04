@@ -2573,6 +2573,9 @@ a
 /***********************Messages************************************/
 $hmesbox: 165px
 
+.return-list-room
+  display: none
+
 .rooms-content
   position: relative
 
@@ -2584,7 +2587,6 @@ $hmesbox: 165px
   display: none
 
 
-
 .search-icon
   @include search-icon
 
@@ -2593,7 +2595,6 @@ $hmesbox: 165px
   z-index: 0
   width: 100%
   margin: 5px 0
-
 
   #search-mes
     width: 100%
@@ -2609,7 +2610,6 @@ $hmesbox: 165px
     &:hover
       cursor: pointer
 
-
 #messages
   .content
     margin-bottom: 20px
@@ -2623,12 +2623,14 @@ $hmesbox: 165px
   border-top-left-radius: 4px
   border-top-right-radius: 4px
 
-  & > div
+  .rooms-header,
+  .rooms-content
     @include clear-table
 
   .left-col
     width: 30%
     float: left
+
   .right-col
     width: 69%
     float: right
@@ -2688,6 +2690,7 @@ $hmesbox: 165px
   height: 300px
   overflow-y: scroll
   margin-bottom: 20px
+  border-left: 1px solid #1593D1
 
   .box-inner
     position: relative
@@ -2697,7 +2700,7 @@ $hmesbox: 165px
   width: 68%
   position: absolute
   bottom: 0
-  right: 10px
+  right: 5px
 
 .room
   @include clear-table
@@ -2774,7 +2777,7 @@ $hmesbox: 165px
   & > div
     display: table-cell
     padding: 0 5px
-    vertical-align: top
+
 
   .user-icon
     width: auto
@@ -2847,6 +2850,8 @@ $hmesbox: 165px
 
   &.edited
     color: #266992
+
+
 
 
 
@@ -4187,6 +4192,9 @@ $hmesbox: 165px
         width: 100%
         float: none
 
+    .current-room
+      display: none
+
     .rooms-content
       padding-top: 60px
       position: relative
@@ -4198,29 +4206,62 @@ $hmesbox: 165px
       top: 0
       width: 260px
 
-  .room
-    .room-info
+  .room.active
+    .room-messages-box
       display: none
-  .room-messages-box
-    background: #ffffff
-    width: 85%
-    left: 15%
-    top: 60px
-    border-left: 2px solid #1593D1
 
   .room-message-form
-    width: 92%
-    left: 10px
-    .form-btn
-      float: none
-
-
-
+    display: none
 
   .list-room
     height: auto
-    margin-bottom: $hmesbox
-    padding-bottom: 10px
+
+
+  #rooms
+    &.chatting
+      .room-filters
+        display: none
+
+      .rooms-content
+        padding-top: 0
+
+      .return-list-room
+        display: block
+        margin: 10px
+
+      .current-room
+        display: table
+      .room
+        display: none
+
+        &.active
+          display: block
+          border-right: none
+          &:hover
+            border-right: none
+
+
+
+      .room-messages-box
+        display: block
+        position: relative
+        background: #ffffff
+        width: 100%
+        height: auto
+        border-left: none
+
+      .room-message-form
+        display: block
+        width: 92%
+        left: 10px
+        .form-btn
+          float: none
+
+      .list-room
+        padding-bottom: 10px
+        margin-bottom: $hmesbox
+
+
 
 
 

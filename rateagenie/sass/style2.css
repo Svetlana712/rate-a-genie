@@ -2192,6 +2192,9 @@ a.popup__close, a.popup__close:visited {
   text-indent: -9000px; }
 
 /***********************Messages*********************************** */
+.return-list-room {
+  display: none; }
+
 .rooms-content {
   position: relative; }
 
@@ -2248,7 +2251,8 @@ a.popup__close, a.popup__close:visited {
   border: 2px solid #1593D1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
-  #rooms > div {
+  #rooms .rooms-header,
+  #rooms .rooms-content {
     display: table;
     width: 100%;
     clear: both; }
@@ -2302,7 +2306,8 @@ a.popup__close, a.popup__close:visited {
   display: none;
   height: 300px;
   overflow-y: scroll;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-left: 1px solid #1593D1; }
   .room-messages-box .box-inner {
     position: relative; }
 
@@ -2311,7 +2316,7 @@ a.popup__close, a.popup__close:visited {
   width: 68%;
   position: absolute;
   bottom: 0;
-  right: 10px; }
+  right: 5px; }
 
 .room {
   display: table;
@@ -2402,8 +2407,7 @@ a.popup__close, a.popup__close:visited {
     background: #e6f0ff; }
   .room-message > div {
     display: table-cell;
-    padding: 0 5px;
-    vertical-align: top; }
+    padding: 0 5px; }
   .room-message .user-icon {
     width: auto;
     max-width: 6%;
@@ -3516,6 +3520,8 @@ a.popup__close, a.popup__close:visited {
   #rooms .rooms-header .right-col {
     width: 100%;
     float: none; }
+  #rooms .current-room {
+    display: none; }
   #rooms .rooms-content {
     padding-top: 60px;
     position: relative; }
@@ -3526,26 +3532,47 @@ a.popup__close, a.popup__close:visited {
     top: 0;
     width: 260px; }
 
-  .room .room-info {
+  .room.active .room-messages-box {
     display: none; }
 
-  .room-messages-box {
-    background: #ffffff;
-    width: 85%;
-    left: 15%;
-    top: 60px;
-    border-left: 2px solid #1593D1; }
-
   .room-message-form {
-    width: 92%;
-    left: 10px; }
-    .room-message-form .form-btn {
-      float: none; }
+    display: none; }
 
   .list-room {
+    height: auto; }
+
+  #rooms.chatting .room-filters {
+    display: none; }
+  #rooms.chatting .rooms-content {
+    padding-top: 0; }
+  #rooms.chatting .return-list-room {
+    display: block;
+    margin: 10px; }
+  #rooms.chatting .current-room {
+    display: table; }
+  #rooms.chatting .room {
+    display: none; }
+    #rooms.chatting .room.active {
+      display: block;
+      border-right: none; }
+      #rooms.chatting .room.active:hover {
+        border-right: none; }
+  #rooms.chatting .room-messages-box {
+    display: block;
+    position: relative;
+    background: #ffffff;
+    width: 100%;
     height: auto;
-    margin-bottom: 165px;
-    padding-bottom: 10px; } }
+    border-left: none; }
+  #rooms.chatting .room-message-form {
+    display: block;
+    width: 92%;
+    left: 10px; }
+    #rooms.chatting .room-message-form .form-btn {
+      float: none; }
+  #rooms.chatting .list-room {
+    padding-bottom: 10px;
+    margin-bottom: 165px; } }
 @media (max-width: 479px) {
   .page_title h1 {
     font-size: 30px;
