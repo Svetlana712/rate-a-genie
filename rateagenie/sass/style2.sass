@@ -2571,7 +2571,19 @@ a
 
 
 /***********************Messages************************************/
-$hmesbox: 130px
+$hmesbox: 165px
+
+.rooms-content
+  position: relative
+
+.room-messages-box
+  position: absolute
+  top: 0
+  right: 0
+  width: 69%
+  display: none
+
+
 
 .search-icon
   @include search-icon
@@ -2667,32 +2679,33 @@ $hmesbox: 130px
     float: right
     margin: 5px 0
 
-
 .list-room
   height: 260px + $hmesbox
   overflow-y: scroll
 
 .room-messages-box
+  display: none
   height: 300px
   overflow-y: scroll
   margin-bottom: 20px
+
+  .box-inner
+    position: relative
 
 .room-message-form
   height: $hmesbox
   width: 68%
   position: absolute
-  bottom: 5px
+  bottom: 0
+  right: 10px
 
 .room
   @include clear-table
   padding: 10px 0
   border-right: 2px solid #ffffff
 
-
-  //&:nth-child(2n)
-   // background: #f9f9f9
-
-  & > div
+  .room-icon,
+  .room-info
     display: table-cell
     padding: 0 5px
     vertical-align: top
@@ -2723,8 +2736,12 @@ $hmesbox: 130px
       float: right
 
   .job-title
+    display: block
+    width: 80%
+    float: left
     max-height: 32px
     overflow: hidden
+
 
   &:hover,
   &.active
@@ -2742,6 +2759,11 @@ $hmesbox: 130px
   &:hover
     cursor: pointer
     border-right: 2px solid #cce0ff
+
+  &.active
+    .room-messages-box
+      display: block
+
 
 .room-message
   @include clear-table
@@ -2764,16 +2786,85 @@ $hmesbox: 130px
 
   .mes-author
     font-weight: bold
+    display: block
+    float: left
+    max-width: 85%
+
+
+  .mes-changes
+    display: block
+    float: left
+    margin: 0 10px
+    width: 20px
+    height: 16px
+
+  .edited-mes
+    background: url("../img/chat/icon_edit_hover.png") no-repeat 50% 0 / auto 16px
+  .deleted-mes
+    background: url("../img/chat/icon_delete_gray.png") no-repeat 50% 0 / auto 16px
+  .unread-mes
+    background: url("../img/dashboard/dashboard_links_icons.png") no-repeat 0 0
+
+
+
   .time
     float: right
     padding-right: 5px
   .mes-title
     margin-bottom: 5px
+    @include clear-table
+
+  .mes-inner
+    @include clear-table
+    .mes-text
+      width: 90%
+      padding-right: 10px
+      float: left
+    .mes-actions
+      width: auto
+      max-width: 10%
+      float: right
+      & > div
+        width: 20px
+        height: 19px
+        background: url("../img/chat/chat-icons.png") no-repeat 50% -63px
+        float: left
+        &:hover
+          cursor: pointer
+
+      .edit-mes
+        background-position: 50% 0
+        &:hover
+          background-position: 50% -32px
+      .del-mes
+        &:hover
+          background-position: 50% -92px
+
+  &.deleted
+    color: darkgrey
+    .del-mes
+      display: none
+
+  &.edited
+    color: #266992
+
+
+
 
 .room-message-form
   .form-inner
     @include clear-table
-    width: 94%
+
+  .form-group
+    padding-bottom: 10px
+
+  .form-btn
+    width: auto
+    float: right
+
+  .form-left
+    width: auto
+    float: left
 
   textarea
     width: 100%
@@ -2785,13 +2876,66 @@ $hmesbox: 130px
     margin-right: 2%
     width: auto
     max-width: 20%
-    float: left
 
-  .form-mes
-    width: 78%
-    float: left
+  .error
+    bottom: 5px
+    font-size: 12px
+    line-height: 12px
+
+
+  //.form-mes
     clear: none
 
+.unread-col
+  display: block
+  float: right
+  width: 30px
+  height: 30px
+  overflow: hidden
+  text-align: center
+  font-size: 12px
+  line-height: 30px
+  font-weight: bold
+  color: #FFFFFF
+  background: #ff0080
+  @include border-radius(50%)
+  @include linearGradient(#ff0080, #D62362, 1%, 51%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0080', endColorstr='#D62362',GradientType=0 )
+  &:hover
+    @include linearGradient(#D62362, #ff0080, 1%, 51%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D62362', endColorstr='#ff0080',GradientType=0 )
+
+.attached
+  color: #28a4da
+  margin-top: 5px
+
+.attach-item
+  @include clear-table
+  margin: 2px 0
+  padding: 2px 0 2px 16px
+  font-size: 14px
+  line-height: 16px
+  background: url("../img/chat/chat-icons.png") no-repeat 0 -122px
+
+  &:hover
+
+    background-position: 0 -155px
+    color: #266992
+
+  .attach-link
+    display: block
+    float: left
+    margin-right: 10px
+
+  .del-attach
+    display: block
+    float: left
+    width: 16px
+    height: 16px
+    background:  url("../img/chat/icon_delete.png") no-repeat 0 50% / auto 16px
+    &:hover
+      cursor: pointer
+      background-image: url("../img/chat/icon_delete_hover.png")
 
 
 
@@ -2844,6 +2988,12 @@ $hmesbox: 130px
         width: 30%
       .motivation
         width: 67%
+
+  .room-message
+    .mes-author
+      max-width: 80%
+
+
 @media (min-width: 1023px) and (max-width: 1199px)
   .feedback-summary
     .grid-header-row
@@ -2965,11 +3115,26 @@ $hmesbox: 130px
 
   .current-room
     .actions
-      //margin: 0
+
       .linkbtn
         padding: 9px
         font-size: 12px
         line-height: 14px
+
+
+  .room
+    .mes-from
+      .user-name
+        max-width: 65%
+      .date
+        font-size: 12px
+    .job-title
+      width: 75%
+      font-size: 12px
+
+  .room-message
+    .mes-author
+      max-width: 75%
 
 
 @media (max-width: 991px)
@@ -3227,6 +3392,12 @@ $hmesbox: 130px
         padding-left: 10px
         padding-right: 10px
 
+  .room-message
+    .mes-author
+      max-width: 70%
+
+
+
 
 
 @media (max-width: 735px)
@@ -3398,6 +3569,29 @@ $hmesbox: 130px
 
     .form-group
       padding-bottom: 10px
+
+  .room
+    .mes-from
+      .date
+        font-size: 10px
+
+
+  .room-message
+    .mes-inner
+      .mes-actions
+        & > div
+          margin-bottom: 5px
+          &:last-child
+            margin-bottom: 0
+
+
+  .unread-col
+    width: 20px
+    height: 20px
+    font-size: 10px
+    line-height: 20px
+
+
 
 @media (min-width: 533px) and (max-width: 719px)
   .profile-wrapper
@@ -3683,6 +3877,22 @@ $hmesbox: 130px
         width: 300px
         float: none
 
+  .room .room-icon,
+  .room-message .user-icon
+    img
+      width: 30px
+    &:after
+      left: 26px
+      top: 18px
+
+  .room
+    .mes-from
+      .user-name
+        max-width: 50%
+
+
+
+
 
 
 
@@ -3796,6 +4006,7 @@ $hmesbox: 130px
           width: 50%
         .whois
           width: 33%
+
 
 @media (max-width: 532px)
   #faqs
@@ -3968,6 +4179,53 @@ $hmesbox: 130px
     .prof-left,
     .prof-right
       width: 100%
+
+  #rooms
+    .rooms-header
+      .left-col,
+      .right-col
+        width: 100%
+        float: none
+
+    .rooms-content
+      padding-top: 60px
+      position: relative
+      .left-col
+        width: 100%
+
+    .room-filters
+      position: absolute
+      top: 0
+      width: 260px
+
+  .room
+    .room-info
+      display: none
+  .room-messages-box
+    background: #ffffff
+    width: 85%
+    left: 15%
+    top: 60px
+    border-left: 2px solid #1593D1
+
+  .room-message-form
+    width: 92%
+    left: 10px
+    .form-btn
+      float: none
+
+
+
+
+  .list-room
+    height: auto
+    margin-bottom: $hmesbox
+    padding-bottom: 10px
+
+
+
+
+
 
 
 

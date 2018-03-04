@@ -2192,6 +2192,16 @@ a.popup__close, a.popup__close:visited {
   text-indent: -9000px; }
 
 /***********************Messages*********************************** */
+.rooms-content {
+  position: relative; }
+
+.room-messages-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 69%;
+  display: none; }
+
 .search-icon {
   background-color: #ffffff;
   text-indent: -500px;
@@ -2285,19 +2295,23 @@ a.popup__close, a.popup__close:visited {
     margin: 5px 0; }
 
 .list-room {
-  height: 390px;
+  height: 425px;
   overflow-y: scroll; }
 
 .room-messages-box {
+  display: none;
   height: 300px;
   overflow-y: scroll;
   margin-bottom: 20px; }
+  .room-messages-box .box-inner {
+    position: relative; }
 
 .room-message-form {
-  height: 130px;
+  height: 165px;
   width: 68%;
   position: absolute;
-  bottom: 5px; }
+  bottom: 0;
+  right: 10px; }
 
 .room {
   display: table;
@@ -2305,7 +2319,8 @@ a.popup__close, a.popup__close:visited {
   clear: both;
   padding: 10px 0;
   border-right: 2px solid #ffffff; }
-  .room > div {
+  .room .room-icon,
+  .room .room-info {
     display: table-cell;
     padding: 0 5px;
     vertical-align: top; }
@@ -2354,6 +2369,9 @@ a.popup__close, a.popup__close:visited {
       display: block;
       float: right; }
   .room .job-title {
+    display: block;
+    width: 80%;
+    float: left;
     max-height: 32px;
     overflow: hidden; }
   .room:hover, .room.active {
@@ -2372,6 +2390,8 @@ a.popup__close, a.popup__close:visited {
   .room:hover {
     cursor: pointer;
     border-right: 2px solid #cce0ff; }
+  .room.active .room-messages-box {
+    display: block; }
 
 .room-message {
   display: table;
@@ -2414,18 +2434,74 @@ a.popup__close, a.popup__close:visited {
   .room-message .mes-content {
     width: 94%; }
   .room-message .mes-author {
-    font-weight: bold; }
+    font-weight: bold;
+    display: block;
+    float: left;
+    max-width: 85%; }
+  .room-message .mes-changes {
+    display: block;
+    float: left;
+    margin: 0 10px;
+    width: 20px;
+    height: 16px; }
+  .room-message .edited-mes {
+    background: url("../img/chat/icon_edit_hover.png") no-repeat 50% 0/auto 16px; }
+  .room-message .deleted-mes {
+    background: url("../img/chat/icon_delete_gray.png") no-repeat 50% 0/auto 16px; }
+  .room-message .unread-mes {
+    background: url("../img/dashboard/dashboard_links_icons.png") no-repeat 0 0; }
   .room-message .time {
     float: right;
     padding-right: 5px; }
   .room-message .mes-title {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    display: table;
+    width: 100%;
+    clear: both; }
+  .room-message .mes-inner {
+    display: table;
+    width: 100%;
+    clear: both; }
+    .room-message .mes-inner .mes-text {
+      width: 90%;
+      padding-right: 10px;
+      float: left; }
+    .room-message .mes-inner .mes-actions {
+      width: auto;
+      max-width: 10%;
+      float: right; }
+      .room-message .mes-inner .mes-actions > div {
+        width: 20px;
+        height: 19px;
+        background: url("../img/chat/chat-icons.png") no-repeat 50% -63px;
+        float: left; }
+        .room-message .mes-inner .mes-actions > div:hover {
+          cursor: pointer; }
+      .room-message .mes-inner .mes-actions .edit-mes {
+        background-position: 50% 0; }
+        .room-message .mes-inner .mes-actions .edit-mes:hover {
+          background-position: 50% -32px; }
+      .room-message .mes-inner .mes-actions .del-mes:hover {
+        background-position: 50% -92px; }
+  .room-message.deleted {
+    color: darkgrey; }
+    .room-message.deleted .del-mes {
+      display: none; }
+  .room-message.edited {
+    color: #266992; }
 
 .room-message-form .form-inner {
   display: table;
   width: 100%;
-  clear: both;
-  width: 94%; }
+  clear: both; }
+.room-message-form .form-group {
+  padding-bottom: 10px; }
+.room-message-form .form-btn {
+  width: auto;
+  float: right; }
+.room-message-form .form-left {
+  width: auto;
+  float: left; }
 .room-message-form textarea {
   width: 100%;
   margin-bottom: 10px;
@@ -2433,12 +2509,75 @@ a.popup__close, a.popup__close:visited {
 .room-message-form .btn {
   margin-right: 2%;
   width: auto;
-  max-width: 20%;
-  float: left; }
-.room-message-form .form-mes {
-  width: 78%;
-  float: left;
-  clear: none; }
+  max-width: 20%; }
+.room-message-form .error {
+  bottom: 5px;
+  font-size: 12px;
+  line-height: 12px; }
+
+.unread-col {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #ff0080;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ff0080;
+  background-image: -moz-linear-gradient(top, #ff0080 1%, #D62362 51%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ff0080), color-stop(51%, #D62362));
+  background-image: -webkit-linear-gradient(top, #ff0080 1%, #D62362 51%);
+  background-image: -o-linear-gradient(top, #ff0080 1%, #D62362 51%);
+  background-image: -ms-linear-gradient(top, #ff0080 1%, #D62362 51%);
+  background-image: linear-gradient(to bottom, #ff0080 1%, #D62362 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0080', endColorstr='#D62362',GradientType=0 ); }
+  .unread-col:hover {
+    background-color: #D62362;
+    background-image: -moz-linear-gradient(top, #D62362 1%, #ff0080 51%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #D62362), color-stop(51%, #ff0080));
+    background-image: -webkit-linear-gradient(top, #D62362 1%, #ff0080 51%);
+    background-image: -o-linear-gradient(top, #D62362 1%, #ff0080 51%);
+    background-image: -ms-linear-gradient(top, #D62362 1%, #ff0080 51%);
+    background-image: linear-gradient(to bottom, #D62362 1%, #ff0080 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D62362', endColorstr='#ff0080',GradientType=0 ); }
+
+.attached {
+  color: #28a4da;
+  margin-top: 5px; }
+
+.attach-item {
+  display: table;
+  width: 100%;
+  clear: both;
+  margin: 2px 0;
+  padding: 2px 0 2px 16px;
+  font-size: 14px;
+  line-height: 16px;
+  background: url("../img/chat/chat-icons.png") no-repeat 0 -122px; }
+  .attach-item:hover {
+    background-position: 0 -155px;
+    color: #266992; }
+  .attach-item .attach-link {
+    display: block;
+    float: left;
+    margin-right: 10px; }
+  .attach-item .del-attach {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url("../img/chat/icon_delete.png") no-repeat 0 50%/auto 16px; }
+    .attach-item .del-attach:hover {
+      cursor: pointer;
+      background-image: url("../img/chat/icon_delete_hover.png"); }
 
 /***************************Media************************* */
 @media (max-width: 1279px) {
@@ -2474,7 +2613,10 @@ a.popup__close, a.popup__close:visited {
   .job .upgrade-box .upgradebtn {
     width: 30%; }
   .job .upgrade-box .motivation {
-    width: 67%; } }
+    width: 67%; }
+
+  .room-message .mes-author {
+    max-width: 80%; } }
 @media (min-width: 1023px) and (max-width: 1199px) {
   .feedback-summary .grid-header-row .inner-cont .col3 {
     padding: 0 10px; } }
@@ -2564,7 +2706,18 @@ a.popup__close, a.popup__close:visited {
   .current-room .actions .linkbtn {
     padding: 9px;
     font-size: 12px;
-    line-height: 14px; } }
+    line-height: 14px; }
+
+  .room .mes-from .user-name {
+    max-width: 65%; }
+  .room .mes-from .date {
+    font-size: 12px; }
+  .room .job-title {
+    width: 75%;
+    font-size: 12px; }
+
+  .room-message .mes-author {
+    max-width: 75%; } }
 @media (max-width: 991px) {
   #faqs .faq-search-form input[type="text"] {
     margin-left: 0;
@@ -2747,7 +2900,10 @@ a.popup__close, a.popup__close:visited {
   .job #bids .linkbtn,
   .job #quests .linkbtn {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  .room-message .mes-author {
+    max-width: 70%; } }
 @media (max-width: 735px) {
   .mailbox .is-more,
   .job .is-more {
@@ -2919,7 +3075,21 @@ a.popup__close, a.popup__close:visited {
   .report_event .popup-inner {
     padding: 10px; }
   .report_event .form-group {
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+
+  .room .mes-from .date {
+    font-size: 10px; }
+
+  .room-message .mes-inner .mes-actions > div {
+    margin-bottom: 5px; }
+    .room-message .mes-inner .mes-actions > div:last-child {
+      margin-bottom: 0; }
+
+  .unread-col {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px; } }
 @media (min-width: 533px) and (max-width: 719px) {
   .profile-wrapper .user-info label,
   .profile-wrapper .user-info .value {
@@ -3124,7 +3294,18 @@ a.popup__close, a.popup__close:visited {
       margin: 0 auto 10px auto; }
     .job .upgrade-box .motivation {
       width: 300px;
-      float: none; } }
+      float: none; }
+
+  .room .room-icon img,
+  .room-message .user-icon img {
+    width: 30px; }
+  .room .room-icon:after,
+  .room-message .user-icon:after {
+    left: 26px;
+    top: 18px; }
+
+  .room .mes-from .user-name {
+    max-width: 50%; } }
 @media (max-width: 575px) {
   header .logo {
     margin-right: 0;
@@ -3329,7 +3510,42 @@ a.popup__close, a.popup__close:visited {
 
   .profile-wrapper .prof-left,
   .profile-wrapper .prof-right {
-    width: 100%; } }
+    width: 100%; }
+
+  #rooms .rooms-header .left-col,
+  #rooms .rooms-header .right-col {
+    width: 100%;
+    float: none; }
+  #rooms .rooms-content {
+    padding-top: 60px;
+    position: relative; }
+    #rooms .rooms-content .left-col {
+      width: 100%; }
+  #rooms .room-filters {
+    position: absolute;
+    top: 0;
+    width: 260px; }
+
+  .room .room-info {
+    display: none; }
+
+  .room-messages-box {
+    background: #ffffff;
+    width: 85%;
+    left: 15%;
+    top: 60px;
+    border-left: 2px solid #1593D1; }
+
+  .room-message-form {
+    width: 92%;
+    left: 10px; }
+    .room-message-form .form-btn {
+      float: none; }
+
+  .list-room {
+    height: auto;
+    margin-bottom: 165px;
+    padding-bottom: 10px; } }
 @media (max-width: 479px) {
   .page_title h1 {
     font-size: 30px;
