@@ -1745,24 +1745,28 @@ header #main-menu .pinkbtn {
   .job label.label-block {
     display: block;
     clear: both; }
-.job .upgrade-box {
+.job .upgrade-box,
+.job .pinkbox {
   width: 100%;
   clear: both;
   background: #FDE2EC;
   border: 1px solid #ffc0cb;
   padding: 10px;
   margin-bottom: 10px; }
-  .job .upgrade-box .upgradebtn {
+  .job .upgrade-box .upgradebtn,
+  .job .pinkbox .upgradebtn {
     width: 24%;
     margin-right: 2%;
     display: inline-block;
     *display: inline; }
-  .job .upgrade-box .motivation {
+  .job .upgrade-box .motivation,
+  .job .pinkbox .motivation {
     width: 73%;
     display: inline-block;
     *display: inline;
     vertical-align: middle; }
-.job .send-bid-form {
+.job .send-bid-form,
+.job .fb-content {
   background: #d8f0fe;
   border: 1px solid #ADDDF3;
   padding: 10px; }
@@ -1774,6 +1778,24 @@ header #main-menu .pinkbtn {
   line-height: 40px; }
 .job .cancelbtn {
   display: none; }
+.job .feedback {
+  margin: 5px 0; }
+.job .fb-content {
+  display: table;
+  width: 100%;
+  clear: both; }
+  .job .fb-content > div {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 5px; }
+  .job .fb-content .feedback-icons {
+    background-position: 0 0; }
+  .job .fb-content .fb-actions {
+    width: 190px; }
+.job.activejob #overview .listing-actions .linkbtn {
+  width: auto;
+  max-width: 220px;
+  height: auto; }
 .job.genie .job-details {
   width: 100%;
   float: none;
@@ -1814,6 +1836,21 @@ header #main-menu .pinkbtn {
   display: none; }
 .job.genie.applied .send-bid.open .expanded-content {
   display: block; }
+
+.rate_event .popup {
+  background: none;
+  border: none; }
+.rate_event .popup-inner.forms-wrap {
+  padding: 0; }
+.rate_event form {
+  margin-bottom: 0;
+  border: 2px solid #2391D6; }
+.rate_event .form-group {
+  text-align: left; }
+.rate_event .form-actions .linkbtn {
+  margin: 0 auto; }
+.rate_event .blueform .error {
+  bottom: 2px; }
 
 /********************************Popup******************************************** */
 .popup__overlay {
@@ -1890,14 +1927,18 @@ a.popup__close, a.popup__close:visited {
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 20px; }
-.popup .buttons .linkbtn {
-  width: auto;
-  min-width: 100px;
-  max-width: 300px; }
-.popup .buttons .yes-btn {
-  float: left; }
-.popup .buttons .no-btn {
-  float: right; }
+.popup .buttons {
+  display: table;
+  width: 100%;
+  clear: both; }
+  .popup .buttons .linkbtn {
+    width: auto;
+    min-width: 100px;
+    max-width: 300px; }
+  .popup .buttons .yes-btn {
+    float: left; }
+  .popup .buttons .no-btn {
+    float: right; }
 
 #popup_report label {
   display: block;
@@ -1969,7 +2010,8 @@ a.popup__close, a.popup__close:visited {
     font-family: Arial, Helvetica, sans-serif; }
 
 /*************************Repair form**************************** */
-#repairform {
+#repairform,
+.blueform {
   padding: 20px;
   margin: 0 auto 30px auto;
   max-width: 600px;
@@ -1986,24 +2028,45 @@ a.popup__close, a.popup__close:visited {
   -ms-border-radius: 4px;
   border-radius: 4px;
   color: #ffffff; }
-  #repairform .linkbtn {
+  #repairform .linkbtn,
+  .blueform .linkbtn {
     font-size: 25px;
     line-height: 25px;
     font-weight: normal; }
-  #repairform #contact-form-submit {
+  #repairform #contact-form-submit,
+  .blueform #contact-form-submit {
     padding: 14px 65px; }
-  #repairform .text {
+  #repairform .text,
+  .blueform .text {
     border-bottom: 2px solid #FFFFFF;
-    margin-bottom: 10px; }
-    #repairform .text p {
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+    #repairform .text p,
+    .blueform .text p {
       text-align: center;
       font-size: 20px;
       line-height: 22px; }
-  #repairform .error {
+  #repairform .error,
+  .blueform .error {
     color: #ffff00;
     bottom: 5px; }
+  #repairform .form-mes,
+  .blueform .form-mes {
+    color: #ffff00; }
 
 /****************View profile******************************** */
+.feedback-icons {
+  background: url(../img/dashboard/iconPlus.png) no-repeat 0 0;
+  width: 18px;
+  height: 18px;
+  text-indent: -9000px;
+  font-size: 0;
+  line-height: 0; }
+  .feedback-icons.iconSlash {
+    background-image: url(../img/dashboard/iconSlash.png); }
+  .feedback-icons.iconMinus {
+    background-image: url(../img/dashboard/iconMinus.png); }
+
 .profile-wrapper {
   background-color: #DEF3FF;
   padding: 20px;
@@ -2012,17 +2075,6 @@ a.popup__close, a.popup__close:visited {
   width: 100%;
   display: table;
   clear: both; }
-  .profile-wrapper .feedback-icons {
-    background: url(../img/dashboard/iconPlus.png) no-repeat 0 0;
-    width: 18px;
-    height: 18px;
-    text-indent: -9000px;
-    font-size: 0;
-    line-height: 0; }
-  .profile-wrapper .iconSlash {
-    background-image: url(../img/dashboard/iconSlash.png); }
-  .profile-wrapper .iconMinus {
-    background-image: url(../img/dashboard/iconMinus.png); }
   .profile-wrapper .inner-cont,
   .profile-wrapper .grid-row,
   .profile-wrapper .main-pagination {
@@ -2905,6 +2957,18 @@ a.popup__close, a.popup__close:visited {
   .job #quests .linkbtn {
     padding-left: 10px;
     padding-right: 10px; }
+  .job .fb-content > div {
+    display: block;
+    float: left; }
+  .job .fb-content .date {
+    width: auto;
+    max-width: 70px; }
+  .job .fb-content .comment {
+    width: calc(100% - 100px);
+    margin-bottom: 10px; }
+  .job .fb-content .fb-actions {
+    float: right;
+    clear: both; }
 
   .room-message .mes-author {
     max-width: 70%; } }
@@ -3236,7 +3300,12 @@ a.popup__close, a.popup__close:visited {
   .forms-wrap form {
     padding-bottom: 0; }
     .forms-wrap form .form-mes {
-      margin: 0; } }
+      margin: 0; }
+    .forms-wrap form.blueform {
+      padding-bottom: initial; }
+
+  .rate_event .forms-wrap form.blueform {
+    padding-bottom: 20px; } }
 @media (max-height: 532px) {
   .forms-wrap .head-text {
     padding-bottom: 10px;
@@ -3436,6 +3505,12 @@ a.popup__close, a.popup__close:visited {
   .job .quest-expander {
     position: absolute;
     right: 10px; }
+  .job .fb-content .date {
+    float: right; }
+  .job .fb-content .comment {
+    clear: both;
+    width: 100%;
+    margin-top: 10px; }
   .job.genie .send-bid {
     width: 100%;
     margin-bottom: 30px; }
