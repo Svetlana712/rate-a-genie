@@ -302,10 +302,11 @@
                 <input type="button" class="no-btn linkbtn greenbtn" value="Cancel, keep my bid">
 
             </div>
+            <div class="form_mes">&nbsp;</div>
 
         </form>
 
-        <div class="form_mes">&nbsp;</div>
+
         </div>
     </div>
 </div>

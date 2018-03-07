@@ -72,6 +72,8 @@
                     <div class="form-actions">
                         <input type="submit" value="Get prices" class="linkbtn greenbtn button" id="contact-form-submit" name="contact-form-submit">
                     </div>
+                    <div class="form-mes"></div>
+
 
                 </div>
             </form>
