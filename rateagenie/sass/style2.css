@@ -1710,9 +1710,14 @@ header #main-menu .pinkbtn {
     background: #F4FAFD;
     color: #246b95; }
     .job .lowest_bid .inner > div {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      clear: both; }
   .job .lowest_bid label {
     width: 50%; }
+  .job .lowest_bid span {
+    width: 50%;
+    display: block;
+    float: right; }
 .job .listing-actions .linkbtn,
 .job .actions .linkbtn {
   margin: 10px auto;
@@ -1778,6 +1783,9 @@ header #main-menu .pinkbtn {
   line-height: 40px; }
 .job .cancelbtn {
   display: none; }
+.job .main-pagination {
+  font-size: 13px;
+  line-height: 14px; }
 .job .feedback {
   margin: 5px 0; }
 .job .fb-content {
@@ -2056,7 +2064,7 @@ a.popup__close, a.popup__close:visited {
 
 /****************View profile******************************** */
 .feedback-icons {
-  background: url(../img/dashboard/iconPlus.png) no-repeat 0 0;
+  background: url(../img/dashboard/iconPlus.png) no-repeat 0 0/18px auto;
   width: 18px;
   height: 18px;
   text-indent: -9000px;
@@ -2103,10 +2111,20 @@ a.popup__close, a.popup__close:visited {
       margin: 20px 10px; }
   .profile-wrapper .prof-right {
     width: 75%;
-    float: right;
-    background-color: #ffffff; }
+    float: right; }
+    .profile-wrapper .prof-right > div {
+      background-color: #ffffff;
+      display: table;
+      width: 100%;
+      clear: both; }
     .profile-wrapper .prof-right h3 {
       margin: 30px; }
+  .profile-wrapper .about {
+    margin-bottom: 20px; }
+    .profile-wrapper .about h3 {
+      margin-bottom: 20px; }
+    .profile-wrapper .about .about-text {
+      padding: 0 20px 20px 30px; }
   .profile-wrapper .noRecords {
     margin: 30px; }
   .profile-wrapper .user-nickname {
@@ -3504,7 +3522,7 @@ a.popup__close, a.popup__close:visited {
   .job .bid-expander,
   .job .quest-expander {
     position: absolute;
-    right: 10px; }
+    right: 0; }
   .job .fb-content .date {
     float: right; }
   .job .fb-content .comment {
@@ -3637,7 +3655,6 @@ a.popup__close, a.popup__close:visited {
     position: relative;
     background: #ffffff;
     width: 100%;
-    height: auto;
     border-left: none; }
   #rooms.chatting .room-message-form {
     display: block;
