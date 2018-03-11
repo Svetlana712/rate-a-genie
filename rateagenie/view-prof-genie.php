@@ -99,6 +99,18 @@
 
                     </div>
                     <div class="prof-right">
+                        <div class="about">
+                            <h3>About Me</h3>
+                            <div class="about-text">
+                                <p>Welcome to our profile!<br>
+                                    We know that repair is a stressful step for most of our customers. Ensuring that we deliver the best services for our clients it’s crucial for us.<br>
+                                    That’s why we are the answer to all your needs as customer satisfaction is a priority for us.<br>
+                                    All guys are skilled, efficient and fully trained.<br>
+                                    Since it started,5 years ago,we have been committed to quality services.<br>
+                                    We learn and improve our services every day.<br>
+                                    Kind regards,<br>Alex</p>
+                            </div>
+                        </div>
                         <div class="feedback">
                             <h3>My Feedback</h3>
                             <div class="data-grid">
