@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="sass/style2.css">
+    <link rel="stylesheet" href="css/dropzone.css">
 
     <title>Repair your device</title>
 </head>
@@ -68,12 +69,18 @@
 
                         </select>
                     </div>
+                    <div class="form-group">
+                        <label for="upload-file">Add Photos</label>
+                        <div class="dropzone dz-clickable" id="upload-file" name="upload-file-form">
+
+                        </div>
+
+                        <input id="image" class="images" hidden="">
+                    </div>
 
                     <div class="form-actions">
                         <input type="submit" value="Get prices" class="linkbtn greenbtn button" id="contact-form-submit" name="contact-form-submit">
                     </div>
-                    <div class="form-mes"></div>
-
 
                 </div>
             </form>
@@ -91,10 +98,14 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/dropzone.js" crossorigin="anonymous"></script>
+
 <script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.1.0.js"></script>
 <script src="js/popper.min.js" crossorigin="anonymous"></script>
 <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.js" crossorigin="anonymous"></script>
+<script src="js/mydropzone.js"></script>
 <script>
     jQuery(window).on('load',function() {
         jQuery(".form_phone").mask("(999) 999-99-99");
@@ -102,6 +113,8 @@
             event.preventDefault();
             //console.log( $( this ).serialize() );
         });
+
+
 
     });
 
