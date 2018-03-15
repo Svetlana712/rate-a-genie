@@ -2061,6 +2061,9 @@ a.popup__close, a.popup__close:visited {
   #repairform .form-mes,
   .blueform .form-mes {
     color: #ffff00; }
+  #repairform .dz-message,
+  .blueform .dz-message {
+    color: #525f7f; }
 
 /****************View profile******************************** */
 .feedback-icons {
