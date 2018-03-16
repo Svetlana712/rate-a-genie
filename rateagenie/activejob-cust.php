@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="sass/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/colorbox.css">
+
+
+
 
     <title>Active listing. Customer view</title>
 </head>
@@ -91,16 +96,46 @@
                     <div class="model">
                         <label>Model:</label><span>Iphone</span>
                     </div>
+                    <div class="job-photos"><label>Photo:</label>
+                    <div class="photos">
+                        <div class="photo-item"><a class="group1 cboxElement" href="files/upload/ph1.jpg" title="Click me"><img class="cBoxImg" src="files/upload/ph1.jpg" alt="Job image"></a></div>
+                        <div class="photo-item"><a class="group1 cboxElement" href="files/upload/ph2.jpg" title="Click me"><img class="cBoxImg" src="files/upload/ph2.jpg" alt="Job image"></a></div>
+                        <div class="photo-item"><a class="group1 cboxElement" href="files/upload/ph3.jpg" title="Click me"><img class="cBoxImg" src="files/upload/ph3.jpg" alt="Job image"></a></div>
+                        <div class="photo-item"><a class="group1 cboxElement" href="files/upload/ph4.jpg" title="Click me"><img class="cBoxImg" src="files/upload/ph4.jpg" alt="Job image"></a></div>
+                        <div class="photo-item"><a class="group1 cboxElement" href="files/upload/ph5.jpg" title="Click me"><img class="cBoxImg" src="files/upload/ph5.jpg" alt="Job image"></a></div>
+                        <div class="photo-item"><a class="group1 cboxElement" href="files/upload/ph6.jpg" title="Click me"><img class="cBoxImg" src="files/upload/ph6.jpg" alt="Job image"></a></div>
+                        <div class="photo-item"><a class="group1 cboxElement" href="files/upload/ph7.jpg" title="Click me"><img class="cBoxImg" src="files/upload/ph7.jpg" alt="Job image"></a></div>
+                    </div>
+                    </div>
+
+                    <!--<div class="jcarousel-wrapper">
+                        <div class="jcarousel">
+                            <ul>
+                                <li><img src="files/upload/ph1.jpg" alt="Image 1"></li>
+                                <li><img src="files/upload/ph2.jpg" alt="Image 2"></li>
+                                <li><img src="files/upload/ph3.jpg" alt="Image 3"></li>
+                                <li><img src="files/upload/ph4.jpg" alt="Image 4"></li>
+                                <li><img src="files/upload/ph5.jpg" alt="Image 5"></li>
+                                <li><img src="files/upload/ph6.jpg" alt="Image 6"></li>
+                                <li><img src="files/upload/ph7.jpg" alt="Image 7"></li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                        <p class="jcarousel-pagination"></p>
+                    </div>-->
                 </div>
                 <div class="lowest_bid">
                     <div class="title">
                         Accepted bid
                     </div>
                     <div class="inner">
-                        <div class="bidder"><label>Bidder</label><span><a href="view-prof-genie.php" title="View profile">DLSvans</a></span></div>
+                        <div class="bidder"><label>Bidder</label><span><a href="view-prof-genie.php" title="View profile">DLSvans DLSvans DLSvans DLSvans</a></span></div>
                         <div class="amount"><label>Amount</label><span>£150.00</span></div>
                         <div class="when"><label>When</label><span>9 hours ago</span></div>
-                        <div class="dates"><label>Pickup date</label><span>17th Feb</span></div>
+                        <div class="dates"><label>Pickup date</label><span>17th Feb 2018</span></div>
                         <div class="dates"><label>Delivery date</label><span>Same day</span></div>
                         <div class="actions">
                             <a href="view-prof-genie.php" class="linkbtn greenbtn view-prof">View Genie Profile</a>
@@ -129,17 +164,17 @@
                                     <div class="bid-expander" id="id-for-this-bid-5140178" title="Click to expand or hide additional info">&nbsp;</div>
                                     <a href="#" title="View profile">
                                         <span class="provider accredited branded">
-                                            DLSvans
+                                            DLSvans DLSvans DLSvans DLSvans
                                             <span class="badge_container">
                                                 <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>
                                 </div>
                                 <div class="cols col2 amount">£150.00</div>
                                 <div class="cols col3 when">9 hours ago</div>
-                                <div class="cols col4 dates"><strong>P:</strong> 17 Feb<br><strong>D:</strong> 17 Feb</div>
+                                <div class="cols col4 dates"><strong>P:</strong> 17 Feb 2018<br><strong>D:</strong> 17 Feb 2018</div>
                                 <div class="cols col5 actions">
                                     <span class="main-option linkbtn bluebtn exp-mes">View details</span>
                                     
@@ -211,7 +246,7 @@
                                                                 </span>
                                                 </div>
                                             </a>
-                                            <p class="chatting_nickname">DLSvans</p>
+                                            <p class="chatting_nickname">DLSvans DLSvans DLSvans DLSvans</p>
                                         </div>
                                     </div>
                                     <div class="bubble with-whois">
@@ -252,7 +287,7 @@
                                                                 </span>
                                                 </div>
                                             </a>
-                                            <p class="chatting_nickname">DLSvans</p>
+                                            <p class="chatting_nickname">DLSvans DLSvans DLSvans DLSvans</p>
                                         </div>
                                     </div>
                                     <div class="bubble with-whois">
@@ -284,14 +319,14 @@
                                             RTRvans
                                             <span class="badge_container">
                                                 <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>
                                 </div>
                                 <div class="cols col2 amount">£250.00</div>
                                 <div class="cols col3 when">yesterday</div>
-                                <div class="cols col4 dates"><strong>P:</strong> 18 Feb<br><strong>D:</strong> 18 Feb</div>
+                                <div class="cols col4 dates"><strong>P:</strong> 18 Feb 2018<br><strong>D:</strong> 18 Feb 2018</div>
                                 <div class="cols col5 actions">
                                     <span class="main-option linkbtn bluebtn exp-mes">View details</span>
                                 </div>
@@ -397,10 +432,10 @@
                                     <div class="quest-expander" id="id-for-this-quest-5101178" title="Click to expand or hide reply form">&nbsp;</div>
                                     <a href="#" title="View profile">
                                         <span class="provider accredited branded">
-                                            DLSvans
+                                            DLSvans DLSvans DLSvans DLSvans
                                             <span class="badge_container">
                                                 <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>
@@ -454,10 +489,10 @@
                                     <div class="quest-expander" id="id-for-this-quest-5141178" title="Click to expand or hide reply form">&nbsp;</div>
                                     <a href="#" title="View profile">
                                         <span class="provider accredited branded">
-                                            DLSvans
+                                            DLSvans DLSvans DLSvans DLSvans
                                             <span class="badge_container">
                                                 <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>
@@ -605,10 +640,16 @@
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jcarousel.responsive.js"></script>-->
 <script src="js/popper.min.js" crossorigin="anonymous"></script>
 <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.js" crossorigin="anonymous"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+
 <script>
 
     $( ".block-header" ).click(function() {
@@ -708,6 +749,9 @@
             event.preventDefault();
             //console.log( $( this ).serialize() );
         });
+
+
+        $(".group1").colorbox({rel:'group1', maxWidth:"100%", maxHeight:"100%", title:""});
 
     });
 
