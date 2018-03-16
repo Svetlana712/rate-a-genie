@@ -1800,6 +1800,36 @@ header #main-menu .pinkbtn {
     background-position: 0 0; }
   .job .fb-content .fb-actions {
     width: 190px; }
+.job .photos {
+  display: inline-block;
+  *display: inline;
+  width: 100%;
+  clear: both;
+  font-size: 0; }
+.job .photo-item {
+  display: block;
+  float: left;
+  width: 23%;
+  font-size: initial;
+  text-align: center;
+  margin: 10px 1%;
+  padding: 5px;
+  border: 2px solid #27A4D9;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  .job .photo-item:hover {
+    background: #E9F6FA; }
+.job .cboxElement {
+  display: table-cell;
+  height: 180px;
+  vertical-align: middle;
+  width: inherit; }
+  .job .cboxElement img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle; }
 .job.activejob #overview .listing-actions .linkbtn {
   width: auto;
   max-width: 220px;
@@ -2724,6 +2754,8 @@ a.popup__close, a.popup__close:visited {
       float: left; }
     .job.genie .app-bid-inner .actions .del-bid {
       float: right; }
+  .job .cboxElement {
+    height: 120px; }
 
   #form-search-filter {
     width: 100%; }
@@ -3178,7 +3210,10 @@ a.popup__close, a.popup__close:visited {
     width: 20px;
     height: 20px;
     font-size: 10px;
-    line-height: 20px; } }
+    line-height: 20px; }
+
+  .job .cboxElement {
+    height: 90px; } }
 @media (min-width: 533px) and (max-width: 719px) {
   .profile-wrapper .user-info label,
   .profile-wrapper .user-info .value {

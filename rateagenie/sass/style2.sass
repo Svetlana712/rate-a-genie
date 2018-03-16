@@ -2115,6 +2115,36 @@ header
     .fb-actions
       width: 190px
 
+  .photos
+    @include clear-inline-block
+    font-size: 0
+
+  .photo-item
+    display: block
+    float: left
+    width: 23%
+    font-size: initial
+    text-align: center
+    margin: 10px 1%
+    padding: 5px
+    border: 2px solid #27A4D9
+    @include border-radius(4px)
+
+    &:hover
+      //border-color: #266992
+      background: #E9F6FA
+
+  .cboxElement
+    display: table-cell
+    height: 180px
+    vertical-align: middle
+    width: inherit
+
+    img
+      max-width: 100%
+      max-height: 100%
+      vertical-align: middle
+
   &.activejob
     #overview
       .listing-actions
@@ -2122,7 +2152,6 @@ header
           width: auto
           max-width: 220px
           height: auto
-
 
 
 
@@ -3133,6 +3162,9 @@ $hmesbox: 165px
           .del-bid
             float: right
 
+    .cboxElement
+      height: 120px
+
 
   #form-search-filter
     width: 100%
@@ -3706,7 +3738,9 @@ $hmesbox: 165px
     font-size: 10px
     line-height: 20px
 
-
+  .job
+    .cboxElement
+      height: 90px
 
 @media (min-width: 533px) and (max-width: 719px)
   .profile-wrapper
