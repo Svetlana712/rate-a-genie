@@ -150,8 +150,8 @@
                                         <span class="provider accredited branded">
                                             DLSvans
                                             <span class="badge_container">
-                                                <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>
@@ -177,8 +177,8 @@
                                         <span class="provider accredited branded">
                                             RTRvans
                                             <span class="badge_container">
-                                                <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>
@@ -222,8 +222,8 @@
                                         <span class="provider accredited branded">
                                             DLSvans
                                             <span class="badge_container">
-                                                <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>
@@ -247,8 +247,8 @@
                                         <span class="provider accredited branded">
                                             DLSvans
                                             <span class="badge_container">
-                                                <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
-                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans">
+                                                <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited">
+                                                <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded genies" title="Branded genies">
                                             </span> <span class="jobs">(82)</span>
                                         </span>
                                     </a>

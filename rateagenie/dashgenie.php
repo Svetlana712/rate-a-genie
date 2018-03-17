@@ -299,7 +299,7 @@
                                         <div class="status unread cols col1"> &nbsp;</div>
 
                                         <div class="subject cols col2">GREEN 1100 Litre ROLLTOP Wheelie Bin with Drop...</div>
-                                        <div class="username cols col3"><span class="provider accredited branded">DLSvans<span class="badge_container"> <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"> <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans"></span> <span class="jobs">(82)</span></span></div>
+                                        <div class="username cols col3"><span class="provider accredited branded">DLSvans<span class="badge_container"> <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"> <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans"></span> <span class="jobs">(82)</span></span></div>
 
                                         <div class="lowest_bid cols col4">&nbsp;</div>
 
@@ -384,7 +384,7 @@
                                         <div class="status read cols col1"> &nbsp;</div>
 
                                         <div class="subject cols col2">GREEN 1100 Litre ROLLTOP Wheelie Bin with Drop...</div>
-                                        <div class="username cols col3"><span class="provider accredited branded">Dlams<span class="badge_container"> <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"> <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans"></span> <span class="jobs">(65)</span></span></div>
+                                        <div class="username cols col3"><span class="provider accredited branded">Dlams<span class="badge_container"> <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"> <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans"></span> <span class="jobs">(65)</span></span></div>
 
                                         <div class="lowest_bid cols col4">&nbsp;</div>
 
@@ -468,7 +468,7 @@
                                         <div class="status read cols col1"> &nbsp;</div>
 
                                         <div class="subject cols col2">GREEN 1100 Litre ROLLTOP Wheelie Bin with Drop...</div>
-                                        <div class="username cols col3"><span class="provider online recommended_lvl5 accredited">Safelym1<span class="badge_container"> <img class="recommended_lvl5" src="img/dashboard/badges/badge_provider_recommended_lvl5.png" alt="Completed over 250 jobs + minimum 95% positive feedback" title="Completed over 250 jobs + minimum 95% positive feedback"> <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(285)</span></span></div>
+                                        <div class="username cols col3"><span class="provider online recommended_lvl5 accredited">Safelym1<span class="badge_container"> <img class="recommended_lvl5" src="img/dashboard/badges/star.png" alt="Completed over 250 jobs + minimum 90% positive feedback" title="Completed over 250 jobs + minimum 90% positive feedback"> <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(285)</span></span></div>
 
                                         <div class="lowest_bid cols col4">&nbsp;</div>
 
@@ -513,7 +513,7 @@
                                                         <div class="profile-image provider accredited">
                                                             <img src="img/dashboard/cust/thumb_1381960.jpg" alt="">
                                                             <span class="badge_container">
-                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 95% positive feedback"></span>
+                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 90% positive feedback"></span>
                                                                 <span class="accredited" title="Rate a Genie Accredited"></span>
                                                             </span>
                                                         </div>
@@ -555,7 +555,7 @@
                                         <div class="status read cols col1"> &nbsp;</div>
 
                                         <div class="subject cols col2">TIROLL GRASS SLEDGE Used Condition</div>
-                                        <div class="username cols col3"><span class="provider power_shield_gold recommended_lvl5 accredited">AMGlt<span class="badge_container"> <img class="power_shield_gold" src="img/dashboard/badges/badge_provider_power_shield_gold.png" alt="Gold Power Mover – Over 1000+ Jobs" title="Gold Power Mover – Over 1000+ Jobs"> <img class="recommended_lvl5" src="img/dashboard/badges/badge_provider_recommended_lvl5.png" alt="Completed over 250 jobs + minimum 95% positive feedback" title="Completed over 250 jobs + minimum 95% positive feedback"> <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(1450)</span></span></div>
+                                        <div class="username cols col3"><span class="provider power_shield_gold recommended_lvl5 accredited">AMGlt<span class="badge_container"> <img class="power_shield_gold" src="img/dashboard/badges/gold_genie.png" alt="Gold Power Genie – Over 1000+ Jobs" title="Gold Power Genie – Over 1000+ Jobs"> <img class="recommended_lvl5" src="img/dashboard/badges/star.png" alt="Completed over 250 jobs + minimum 90% positive feedback" title="Completed over 250 jobs + minimum 90% positive feedback"> <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(1450)</span></span></div>
 
                                         <div class="lowest_bid cols col4"><a class="accept_bid" href="#">£95</a></div>
 
@@ -601,8 +601,8 @@
                                                         <div class="profile-image provider accredited">
                                                             <img src="img/dashboard/cust/thumb_2369630.jpg" alt="">
                                                             <span class="badge_container">
-                                                                <span class="power_shield_gold" title="Gold Power Mover – Over 500+ Jobs"></span>
-                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 95% positive feedback"></span>
+                                                                <span class="power_shield_gold" title="Gold Power Genie – Over 1000+ Jobs"></span>
+                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 90% positive feedback"></span>
                                                                 <span class="accredited" title="Rate a Genie Accredited"></span>
                                                             </span>
                                                         </div>
@@ -667,7 +667,7 @@
                                         <div class="status read cols col1 replied"> &nbsp;</div>
 
                                         <div class="subject cols col2">TIROLL GRASS SLEDGE Used Condition</div>
-                                        <div class="username cols col3"><span class="provider online power_shield_gold recommended_lvl5 accredited branded">Promasyl<span class="badge_container"> <img class="power_shield_gold" src="img/dashboard/badges/badge_provider_power_shield_gold.png" alt="Gold Power Mover – Over 1000+ Jobs" title="Gold Power Mover – Over 1000+ Jobs"> <img class="recommended_lvl5" src="img/dashboard/badges/badge_provider_recommended_lvl5.png" alt="Completed over 250 jobs + minimum 95% positive feedback" title="Completed over 250 jobs + minimum 95% positive feedback"> <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"> <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans"></span> <span class="jobs">(2496)</span></span></div>
+                                        <div class="username cols col3"><span class="provider online power_shield_gold recommended_lvl5 accredited branded">Promasyl<span class="badge_container"> <img class="power_shield_gold" src="img/dashboard/badges/gold_genie.png" alt="Gold Power Genie – Over 1000+ Jobs" title="Gold Power Genie – Over 1000+ Jobs"> <img class="recommended_lvl5" src="img/dashboard/badges/star.png" alt="Completed over 250 jobs + minimum 90% positive feedback" title="Completed over 250 jobs + minimum 90% positive feedback"> <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"> <img class="branded" src="img/dashboard/badges/badge_provider_branded.png" alt="Branded vans" title="Branded vans"></span> <span class="jobs">(2496)</span></span></div>
 
                                         <div class="lowest_bid cols col4"><a class="accept_bid" href="#">£100</a></div>
 
@@ -735,8 +735,8 @@
                                                         <div class="profile-image provider accredited">
                                                             <img src="img/dashboard/cust/thumb_2280601.jpg" alt="">
                                                             <span class="badge_container">
-                                                                <span class="power_shield_gold" title="Gold Power Mover – Over 500+ Jobs"></span>
-                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 95% positive feedback"></span>
+                                                                <span class="power_shield_gold" title="Gold Power Genie – Over 1000+ Jobs"></span>
+                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 90% positive feedback"></span>
                                                                 <span class="accredited" title="Rate a Genie Accredited"></span>
                                                             </span>
                                                         </div>
@@ -785,7 +785,7 @@
                                         <div class="status read cols col1"> &nbsp;</div>
 
                                         <div class="subject cols col2">Parcel (20x15x15in)</div>
-                                        <div class="username cols col3"><span class="provider power_shield_silver recommended_lvl5 accredited">CAE_VAN<span class="badge_container"> <img class="power_shield_silver" src="img/dashboard/badges/badge_provider_power_shield_silver.png" alt="Silver Power Mover – Over 500+ Jobs" title="Silver Power Mover – Over 500+ Jobs"> <img class="recommended_lvl5" src="img/dashboard/badges/badge_provider_recommended_lvl5.png" alt="Completed over 250 jobs + minimum 95% positive feedback" title="Completed over 250 jobs + minimum 95% positive feedback"> <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(516)</span></span></div>
+                                        <div class="username cols col3"><span class="provider power_shield_silver recommended_lvl5 accredited">CAE_VAN<span class="badge_container"> <img class="power_shield_silver" src="img/dashboard/badges/silver_genie.png" alt="Silver Power Genie – Over 500 jobs + minimum 95% positive feedback" title="Silver Power Genie – Over 500 jobs + minimum 95% positive feedback"> <img class="recommended_lvl5" src="img/dashboard/badges/star.png" alt="Completed over 250 jobs + minimum 90% positive feedback" title="Completed over 250 jobs + minimum 90% positive feedback"> <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(516)</span></span></div>
 
                                         <div class="lowest_bid cols col4">&nbsp;</div>
 
@@ -828,8 +828,8 @@
                                                         <div class="profile-image provider accredited">
                                                             <img src="img/dashboard/cust/thumb_2170030.jpg" alt="">
                                                             <span class="badge_container">
-                                                                <span class="power_shield_gold" title="Gold Power Mover – Over 500+ Jobs"></span>
-                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 95% positive feedback"></span>
+                                                                <span class="power_shield_gold" title="Gold Power Genie – Over 1000+ Jobs"></span>
+                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 90% positive feedback"></span>
                                                                 <span class="accredited" title="Rate a Genie Accredited"></span>
                                                             </span>
                                                         </div>
@@ -891,8 +891,8 @@
                                                         <div class="profile-image provider accredited">
                                                             <img src="img/dashboard/cust/thumb_2170030.jpg" alt="">
                                                             <span class="badge_container">
-                                                                <span class="power_shield_gold" title="Gold Power Mover – Over 500+ Jobs"></span>
-                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 95% positive feedback"></span>
+                                                                <span class="power_shield_gold" title="Gold Power Genie – Over 1000+ Jobs"></span>
+                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 90% positive feedback"></span>
                                                                 <span class="accredited" title="Rate a Genie Accredited"></span>
                                                             </span>
                                                         </div>
@@ -922,7 +922,7 @@
                                         <div class="status read cols col1 replied"> &nbsp;</div>
 
                                         <div class="subject cols col2">Parcel (20x15x15in)</div>
-                                        <div class="username cols col3"><span class="provider power_shield_silver recommended_lvl5 accredited">BartNW<span class="badge_container"> <img class="power_shield_silver" src="img/dashboard/badges/badge_provider_power_shield_silver.png" alt="Silver Power Mover – Over 500+ Jobs" title="Silver Power Mover – Over 500+ Jobs"> <img class="recommended_lvl5" src="img/dashboard/badges/badge_provider_recommended_lvl5.png" alt="Completed over 250 jobs + minimum 95% positive feedback" title="Completed over 250 jobs + minimum 95% positive feedback"> <img class="accredited" src="img/dashboard/badges/badge_provider_accredited.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(555)</span></span></div>
+                                        <div class="username cols col3"><span class="provider power_shield_silver recommended_lvl5 accredited">BartNW<span class="badge_container"> <img class="power_shield_silver" src="img/dashboard/badges/silver_genie.png" alt="Silver Power Genie – Over 500 jobs + minimum 95% positive feedback" title="Silver Power Genie – Over 500 jobs + minimum 95% positive feedback"> <img class="recommended_lvl5" src="img/dashboard/badges/star.png" alt="Completed over 250 jobs + minimum 90% positive feedback" title="Completed over 250 jobs + minimum 90% positive feedback"> <img class="accredited" src="img/dashboard/badges/accredited_genie.png" alt="Rate a Genie Accredited" title="Rate a Genie Accredited"></span> <span class="jobs">(555)</span></span></div>
 
                                         <div class="lowest_bid cols col4">&nbsp;</div>
 
@@ -988,8 +988,8 @@
                                                         <div class="profile-image provider accredited">
                                                             <img src="img/dashboard/cust/thumb_1721931.jpg" alt="">
                                                             <span class="badge_container">
-                                                                <span class="power_shield_gold" title="Gold Power Mover – Over 500+ Jobs"></span>
-                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 95% positive feedback"></span>
+                                                                <span class="power_shield_gold" title="Gold Power Genie – Over 1000+ Jobs"></span>
+                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 90% positive feedback"></span>
                                                                 <span class="accredited" title="Rate a Genie Accredited"></span>
                                                             </span>
                                                         </div>
@@ -1029,8 +1029,8 @@
                                                         <div class="profile-image provider accredited">
                                                             <img src="img/dashboard/cust/thumb_1721931.jpg" alt="">
                                                             <span class="badge_container">
-                                                                <span class="power_shield_gold" title="Gold Power Mover – Over 500+ Jobs"></span>
-                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 95% positive feedback"></span>
+                                                                <span class="power_shield_gold" title="Gold Power Genie – Over 1000+ Jobs"></span>
+                                                                <span class="recommended_lvl5" title="Completed over 250 jobs + minimum 90% positive feedback"></span>
                                                                 <span class="accredited" title="Rate a Genie Accredited"></span>
                                                             </span>
                                                         </div>
