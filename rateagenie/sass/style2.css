@@ -883,6 +883,9 @@ footer {
       #dashboard .tab-item.listing .listing-more-options ul li:first-child {
         border-left: none; }
 
+.provider .badge_container img {
+  margin-top: -5px; }
+
 /*-----------------------Dashboard Mailbox------------------------------ */
 #mailbox-selector {
   font-size: 15px; }
@@ -1115,8 +1118,8 @@ footer {
       .job .is-more .thread_item .bubble .sent {
         display: inline-block;
         margin: 0 0 0 5px;
-        background: url("../img/dashboard/badge_provider_accredited.png") no-repeat left 2px;
-        text-indent: 15px; }
+        background: url("../img/dashboard/badges/accredited_genie.png") no-repeat left 2px;
+        text-indent: 22px; }
       .mailbox .is-more .thread_item .bubble .arrow,
       .job .is-more .thread_item .bubble .arrow {
         position: absolute;
@@ -1187,10 +1190,10 @@ footer {
       background-repeat: no-repeat; }
       .mailbox .profile-image .badge_container span.recommended_lvl5,
       .job .profile-image .badge_container span.recommended_lvl5 {
-        background: url(../img/dashboard/badges/smallgold.svg) no-repeat 0 0/25px auto; }
+        background: url(../img/dashboard/badges/star.png) no-repeat 0 50%/20px auto; }
       .mailbox .profile-image .badge_container span.power_shield_gold,
       .job .profile-image .badge_container span.power_shield_gold {
-        background: url(../img/dashboard/badges/smallpm.svg) no-repeat 0 0/20px auto; }
+        background: url(../img/dashboard/badges/gold_genie.png) no-repeat 0 50%/20px auto; }
 .mailbox .reply_block,
 .job .reply_block {
   margin: 0 0 20px 0;
